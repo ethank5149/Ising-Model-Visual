@@ -270,7 +270,7 @@ void run_simulation(int** lattice, int nrows, int ncols, int nframes, int algste
     // Loop through the desired number of frames
     for (int frame = 0; frame < nframes; frame++) {
         lattice2pbm(lattice, nrows, ncols, frame); // Save the frame as a pbm file
-        pbms2images(); // Convert pbm to png
+        //pbms2images(); // Convert pbm to png
 
         // Loop through the intermediate algorithm steps
         for (int step = 0; step < algsteps; step++) {
