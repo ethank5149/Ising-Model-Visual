@@ -1,87 +1,210 @@
-const double k_B = 1.0; // Boltzmann constant
-void clean();
-
 #include "stdio.h"
 #include "stdlib.h"
 #include "math.h"
 
+// Global Constants
+#define kB 1.0 // Boltzmann constant
+
+// Function Declarations
+void pbms2images();
+void images2video(int**, int, int);
+void lattice2pbm(int**, int, int, int);
 double prob();
-void lattice2image(int**, int, int, int);
-void images2video(int, int);
-void initialize_lattice(int**, int, int);
 int neighbors(int**, int, int, int, int);
-void metropolis_hastings_step(int**, int, int, double, double, double);
+void initialize_lattice(int**, int, int);
+void metropolis_hastings_step(int**, int, int, int, int, double, double, double);
 void run_simulation(int**, int, int, int, int, double, double, double);
 
 
-double prob() {
+int main(int argc, const char* argv[])
+{
+    printf("\n2D ISING MODEL - VISUAL SIMULATION\n");
+    printf("----------------------------------\n");
+
+    // Check the number of parameters
+    if (argc == 8) {
+        // Convert commandline arguments from strings
+        char** endptr = NULL;
+        int nrows = strtol(argv[1], endptr, 0);
+        int ncols = strtol(argv[2], endptr, 0);
+        int nframes = strtol(argv[3], endptr, 0);
+        int algsteps = strtol(argv[4], endptr, 0);
+        double J = strtod(argv[5], endptr);
+        double h = strtod(argv[6], endptr);
+        double T = strtod(argv[7], endptr);
+
+        printf("\nRunning...\n");
+
+        int** lattice = (int**)malloc(nrows * sizeof(int*));
+        for (int i = 0; i < nrows; i++) {
+            lattice[i] = (int*)malloc(ncols * sizeof(int));
+        }
+
+        initialize_lattice(lattice, nrows, ncols); // Randomize the lattice
+        run_simulation(lattice, nrows, ncols, nframes, algsteps, J, h, T); // Go baby go
+        free(lattice);
+    }
+    else {
+        int nrows, ncols, nframes, algsteps;
+        double J, h, T;
+
+        printf("\nShortcut Usage: %s [nrows] [ncols] [nframes] [algsteps] [J] [h] [T]\n\n", argv[0]);
+        
+        printf("Number of Rows ----------------------> ");
+        scanf_s("%d", &nrows);
+        
+        printf("Number of Columns -------------------> ");
+        scanf_s("%d", &ncols);
+        
+        printf("Number of Frames --------------------> ");
+        scanf_s("%d", &nframes);
+        
+        printf("Number of Iterations Between Frames -> ");
+        scanf_s("%d", &algsteps);
+
+        printf("Ferromagnetic Coupling Constant -----> ");
+        scanf_s("%lf", &J);
+
+        printf("Magnetic Field Strength -------------> ");
+        scanf_s("%lf", &h);
+
+        printf("Temperature -------------------------> ");
+        scanf_s("%lf", &T);
+
+        printf("\n\nRunning...\n\n");
+
+        int** lattice = (int**)malloc(nrows * sizeof(int*));
+        for (int i = 0; i < nrows; i++) {
+            lattice[i] = (int*)malloc(ncols * sizeof(int));
+        }
+
+        initialize_lattice(lattice, nrows, ncols); // Randomize the lattice
+        run_simulation(lattice, nrows, ncols, nframes, algsteps, J, h, T); // Go baby go
+        free(lattice);
+    }
+
+    return 0;
+}
+
+
+/*****************************************************************************\
+| Function:  pbms2images                                                      |
+| -----------------------------------                                         |
+| Runs a customizable batch script capable of converting the pbm files into   |
+| png frames.                                                                 |
+|                                                                             |
+| Returns: void                                                               |
+\*****************************************************************************/
+void pbms2images()
+{
+    system("pbms2images.bat");
+}
+
+
+/*****************************************************************************\
+| Function:  images2video                                                     |
+| -----------------------------------                                         |
+| Runs a customizable batch script capable of converting the frames into a    |
+| proper video. The dimensions of the video are passed to the script as well. |
+|                                                                             |
+| lattice:  The 2D grid of spin values                                        |
+| nrows:  Number of rows                                                      |
+| ncols:  Number of columns                                                   |
+|                                                                             |
+| Returns: void                                                               |
+\*****************************************************************************/
+void images2video(int** lattice, int nrows, int ncols)
+{
+    char command[0x100];
+    snprintf(command, sizeof(command), "images2video.bat %d %d", nrows, ncols);
+    system(command);
+}
+
+
+/*****************************************************************************\
+| Function:  lattice2pbm                                                      |
+| -----------------------------------                                         |
+| Writes and saves a pbm file fully describing the state of the lattice at a  |
+| particular frame                                                            |
+|                                                                             |
+| lattice:  The 2D grid of spin values                                        |
+| nrows:  Number of rows                                                      |
+| ncols:  Number of columns                                                   |
+| frame:    The index of the frame being saved                                |
+|                                                                             |
+| Returns: void                                                               |
+\*****************************************************************************/
+void lattice2pbm(int** lattice,int nrows, int ncols, const int frame)
+{
+    // Appropriately format the numbered filename
+    char f[0x100];                                              
+    snprintf(f, sizeof(f), "frames/frame%d.pbm", frame);        
+                                                                
+    FILE* file;                                                 
+    fopen_s(&file, f, "wb");                                    
+                                                                
+    fprintf(file, "P1\n");                                      
+    fprintf(file, "%d %d\n", nrows, ncols);                     
+                                                                
+    for (int i = 0; i < nrows; i++) {                           
+        for (int j = 0; j < ncols; j++) {                       
+            fprintf(file, "%d ", (lattice[i][j] == 1 ? 1 : 0)); 
+        }                                                       
+                                                                
+        fprintf(file, "\n");                                    
+    }                                                           
+                                                                
+    fclose(file);                                               
+}
+
+
+/*****************************************************************************\
+| Function:  prob                                                             |
+| -----------------------------------                                         |
+| Outputs a quasi-random double from 0.0 to 1.0                               |
+|                                                                             |
+| Returns: The quasi-random double                                            |
+\*****************************************************************************/
+double prob()
+{
     return (double)rand() / RAND_MAX;
 }
 
 
-void lattice2image(int** lattice, int nrows, int ncols, const int frame) {
-    /************************************************************\
-    | This writes the lattice in the appropriate format for a    |
-    | 'pbm' file                                                 |
-    \************************************************************/
-    //////////////////////////////////////////////////////////////
-    char f[0x100];                                              //
-    snprintf(f, sizeof(f), "frames/frame%d.pbm", frame);        //
-                                                                //
-    FILE* file;                                                 //
-    fopen_s(&file, f, "wb");                                    //
-                                                                //
-    fprintf(file, "P1\n");                                      //
-    fprintf(file, "%d %d\n", nrows, ncols);                     //
-                                                                //
-    for (int i = 0; i < nrows; i++) {                           //
-        for (int j = 0; j < ncols; j++) {                       //
-            fprintf(file, "%d ", (lattice[i][j] == 1 ? 1 : 0)); //
-        }                                                       //
-                                                                //
-        fprintf(file, "\n");                                    //
-    }                                                           //
-                                                                //
-    fclose(file);                                               //
-    //////////////////////////////////////////////////////////////
-
-    /************************************************************\
-    | This next line of code daisy-chains a few cmd commands:    |
-    | - Changes into the 'frames/' directory                     |
-    | - Converts any 'pbm' files to 'png' files                  |
-    | - Deletes the now unnecessary 'pbm' files                  |
-    | - Changes directory back to its original location          |
-    \************************************************************/
-    system("cd frames && magick mogrify -format png *.pbm && del /Q *.pbm && cd ..");
+/*****************************************************************************\
+| Function:  neighbors                                                        |
+| -----------------------------------                                         |
+| Calculates the sum of the spins of the selected points immediate neighbors  |
+|                                                                             |
+| lattice:  The 2D grid of spin values                                        |
+| nrows:  Number of rows                                                      |
+| ncols:  Number of columns                                                   |
+| i:        The row in question                                               |
+| j:        The column in question                                            |
+|                                                                             |
+| Returns: The resulting sum of spins                                         |
+\*****************************************************************************/
+int neighbors(int** lattice, int nrows, int ncols, int i, int j)
+{
+    return lattice[(i + 1) % nrows][j] +
+        lattice[i][(j + 1) % ncols] +
+        lattice[((i - 1) + nrows) % nrows][j] +
+        lattice[i][((j - 1) + ncols) % ncols];
 }
 
 
-void clean() {
-    /*********************************************************\
-    | This next line of code daisy-chains a few cmd commands: |
-    | - Changes into the 'frames/' directory                  |
-    | - Deletes the now unnecessary 'png' files               |
-    | - Changes directory back to its original location       |
-    \*********************************************************/
-    system("cd frames && del /Q *.png && cd ..");
-}
-
-
-void images2video(int nrows, int ncols) {
-    // Appropriately format the ffmpeg command
-    char command[256];
-    sprintf_s(command, "ffmpeg -r 30 -f image2 -s %dx%d -i frames/frame%%d.png -vcodec libx264 -crf 25  -pix_fmt yuv420p movies/movie.mp4", nrows, ncols);
-    // Run the above command 
-    system(command);
-    clean();
-}
-
-
+/*****************************************************************************\
+| Function:  initialize_lattice                                               |
+| -----------------------------------                                         |
+| Performs Randomize the Ising lattice                                        |
+|                                                                             |
+| lattice:  The 2D grid of spin values                                        |
+| nrows:  Number of rows                                                      |
+| ncols:  Number of columns                                                   |
+|                                                                             |
+| Returns: void                                                               |
+\*****************************************************************************/
 void initialize_lattice(int** lattice, int nrows, int ncols)
-/***********************************************************\
-| This function simply loops through the lattice and        |
-| randomly assigns either plus one or minus one.            |
-\***********************************************************/
 {
     for (int i = 0; i < nrows; i++) {
         for (int j = 0; j < ncols; j++)
@@ -97,20 +220,23 @@ void initialize_lattice(int** lattice, int nrows, int ncols)
 }
 
 
-int neighbors(int** lattice, int nrows, int ncols, int i, int j) {
-    return lattice[((i + 1) + nrows) % nrows][j] +
-        lattice[i][((j + 1) + ncols) % ncols] +
-        lattice[((i - 1) + nrows) % nrows][j] +
-        lattice[i][((j - 1) + ncols) % ncols];
-}
-
-
-void metropolis_hastings_step(int** lattice, int nrows, int ncols, double J, double h, double T)
-/******************************************************************************\
-| This function carries out the core iterative step, utilizing the             |
-| Metropolis-Hastings Algorithm and Single-Flip Dynamics                       |
-\******************************************************************************/
-{
+/*****************************************************************************\
+| Function:  metropolis_hastings_step                                         |
+| -----------------------------------                                         |
+| Performs one step of the Metropolis-Hastings Algorithm                      |
+|                                                                             |
+| lattice:  The 2D grid of spin values                                        |
+| nrows:    Number of rows                                                      |
+| ncols:    Number of columns                                                   |
+| nframes:  The number of frames desired to visualize the system              |
+| algsteps: The number of algorithm steps between each recorded frame         |
+| J:        Ferromagnetic Coupling Constant                                   |
+| h:        Magnetic field strength                                           |
+| T:        Temperature                                                       |
+|                                                                             |
+| Returns: void                                                               |
+\*****************************************************************************/
+void metropolis_hastings_step(int** lattice, int nrows, int ncols, int nframes, int algsteps, double J, double h, double T) {
     // Select a random point in the lattice
     int i = rand() % nrows;
     int j = rand() % ncols;
@@ -123,63 +249,40 @@ void metropolis_hastings_step(int** lattice, int nrows, int ncols, double J, dou
         lattice[i][j] *= -1;
     }
     // Otherwise, accept with a probability P = e^(-dE/(k_B T))
-    else if (prob() < exp(-(double)dE / (k_B * T))) {
+    else if(prob() < exp(-dE / (kB * T) ) ){
         lattice[i][j] *= -1;
     }
 }
 
 
-void run_simulation(int** lattice, int nrows, int ncols, int nframes, int algsteps, double J, double h, double T)
 /*****************************************************************************\
-| Although this function's name is 'run_simulation', its main job is to       |
-| loop through the algorithm steps and perform the file creation/deletion     |
-| logistics                                                                   |
+| Function:  run_simulation                                                   |
+| ---------------------------                                                 |
+| Loops through the total number of algorithm iterations (nframes + algsteps) |
+| and perform the necessary file handling by calling the necessary functions  |
+|                                                                             |
+| lattice:  The 2D grid of spin values                                        |
+| nrows:    Number of rows                                                      |
+| ncols:    Number of columns                                                   |
+| nframes:  The number of frames desired to visualize the system              |
+| algsteps: The number of algorithm steps between each recorded frame         |
+| J:        Ferromagnetic Coupling Constant                                   |
+| h:        Magnetic field strength                                           |
+| T:        Temperature                                                       |
+|                                                                             |
+| Returns: void                                                               |
 \*****************************************************************************/
-{
+void run_simulation(int** lattice, int nrows, int ncols, int nframes, int algsteps, double J, double h, double T) {
     // Loop through the desired number of frames
     for (int frame = 0; frame < nframes; frame++) {
-        lattice2image(lattice, nrows, ncols, frame); // Save the frame
+        lattice2pbm(lattice, nrows, ncols, frame); // Save the frame as a pbm file
+        pbms2images(); // Convert pbm to png
 
         // Loop through the intermediate algorithm steps
         for (int step = 0; step < algsteps; step++) {
-            metropolis_hastings_step(lattice, nrows, ncols, J, h, T); // Step
+            metropolis_hastings_step(lattice, nrows, ncols, nframes, algsteps, J, h, T);
         }
     }
 
-    system("del /Q movies/movie.mp4");
-
-    images2video(nrows, ncols); // Convert the frames into a video using ffmpeg
-    clean(); // Deletes the now obsolete images to save space
-}
-
-
-int main(int argc, const char* argv[])
-{
-    // Check the number of parameters
-    if (argc == 8) {
-        // Convert commandline arguments from strings to integers
-        char** endptr = NULL;
-        int nrows = strtol(argv[1], endptr, 0);
-        int ncols = strtol(argv[2], endptr, 0);
-        int nframes = strtol(argv[3], endptr, 0);
-        int algsteps = strtol(argv[4], endptr, 0);
-        double J = strtod(argv[5], endptr);
-        double h = strtod(argv[6], endptr);
-        double T = strtod(argv[7], endptr);
-
-        int** lattice = (int**)malloc(nrows * sizeof(int*));
-        for (int i = 0; i < nrows; i++) {
-            lattice[i] = (int*)malloc(ncols * sizeof(int));
-        }
-
-        initialize_lattice(lattice, nrows, ncols); // Randomize the lattice
-        run_simulation(lattice, nrows, ncols, nframes, algsteps, J, h, T); // Go baby go
-        free(lattice);
-    }
-    else {
-        // Print out a helpful message to remind you of the proper usage
-        printf("Usage: %s [nrows] [ncols] [Number of Frames] [Algorithm Steps Per Frame] [Ferromagnetic Coupling] [Magnetic Field] [Temperature]\n", argv[0]);
-    }
-
-    return 0;
+    images2video(lattice, nrows, ncols);
 }
