@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['images2video_15',['images2video',['../_ising_model-_visual-_c_8c.html#a4e0975ee37c54eb62b7a3e71452bb8a8',1,'IsingModel-Visual-C.c']]],
-  ['initialize_5flattice_16',['initialize_lattice',['../_ising_model-_visual-_c_8c.html#a7e3124f5efc198f8d0c2904e106b0b4e',1,'IsingModel-Visual-C.c']]]
+  ['images2video_17',['images2video',['../_ising_model-_visual-_c_8c.html#a9549cfb396a3d6f11799028684478cb9',1,'IsingModel-Visual-C.c']]],
+  ['initialize_5flattice_18',['initialize_lattice',['../_ising_model-_visual-_c_8c.html#af6e3f3da8636ca210be9019a97ad598a',1,'IsingModel-Visual-C.c']]]
 ];

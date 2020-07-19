@@ -24,7 +24,7 @@ int main(int argc, const char* argv[])
     printf("\n2D ISING MODEL - VISUAL SIMULATION\n");
     printf("----------------------------------\n");
 
-    // Check the number of parameters
+    // Check the number of parameters to enable shortcut usage
     if (argc == 8) {
         // Convert commandline arguments from strings
         char** endptr = NULL;
@@ -48,6 +48,7 @@ int main(int argc, const char* argv[])
         free(lattice);
     }
     else {
+        // Otherwise, ask for the parameters manually
         int nrows, ncols, nframes, algsteps;
         double J, h, T;
 
@@ -91,8 +92,8 @@ int main(int argc, const char* argv[])
 
 
 /*!
-\brief Runs a customizable batch script capable of converting the pbm files 
-into png frames.
+\brief Runs a customizable batch script with the intent of converting the pbm 
+files into png frames.
 
 \return void
 */
@@ -103,8 +104,9 @@ void pbms2images()
 
 
 /*!
-\brief Runs a customizable batch script capable of converting the frames into a
-proper video. The dimensions of the video are passed to the script as well.
+\brief Runs a customizable batch script with the intent of converting the 
+frames into a proper video. The dimensions of the video are passed to the 
+script as well.
 
 @param lattice The 2D grid of spin values
 @param nrows  Number of rows
@@ -122,7 +124,7 @@ void images2video(int** lattice, int nrows, int ncols)
 
 /*!
 \brief Writes and saves a pbm file fully describing the state of the lattice at a
-particular frame
+particular iteration.
 
 @param lattice  The 2D grid of spin values
 @param nrows  Number of rows
@@ -156,9 +158,9 @@ void lattice2pbm(int** lattice,int nrows, int ncols, const int frame)
 
 
 /*!
-\brief Outputs a quasi-random double from 0.0 to 1.0
+\brief Outputs a quasi-random number from 0.0 to 1.0
 
-\return The quasi-random double
+\return The quasi-random number
 */
 double prob()
 {
@@ -167,7 +169,7 @@ double prob()
 
 
 /*!
-\brief Calculates the sum of the spins of the selected points immediate neighbors
+\brief Calculates the sum of the spins of the neighbors of a specified point
 
 @param lattice  The 2D grid of spin values
 @param nrows  Number of rows
@@ -214,6 +216,10 @@ void initialize_lattice(int** lattice, int nrows, int ncols)
 /*!
 \brief Performs one step of the Metropolis-Hastings Algorithm
 
+Selects a point at random and calculates the energy difference.
+If this difference is less than zero, the spin is automatically flipped,
+otherwise it's flipped with probability \f$P = e^{-\frac{dE}{k_BT}} \f$
+
 @param lattice  The 2D grid of spin values
 @param nrows  Number of rows
 @param ncols  Number of columns
@@ -237,7 +243,7 @@ void metropolis_hastings_step(int** lattice, int nrows, int ncols, int nframes, 
     if (dE < 0.0) {
         lattice[i][j] *= -1;
     }
-    // Otherwise, accept with a probability P = e^(-dE/(k_B T))
+    // Otherwise, accept with a probability $P = e^{-\frac{dE}{k_B T}}$
     else if(prob() < exp(-dE / (kB * T) ) ){
         lattice[i][j] *= -1;
     }
@@ -247,8 +253,8 @@ void metropolis_hastings_step(int** lattice, int nrows, int ncols, int nframes, 
 /*!
 \brief Run through iterations, generate files, and compile video
 
-Loops through the total number of algorithm iterations (nframes + algsteps)
-and perform the necessary file handling by calling the necessary functions
+Loops through the total number of algorithm iterations (nframes * algsteps)
+and performs the necessary file handling by calling the subsequent functions
 
 @param lattice  The 2D grid of spin values
 @param nrows  Number of rows

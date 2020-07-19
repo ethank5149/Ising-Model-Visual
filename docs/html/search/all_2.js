@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['lattice2pbm_5',['lattice2pbm',['../_ising_model-_visual-_c_8c.html#ab20d4734592f63aa5a07ec099ee61916',1,'IsingModel-Visual-C.c']]]
+  ['lattice2pbm_5',['lattice2pbm',['../_ising_model-_visual-_c_8c.html#ac027f6df25e3a1748f9cfb5c07c368eb',1,'IsingModel-Visual-C.c']]]
 ];

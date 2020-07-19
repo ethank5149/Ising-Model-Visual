@@ -12,21 +12,21 @@
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{_ising_model-_visual-_c_8c_ad6817ae6be01bd80fc83862a575c7126}{pbms2images}} ()
-\begin{DoxyCompactList}\small\item\em Runs a customizable batch script capable of converting the pbm files into png frames. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{_ising_model-_visual-_c_8c_a4e0975ee37c54eb62b7a3e71452bb8a8}{images2video}} (int $\ast$$\ast$, int, int)
-\item 
-void \mbox{\hyperlink{_ising_model-_visual-_c_8c_ab20d4734592f63aa5a07ec099ee61916}{lattice2pbm}} (int $\ast$$\ast$, int, int, int)
-\item 
+\begin{DoxyCompactList}\small\item\em Runs a customizable batch script with the intent of converting the pbm files into png frames. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_ising_model-_visual-_c_8c_a9549cfb396a3d6f11799028684478cb9}{images2video}} (int $\ast$$\ast$lattice, int nrows, int ncols)
+\begin{DoxyCompactList}\small\item\em Runs a customizable batch script with the intent of converting the frames into a proper video. The dimensions of the video are passed to the script as well. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_ising_model-_visual-_c_8c_ac027f6df25e3a1748f9cfb5c07c368eb}{lattice2pbm}} (int $\ast$$\ast$lattice, int nrows, int ncols, const int frame)
+\begin{DoxyCompactList}\small\item\em Writes and saves a pbm file fully describing the state of the lattice at a particular iteration. \end{DoxyCompactList}\item 
 double \mbox{\hyperlink{_ising_model-_visual-_c_8c_a006d5efa47cda07ee4daa9e2d4190f13}{prob}} ()
-\begin{DoxyCompactList}\small\item\em Outputs a quasi-\/random double from 0.\+0 to 1.\+0. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{_ising_model-_visual-_c_8c_a400106a542b4093aa208fcd3a8f558ae}{neighbors}} (int $\ast$$\ast$, int, int, int, int)
-\item 
-void \mbox{\hyperlink{_ising_model-_visual-_c_8c_a7e3124f5efc198f8d0c2904e106b0b4e}{initialize\+\_\+lattice}} (int $\ast$$\ast$, int, int)
-\item 
-void \mbox{\hyperlink{_ising_model-_visual-_c_8c_a9357ccfe032affe148018ad02782799b}{metropolis\+\_\+hastings\+\_\+step}} (int $\ast$$\ast$, int, int, int, int, double, double, double)
-\item 
-void \mbox{\hyperlink{_ising_model-_visual-_c_8c_a718a6d3b183916d962845a933ff7e84f}{run\+\_\+simulation}} (int $\ast$$\ast$, int, int, int, int, double, double, double)
-\item 
+\begin{DoxyCompactList}\small\item\em Outputs a quasi-\/random number from 0.\+0 to 1.\+0. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_ising_model-_visual-_c_8c_a66d56962f8ad89ac124b3b7634bd5f7f}{neighbors}} (int $\ast$$\ast$lattice, int nrows, int ncols, int i, int j)
+\begin{DoxyCompactList}\small\item\em Calculates the sum of the spins of the neighbors of a specified point. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_ising_model-_visual-_c_8c_af6e3f3da8636ca210be9019a97ad598a}{initialize\+\_\+lattice}} (int $\ast$$\ast$lattice, int nrows, int ncols)
+\begin{DoxyCompactList}\small\item\em Performs Randomize the Ising lattice. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_ising_model-_visual-_c_8c_acc1d5e01292129ba57878465488368c3}{metropolis\+\_\+hastings\+\_\+step}} (int $\ast$$\ast$lattice, int nrows, int ncols, int nframes, int algsteps, double J, double h, double T)
+\begin{DoxyCompactList}\small\item\em Performs one step of the Metropolis-\/\+Hastings Algorithm. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_ising_model-_visual-_c_8c_a9cdd202f004eb3c99b9a075be1b71148}{run\+\_\+simulation}} (int $\ast$$\ast$lattice, int nrows, int ncols, int nframes, int algsteps, double J, double h, double T)
+\begin{DoxyCompactList}\small\item\em Run through iterations, generate files, and compile video. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{_ising_model-_visual-_c_8c_ac0f2228420376f4db7e1274f2b41667c}{main}} (int argc, const char $\ast$argv\mbox{[}$\,$\mbox{]})
 \end{DoxyCompactItemize}
 
@@ -45,42 +45,140 @@ Boltzmann constant.
 
 
 \doxysubsection{Function Documentation}
-\mbox{\Hypertarget{_ising_model-_visual-_c_8c_a4e0975ee37c54eb62b7a3e71452bb8a8}\label{_ising_model-_visual-_c_8c_a4e0975ee37c54eb62b7a3e71452bb8a8}} 
+\mbox{\Hypertarget{_ising_model-_visual-_c_8c_a9549cfb396a3d6f11799028684478cb9}\label{_ising_model-_visual-_c_8c_a9549cfb396a3d6f11799028684478cb9}} 
 \index{IsingModel-\/Visual-\/C.c@{IsingModel-\/Visual-\/C.c}!images2video@{images2video}}
 \index{images2video@{images2video}!IsingModel-\/Visual-\/C.c@{IsingModel-\/Visual-\/C.c}}
 \doxysubsubsection{\texorpdfstring{images2video()}{images2video()}}
 {\footnotesize\ttfamily void images2video (\begin{DoxyParamCaption}\item[{int $\ast$$\ast$}]{lattice,  }\item[{int}]{nrows,  }\item[{int}]{ncols }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{_ising_model-_visual-_c_8c_a7e3124f5efc198f8d0c2904e106b0b4e}\label{_ising_model-_visual-_c_8c_a7e3124f5efc198f8d0c2904e106b0b4e}} 
+
+
+Runs a customizable batch script with the intent of converting the frames into a proper video. The dimensions of the video are passed to the script as well. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lattice} & The 2D grid of spin values \\
+\hline
+{\em nrows} & Number of rows \\
+\hline
+{\em ncols} & Number of columns\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_ising_model-_visual-_c_8c_af6e3f3da8636ca210be9019a97ad598a}\label{_ising_model-_visual-_c_8c_af6e3f3da8636ca210be9019a97ad598a}} 
 \index{IsingModel-\/Visual-\/C.c@{IsingModel-\/Visual-\/C.c}!initialize\_lattice@{initialize\_lattice}}
 \index{initialize\_lattice@{initialize\_lattice}!IsingModel-\/Visual-\/C.c@{IsingModel-\/Visual-\/C.c}}
 \doxysubsubsection{\texorpdfstring{initialize\_lattice()}{initialize\_lattice()}}
 {\footnotesize\ttfamily void initialize\+\_\+lattice (\begin{DoxyParamCaption}\item[{int $\ast$$\ast$}]{lattice,  }\item[{int}]{nrows,  }\item[{int}]{ncols }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{_ising_model-_visual-_c_8c_ab20d4734592f63aa5a07ec099ee61916}\label{_ising_model-_visual-_c_8c_ab20d4734592f63aa5a07ec099ee61916}} 
+
+
+Performs Randomize the Ising lattice. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lattice} & The 2D grid of spin values \\
+\hline
+{\em nrows} & Number of rows \\
+\hline
+{\em ncols} & Number of columns\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_ising_model-_visual-_c_8c_ac027f6df25e3a1748f9cfb5c07c368eb}\label{_ising_model-_visual-_c_8c_ac027f6df25e3a1748f9cfb5c07c368eb}} 
 \index{IsingModel-\/Visual-\/C.c@{IsingModel-\/Visual-\/C.c}!lattice2pbm@{lattice2pbm}}
 \index{lattice2pbm@{lattice2pbm}!IsingModel-\/Visual-\/C.c@{IsingModel-\/Visual-\/C.c}}
 \doxysubsubsection{\texorpdfstring{lattice2pbm()}{lattice2pbm()}}
-{\footnotesize\ttfamily void lattice2pbm (\begin{DoxyParamCaption}\item[{int $\ast$$\ast$}]{lattice,  }\item[{int}]{nrows,  }\item[{int}]{ncols,  }\item[{int}]{frame }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void lattice2pbm (\begin{DoxyParamCaption}\item[{int $\ast$$\ast$}]{lattice,  }\item[{int}]{nrows,  }\item[{int}]{ncols,  }\item[{const int}]{frame }\end{DoxyParamCaption})}
 
+
+
+Writes and saves a pbm file fully describing the state of the lattice at a particular iteration. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lattice} & The 2D grid of spin values \\
+\hline
+{\em nrows} & Number of rows \\
+\hline
+{\em ncols} & Number of columns \\
+\hline
+{\em frame} & The index of the frame being saved\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
 \mbox{\Hypertarget{_ising_model-_visual-_c_8c_ac0f2228420376f4db7e1274f2b41667c}\label{_ising_model-_visual-_c_8c_ac0f2228420376f4db7e1274f2b41667c}} 
 \index{IsingModel-\/Visual-\/C.c@{IsingModel-\/Visual-\/C.c}!main@{main}}
 \index{main@{main}!IsingModel-\/Visual-\/C.c@{IsingModel-\/Visual-\/C.c}}
 \doxysubsubsection{\texorpdfstring{main()}{main()}}
 {\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{const char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{_ising_model-_visual-_c_8c_a9357ccfe032affe148018ad02782799b}\label{_ising_model-_visual-_c_8c_a9357ccfe032affe148018ad02782799b}} 
+\mbox{\Hypertarget{_ising_model-_visual-_c_8c_acc1d5e01292129ba57878465488368c3}\label{_ising_model-_visual-_c_8c_acc1d5e01292129ba57878465488368c3}} 
 \index{IsingModel-\/Visual-\/C.c@{IsingModel-\/Visual-\/C.c}!metropolis\_hastings\_step@{metropolis\_hastings\_step}}
 \index{metropolis\_hastings\_step@{metropolis\_hastings\_step}!IsingModel-\/Visual-\/C.c@{IsingModel-\/Visual-\/C.c}}
 \doxysubsubsection{\texorpdfstring{metropolis\_hastings\_step()}{metropolis\_hastings\_step()}}
 {\footnotesize\ttfamily void metropolis\+\_\+hastings\+\_\+step (\begin{DoxyParamCaption}\item[{int $\ast$$\ast$}]{lattice,  }\item[{int}]{nrows,  }\item[{int}]{ncols,  }\item[{int}]{nframes,  }\item[{int}]{algsteps,  }\item[{double}]{J,  }\item[{double}]{h,  }\item[{double}]{T }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{_ising_model-_visual-_c_8c_a400106a542b4093aa208fcd3a8f558ae}\label{_ising_model-_visual-_c_8c_a400106a542b4093aa208fcd3a8f558ae}} 
+
+
+Performs one step of the Metropolis-\/\+Hastings Algorithm. 
+
+Selects a point at random and calculates the energy difference. If this difference is less than zero, the spin is automatically flipped, otherwise it\textquotesingle{}s flipped with probability $P = e^{-\frac{dE}{k_BT}} $
+
+
+\begin{DoxyParams}{Parameters}
+{\em lattice} & The 2D grid of spin values \\
+\hline
+{\em nrows} & Number of rows \\
+\hline
+{\em ncols} & Number of columns \\
+\hline
+{\em nframes} & The number of frames desired to visualize the system \\
+\hline
+{\em algsteps} & The number of algorithm steps between each recorded frame \\
+\hline
+{\em J} & Ferromagnetic Coupling Constant \\
+\hline
+{\em h} & Magnetic field strength \\
+\hline
+{\em T} & Temperature\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_ising_model-_visual-_c_8c_a66d56962f8ad89ac124b3b7634bd5f7f}\label{_ising_model-_visual-_c_8c_a66d56962f8ad89ac124b3b7634bd5f7f}} 
 \index{IsingModel-\/Visual-\/C.c@{IsingModel-\/Visual-\/C.c}!neighbors@{neighbors}}
 \index{neighbors@{neighbors}!IsingModel-\/Visual-\/C.c@{IsingModel-\/Visual-\/C.c}}
 \doxysubsubsection{\texorpdfstring{neighbors()}{neighbors()}}
 {\footnotesize\ttfamily int neighbors (\begin{DoxyParamCaption}\item[{int $\ast$$\ast$}]{lattice,  }\item[{int}]{nrows,  }\item[{int}]{ncols,  }\item[{int}]{i,  }\item[{int}]{j }\end{DoxyParamCaption})}
 
+
+
+Calculates the sum of the spins of the neighbors of a specified point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lattice} & The 2D grid of spin values \\
+\hline
+{\em nrows} & Number of rows \\
+\hline
+{\em ncols} & Number of columns \\
+\hline
+{\em i} & The row in question \\
+\hline
+{\em j} & The column in question\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The resulting sum of spins 
+\end{DoxyReturn}
 \mbox{\Hypertarget{_ising_model-_visual-_c_8c_ad6817ae6be01bd80fc83862a575c7126}\label{_ising_model-_visual-_c_8c_ad6817ae6be01bd80fc83862a575c7126}} 
 \index{IsingModel-\/Visual-\/C.c@{IsingModel-\/Visual-\/C.c}!pbms2images@{pbms2images}}
 \index{pbms2images@{pbms2images}!IsingModel-\/Visual-\/C.c@{IsingModel-\/Visual-\/C.c}}
@@ -89,7 +187,7 @@ Boltzmann constant.
 
 
 
-Runs a customizable batch script capable of converting the pbm files into png frames. 
+Runs a customizable batch script with the intent of converting the pbm files into png frames. 
 
 \begin{DoxyReturn}{Returns}
 void 
@@ -102,14 +200,42 @@ void
 
 
 
-Outputs a quasi-\/random double from 0.\+0 to 1.\+0. 
+Outputs a quasi-\/random number from 0.\+0 to 1.\+0. 
 
 \begin{DoxyReturn}{Returns}
-The quasi-\/random double 
+The quasi-\/random number 
 \end{DoxyReturn}
-\mbox{\Hypertarget{_ising_model-_visual-_c_8c_a718a6d3b183916d962845a933ff7e84f}\label{_ising_model-_visual-_c_8c_a718a6d3b183916d962845a933ff7e84f}} 
+\mbox{\Hypertarget{_ising_model-_visual-_c_8c_a9cdd202f004eb3c99b9a075be1b71148}\label{_ising_model-_visual-_c_8c_a9cdd202f004eb3c99b9a075be1b71148}} 
 \index{IsingModel-\/Visual-\/C.c@{IsingModel-\/Visual-\/C.c}!run\_simulation@{run\_simulation}}
 \index{run\_simulation@{run\_simulation}!IsingModel-\/Visual-\/C.c@{IsingModel-\/Visual-\/C.c}}
 \doxysubsubsection{\texorpdfstring{run\_simulation()}{run\_simulation()}}
 {\footnotesize\ttfamily void run\+\_\+simulation (\begin{DoxyParamCaption}\item[{int $\ast$$\ast$}]{lattice,  }\item[{int}]{nrows,  }\item[{int}]{ncols,  }\item[{int}]{nframes,  }\item[{int}]{algsteps,  }\item[{double}]{J,  }\item[{double}]{h,  }\item[{double}]{T }\end{DoxyParamCaption})}
 
+
+
+Run through iterations, generate files, and compile video. 
+
+Loops through the total number of algorithm iterations (nframes $\ast$ algsteps) and performs the necessary file handling by calling the subsequent functions
+
+
+\begin{DoxyParams}{Parameters}
+{\em lattice} & The 2D grid of spin values \\
+\hline
+{\em nrows} & Number of rows \\
+\hline
+{\em ncols} & Number of columns \\
+\hline
+{\em nframes} & The number of frames desired to visualize the system \\
+\hline
+{\em algsteps} & The number of algorithm steps between each recorded frame \\
+\hline
+{\em J} & Ferromagnetic Coupling Constant \\
+\hline
+{\em h} & Magnetic field strength \\
+\hline
+{\em T} & Temperature \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
