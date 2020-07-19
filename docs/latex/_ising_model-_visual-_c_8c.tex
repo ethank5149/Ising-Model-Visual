@@ -1,0 +1,115 @@
+\hypertarget{_ising_model-_visual-_c_8c}{}\doxysection{Ising\+Model-\/\+Visual-\/C.c File Reference}
+\label{_ising_model-_visual-_c_8c}\index{IsingModel-\/Visual-\/C.c@{IsingModel-\/Visual-\/C.c}}
+{\ttfamily \#include \char`\"{}stdio.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stdlib.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}math.\+h\char`\"{}}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_ising_model-_visual-_c_8c_a8d945950272f02a151793d09aea05627}{kB}}~1.\+0
+\begin{DoxyCompactList}\small\item\em Boltzmann constant. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_ising_model-_visual-_c_8c_ad6817ae6be01bd80fc83862a575c7126}{pbms2images}} ()
+\begin{DoxyCompactList}\small\item\em Runs a customizable batch script capable of converting the pbm files into png frames. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_ising_model-_visual-_c_8c_a4e0975ee37c54eb62b7a3e71452bb8a8}{images2video}} (int $\ast$$\ast$, int, int)
+\item 
+void \mbox{\hyperlink{_ising_model-_visual-_c_8c_ab20d4734592f63aa5a07ec099ee61916}{lattice2pbm}} (int $\ast$$\ast$, int, int, int)
+\item 
+double \mbox{\hyperlink{_ising_model-_visual-_c_8c_a006d5efa47cda07ee4daa9e2d4190f13}{prob}} ()
+\begin{DoxyCompactList}\small\item\em Outputs a quasi-\/random double from 0.\+0 to 1.\+0. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_ising_model-_visual-_c_8c_a400106a542b4093aa208fcd3a8f558ae}{neighbors}} (int $\ast$$\ast$, int, int, int, int)
+\item 
+void \mbox{\hyperlink{_ising_model-_visual-_c_8c_a7e3124f5efc198f8d0c2904e106b0b4e}{initialize\+\_\+lattice}} (int $\ast$$\ast$, int, int)
+\item 
+void \mbox{\hyperlink{_ising_model-_visual-_c_8c_a9357ccfe032affe148018ad02782799b}{metropolis\+\_\+hastings\+\_\+step}} (int $\ast$$\ast$, int, int, int, int, double, double, double)
+\item 
+void \mbox{\hyperlink{_ising_model-_visual-_c_8c_a718a6d3b183916d962845a933ff7e84f}{run\+\_\+simulation}} (int $\ast$$\ast$, int, int, int, int, double, double, double)
+\item 
+int \mbox{\hyperlink{_ising_model-_visual-_c_8c_ac0f2228420376f4db7e1274f2b41667c}{main}} (int argc, const char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_ising_model-_visual-_c_8c_a8d945950272f02a151793d09aea05627}\label{_ising_model-_visual-_c_8c_a8d945950272f02a151793d09aea05627}} 
+\index{IsingModel-\/Visual-\/C.c@{IsingModel-\/Visual-\/C.c}!kB@{kB}}
+\index{kB@{kB}!IsingModel-\/Visual-\/C.c@{IsingModel-\/Visual-\/C.c}}
+\doxysubsubsection{\texorpdfstring{kB}{kB}}
+{\footnotesize\ttfamily \#define kB~1.\+0}
+
+
+
+Boltzmann constant. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_ising_model-_visual-_c_8c_a4e0975ee37c54eb62b7a3e71452bb8a8}\label{_ising_model-_visual-_c_8c_a4e0975ee37c54eb62b7a3e71452bb8a8}} 
+\index{IsingModel-\/Visual-\/C.c@{IsingModel-\/Visual-\/C.c}!images2video@{images2video}}
+\index{images2video@{images2video}!IsingModel-\/Visual-\/C.c@{IsingModel-\/Visual-\/C.c}}
+\doxysubsubsection{\texorpdfstring{images2video()}{images2video()}}
+{\footnotesize\ttfamily void images2video (\begin{DoxyParamCaption}\item[{int $\ast$$\ast$}]{lattice,  }\item[{int}]{nrows,  }\item[{int}]{ncols }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_ising_model-_visual-_c_8c_a7e3124f5efc198f8d0c2904e106b0b4e}\label{_ising_model-_visual-_c_8c_a7e3124f5efc198f8d0c2904e106b0b4e}} 
+\index{IsingModel-\/Visual-\/C.c@{IsingModel-\/Visual-\/C.c}!initialize\_lattice@{initialize\_lattice}}
+\index{initialize\_lattice@{initialize\_lattice}!IsingModel-\/Visual-\/C.c@{IsingModel-\/Visual-\/C.c}}
+\doxysubsubsection{\texorpdfstring{initialize\_lattice()}{initialize\_lattice()}}
+{\footnotesize\ttfamily void initialize\+\_\+lattice (\begin{DoxyParamCaption}\item[{int $\ast$$\ast$}]{lattice,  }\item[{int}]{nrows,  }\item[{int}]{ncols }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_ising_model-_visual-_c_8c_ab20d4734592f63aa5a07ec099ee61916}\label{_ising_model-_visual-_c_8c_ab20d4734592f63aa5a07ec099ee61916}} 
+\index{IsingModel-\/Visual-\/C.c@{IsingModel-\/Visual-\/C.c}!lattice2pbm@{lattice2pbm}}
+\index{lattice2pbm@{lattice2pbm}!IsingModel-\/Visual-\/C.c@{IsingModel-\/Visual-\/C.c}}
+\doxysubsubsection{\texorpdfstring{lattice2pbm()}{lattice2pbm()}}
+{\footnotesize\ttfamily void lattice2pbm (\begin{DoxyParamCaption}\item[{int $\ast$$\ast$}]{lattice,  }\item[{int}]{nrows,  }\item[{int}]{ncols,  }\item[{int}]{frame }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_ising_model-_visual-_c_8c_ac0f2228420376f4db7e1274f2b41667c}\label{_ising_model-_visual-_c_8c_ac0f2228420376f4db7e1274f2b41667c}} 
+\index{IsingModel-\/Visual-\/C.c@{IsingModel-\/Visual-\/C.c}!main@{main}}
+\index{main@{main}!IsingModel-\/Visual-\/C.c@{IsingModel-\/Visual-\/C.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{const char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_ising_model-_visual-_c_8c_a9357ccfe032affe148018ad02782799b}\label{_ising_model-_visual-_c_8c_a9357ccfe032affe148018ad02782799b}} 
+\index{IsingModel-\/Visual-\/C.c@{IsingModel-\/Visual-\/C.c}!metropolis\_hastings\_step@{metropolis\_hastings\_step}}
+\index{metropolis\_hastings\_step@{metropolis\_hastings\_step}!IsingModel-\/Visual-\/C.c@{IsingModel-\/Visual-\/C.c}}
+\doxysubsubsection{\texorpdfstring{metropolis\_hastings\_step()}{metropolis\_hastings\_step()}}
+{\footnotesize\ttfamily void metropolis\+\_\+hastings\+\_\+step (\begin{DoxyParamCaption}\item[{int $\ast$$\ast$}]{lattice,  }\item[{int}]{nrows,  }\item[{int}]{ncols,  }\item[{int}]{nframes,  }\item[{int}]{algsteps,  }\item[{double}]{J,  }\item[{double}]{h,  }\item[{double}]{T }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_ising_model-_visual-_c_8c_a400106a542b4093aa208fcd3a8f558ae}\label{_ising_model-_visual-_c_8c_a400106a542b4093aa208fcd3a8f558ae}} 
+\index{IsingModel-\/Visual-\/C.c@{IsingModel-\/Visual-\/C.c}!neighbors@{neighbors}}
+\index{neighbors@{neighbors}!IsingModel-\/Visual-\/C.c@{IsingModel-\/Visual-\/C.c}}
+\doxysubsubsection{\texorpdfstring{neighbors()}{neighbors()}}
+{\footnotesize\ttfamily int neighbors (\begin{DoxyParamCaption}\item[{int $\ast$$\ast$}]{lattice,  }\item[{int}]{nrows,  }\item[{int}]{ncols,  }\item[{int}]{i,  }\item[{int}]{j }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_ising_model-_visual-_c_8c_ad6817ae6be01bd80fc83862a575c7126}\label{_ising_model-_visual-_c_8c_ad6817ae6be01bd80fc83862a575c7126}} 
+\index{IsingModel-\/Visual-\/C.c@{IsingModel-\/Visual-\/C.c}!pbms2images@{pbms2images}}
+\index{pbms2images@{pbms2images}!IsingModel-\/Visual-\/C.c@{IsingModel-\/Visual-\/C.c}}
+\doxysubsubsection{\texorpdfstring{pbms2images()}{pbms2images()}}
+{\footnotesize\ttfamily void pbms2images (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Runs a customizable batch script capable of converting the pbm files into png frames. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_ising_model-_visual-_c_8c_a006d5efa47cda07ee4daa9e2d4190f13}\label{_ising_model-_visual-_c_8c_a006d5efa47cda07ee4daa9e2d4190f13}} 
+\index{IsingModel-\/Visual-\/C.c@{IsingModel-\/Visual-\/C.c}!prob@{prob}}
+\index{prob@{prob}!IsingModel-\/Visual-\/C.c@{IsingModel-\/Visual-\/C.c}}
+\doxysubsubsection{\texorpdfstring{prob()}{prob()}}
+{\footnotesize\ttfamily double prob (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Outputs a quasi-\/random double from 0.\+0 to 1.\+0. 
+
+\begin{DoxyReturn}{Returns}
+The quasi-\/random double 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_ising_model-_visual-_c_8c_a718a6d3b183916d962845a933ff7e84f}\label{_ising_model-_visual-_c_8c_a718a6d3b183916d962845a933ff7e84f}} 
+\index{IsingModel-\/Visual-\/C.c@{IsingModel-\/Visual-\/C.c}!run\_simulation@{run\_simulation}}
+\index{run\_simulation@{run\_simulation}!IsingModel-\/Visual-\/C.c@{IsingModel-\/Visual-\/C.c}}
+\doxysubsubsection{\texorpdfstring{run\_simulation()}{run\_simulation()}}
+{\footnotesize\ttfamily void run\+\_\+simulation (\begin{DoxyParamCaption}\item[{int $\ast$$\ast$}]{lattice,  }\item[{int}]{nrows,  }\item[{int}]{ncols,  }\item[{int}]{nframes,  }\item[{int}]{algsteps,  }\item[{double}]{J,  }\item[{double}]{h,  }\item[{double}]{T }\end{DoxyParamCaption})}
+

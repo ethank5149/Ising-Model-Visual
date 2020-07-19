@@ -2,8 +2,11 @@
 #include "stdlib.h"
 #include "math.h"
 
-// Global Constants
-#define kB 1.0 // Boltzmann constant
+/*!
+\def kB
+\brief Boltzmann constant
+*/
+#define kB 1.0
 
 // Function Declarations
 void pbms2images();
@@ -87,53 +90,47 @@ int main(int argc, const char* argv[])
 }
 
 
-/*****************************************************************************\
-| Function:  pbms2images                                                      |
-| -----------------------------------                                         |
-| Runs a customizable batch script capable of converting the pbm files into   |
-| png frames.                                                                 |
-|                                                                             |
-| Returns: void                                                               |
-\*****************************************************************************/
+/*!
+\brief Runs a customizable batch script capable of converting the pbm files 
+into png frames.
+
+\return void
+*/
 void pbms2images()
 {
     system("pbms2images.bat");
 }
 
 
-/*****************************************************************************\
-| Function:  images2video                                                     |
-| -----------------------------------                                         |
-| Runs a customizable batch script capable of converting the frames into a    |
-| proper video. The dimensions of the video are passed to the script as well. |
-|                                                                             |
-| lattice:  The 2D grid of spin values                                        |
-| nrows:  Number of rows                                                      |
-| ncols:  Number of columns                                                   |
-|                                                                             |
-| Returns: void                                                               |
-\*****************************************************************************/
+/*!
+\brief Runs a customizable batch script capable of converting the frames into a
+proper video. The dimensions of the video are passed to the script as well.
+
+@param lattice The 2D grid of spin values
+@param nrows  Number of rows
+@param ncols  Number of columns
+
+\return void
+*/
 void images2video(int** lattice, int nrows, int ncols)
 {
     char command[0x100];
-    snprintf(command, sizeof(command), "images2video.bat %d %d", nrows, ncols);
+    snprintf(command, sizeof(command), "images2video.bat %d %d", ncols, nrows);
     system(command);
 }
 
 
-/*****************************************************************************\
-| Function:  lattice2pbm                                                      |
-| -----------------------------------                                         |
-| Writes and saves a pbm file fully describing the state of the lattice at a  |
-| particular frame                                                            |
-|                                                                             |
-| lattice:  The 2D grid of spin values                                        |
-| nrows:  Number of rows                                                      |
-| ncols:  Number of columns                                                   |
-| frame:    The index of the frame being saved                                |
-|                                                                             |
-| Returns: void                                                               |
-\*****************************************************************************/
+/*!
+\brief Writes and saves a pbm file fully describing the state of the lattice at a
+particular frame
+
+@param lattice  The 2D grid of spin values
+@param nrows  Number of rows
+@param ncols  Number of columns
+@param frame  The index of the frame being saved
+
+\return void
+*/
 void lattice2pbm(int** lattice,int nrows, int ncols, const int frame)
 {
     // Appropriately format the numbered filename
@@ -158,32 +155,28 @@ void lattice2pbm(int** lattice,int nrows, int ncols, const int frame)
 }
 
 
-/*****************************************************************************\
-| Function:  prob                                                             |
-| -----------------------------------                                         |
-| Outputs a quasi-random double from 0.0 to 1.0                               |
-|                                                                             |
-| Returns: The quasi-random double                                            |
-\*****************************************************************************/
+/*!
+\brief Outputs a quasi-random double from 0.0 to 1.0
+
+\return The quasi-random double
+*/
 double prob()
 {
     return (double)rand() / RAND_MAX;
 }
 
 
-/*****************************************************************************\
-| Function:  neighbors                                                        |
-| -----------------------------------                                         |
-| Calculates the sum of the spins of the selected points immediate neighbors  |
-|                                                                             |
-| lattice:  The 2D grid of spin values                                        |
-| nrows:  Number of rows                                                      |
-| ncols:  Number of columns                                                   |
-| i:        The row in question                                               |
-| j:        The column in question                                            |
-|                                                                             |
-| Returns: The resulting sum of spins                                         |
-\*****************************************************************************/
+/*!
+\brief Calculates the sum of the spins of the selected points immediate neighbors
+
+@param lattice  The 2D grid of spin values
+@param nrows  Number of rows
+@param ncols  Number of columns
+@param i  The row in question
+@param j  The column in question
+
+\return The resulting sum of spins
+*/
 int neighbors(int** lattice, int nrows, int ncols, int i, int j)
 {
     return lattice[(i + 1) % nrows][j] +
@@ -193,17 +186,15 @@ int neighbors(int** lattice, int nrows, int ncols, int i, int j)
 }
 
 
-/*****************************************************************************\
-| Function:  initialize_lattice                                               |
-| -----------------------------------                                         |
-| Performs Randomize the Ising lattice                                        |
-|                                                                             |
-| lattice:  The 2D grid of spin values                                        |
-| nrows:  Number of rows                                                      |
-| ncols:  Number of columns                                                   |
-|                                                                             |
-| Returns: void                                                               |
-\*****************************************************************************/
+/*!
+\brief Performs Randomize the Ising lattice
+
+@param lattice  The 2D grid of spin values
+@param nrows  Number of rows
+@param ncols  Number of columns
+
+\return void
+*/
 void initialize_lattice(int** lattice, int nrows, int ncols)
 {
     for (int i = 0; i < nrows; i++) {
@@ -220,22 +211,20 @@ void initialize_lattice(int** lattice, int nrows, int ncols)
 }
 
 
-/*****************************************************************************\
-| Function:  metropolis_hastings_step                                         |
-| -----------------------------------                                         |
-| Performs one step of the Metropolis-Hastings Algorithm                      |
-|                                                                             |
-| lattice:  The 2D grid of spin values                                        |
-| nrows:    Number of rows                                                      |
-| ncols:    Number of columns                                                   |
-| nframes:  The number of frames desired to visualize the system              |
-| algsteps: The number of algorithm steps between each recorded frame         |
-| J:        Ferromagnetic Coupling Constant                                   |
-| h:        Magnetic field strength                                           |
-| T:        Temperature                                                       |
-|                                                                             |
-| Returns: void                                                               |
-\*****************************************************************************/
+/*!
+\brief Performs one step of the Metropolis-Hastings Algorithm
+
+@param lattice  The 2D grid of spin values
+@param nrows  Number of rows
+@param ncols  Number of columns
+@param nframes  The number of frames desired to visualize the system
+@param algsteps  The number of algorithm steps between each recorded frame
+@param J  Ferromagnetic Coupling Constant
+@param h  Magnetic field strength
+@param T  Temperature
+
+\return void
+*/
 void metropolis_hastings_step(int** lattice, int nrows, int ncols, int nframes, int algsteps, double J, double h, double T) {
     // Select a random point in the lattice
     int i = rand() % nrows;
@@ -255,23 +244,22 @@ void metropolis_hastings_step(int** lattice, int nrows, int ncols, int nframes, 
 }
 
 
-/*****************************************************************************\
-| Function:  run_simulation                                                   |
-| ---------------------------                                                 |
-| Loops through the total number of algorithm iterations (nframes + algsteps) |
-| and perform the necessary file handling by calling the necessary functions  |
-|                                                                             |
-| lattice:  The 2D grid of spin values                                        |
-| nrows:    Number of rows                                                      |
-| ncols:    Number of columns                                                   |
-| nframes:  The number of frames desired to visualize the system              |
-| algsteps: The number of algorithm steps between each recorded frame         |
-| J:        Ferromagnetic Coupling Constant                                   |
-| h:        Magnetic field strength                                           |
-| T:        Temperature                                                       |
-|                                                                             |
-| Returns: void                                                               |
-\*****************************************************************************/
+/*!
+\brief Run through iterations, generate files, and compile video
+
+Loops through the total number of algorithm iterations (nframes + algsteps)
+and perform the necessary file handling by calling the necessary functions
+
+@param lattice  The 2D grid of spin values
+@param nrows  Number of rows
+@param ncols  Number of columns
+@param nframes  The number of frames desired to visualize the system
+@param algsteps  The number of algorithm steps between each recorded frame
+@param J  Ferromagnetic Coupling Constant
+@param h  Magnetic field strength
+@param T  Temperature
+\return void
+*/
 void run_simulation(int** lattice, int nrows, int ncols, int nframes, int algsteps, double J, double h, double T) {
     // Loop through the desired number of frames
     for (int frame = 0; frame < nframes; frame++) {
