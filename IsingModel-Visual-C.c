@@ -1,6 +1,7 @@
 #include "stdio.h"
 #include "stdlib.h"
 #include "math.h"
+//#include "windows.h"
 
 /*!
 \def kB
@@ -9,9 +10,8 @@
 #define kB 1.0
 
 // Function Declarations
-void pbms2images();
-void images2video(int**, int, int);
-void lattice2pbm(int**, int, int, int);
+void pngs2video();
+void lattice2png(int**, int, int, int);
 double prob();
 int neighbors(int**, int, int, int, int);
 void initialize_lattice(int**, int, int);
@@ -92,33 +92,15 @@ int main(int argc, const char* argv[])
 
 
 /*!
-\brief Runs a customizable batch script with the intent of converting the pbm 
-files into png frames.
-
-\return void
-*/
-void pbms2images()
-{
-    system("pbms2images.bat");
-}
-
-
-/*!
 \brief Runs a customizable batch script with the intent of converting the 
 frames into a proper video. The dimensions of the video are passed to the 
 script as well.
 
-@param lattice The 2D grid of spin values
-@param nrows  Number of rows
-@param ncols  Number of columns
-
 \return void
 */
-void images2video(int** lattice, int nrows, int ncols)
+void pngs2video()
 {
-    char command[0x100];
-    snprintf(command, sizeof(command), "images2video.bat %d %d", ncols, nrows);
-    system(command);
+    system("cd output && del output.mp4 && ffmpeg -nostats -loglevel 0 -i frame%d.png output.mp4 && del /Q *.png && cd ..");
 }
 
 
@@ -133,14 +115,18 @@ particular iteration.
 
 \return void
 */
-void lattice2pbm(int** lattice,int nrows, int ncols, const int frame)
+void lattice2png(int** lattice,int nrows, int ncols, const int frame)
 {
     // Appropriately format the numbered filename
-    char f[0x100];                                              
-    snprintf(f, sizeof(f), "frames/frame%d.pbm", frame);        
+    char savefile[0x100];         
+    char convertcommand[0x100];
+    snprintf(savefile, sizeof(savefile), "output/frame%d.pbm", frame);        
+    snprintf(convertcommand, sizeof(convertcommand), 
+        "cd output && ffmpeg -nostats -loglevel 0 -i frame%d.pbm frame%d.png && del /Q frame%d.pbm && cd ..", 
+        frame, frame, frame);
                                                                 
     FILE* file;                                                 
-    fopen_s(&file, f, "wb");                                    
+    fopen_s(&file, savefile, "wb");                                    
                                                                 
     fprintf(file, "P1\n");                                      
     fprintf(file, "%d %d\n", nrows, ncols);                     
@@ -153,7 +139,9 @@ void lattice2pbm(int** lattice,int nrows, int ncols, const int frame)
         fprintf(file, "\n");                                    
     }                                                           
                                                                 
-    fclose(file);                                               
+    fclose(file);        
+
+    system(convertcommand);
 }
 
 
@@ -267,9 +255,10 @@ and performs the necessary file handling by calling the subsequent functions
 \return void
 */
 void run_simulation(int** lattice, int nrows, int ncols, int nframes, int algsteps, double J, double h, double T) {
+    _mkdir("output");
     // Loop through the desired number of frames
     for (int frame = 0; frame < nframes; frame++) {
-        lattice2pbm(lattice, nrows, ncols, frame); // Save the frame as a pbm file
+        lattice2png(lattice, nrows, ncols, frame); // Save the frame as a pbm file
         //pbms2images(); // Convert pbm to png
 
         // Loop through the intermediate algorithm steps
@@ -278,5 +267,5 @@ void run_simulation(int** lattice, int nrows, int ncols, int nframes, int algste
         }
     }
 
-    images2video(lattice, nrows, ncols);
+    pngs2video();
 }

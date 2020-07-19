@@ -20,10 +20,10 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="images2video.bat">
+    <None Include="pbms2images.bat">
       <Filter>Source Files</Filter>
     </None>
-    <None Include="pbms2images.bat">
+    <None Include="images2video.bat">
       <Filter>Source Files</Filter>
     </None>
   </ItemGroup>
