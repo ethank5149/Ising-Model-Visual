@@ -15,8 +15,8 @@ void lattice2png(int**, int, int, int);
 double prob();
 int neighbors(int**, int, int, int, int);
 void initialize_lattice(int**, int, int);
-void metropolis_hastings_step(int**, int, int, int, int, double, double, double);
-void run_simulation(int**, int, int, int, int, double, double, double);
+void metropolis_hastings_step(int**, int, int, double, double, double);
+void run_simulation(int**, int, int, int, int, int, double, double, double);
 
 
 int main(int argc, const char* argv[])
@@ -25,16 +25,17 @@ int main(int argc, const char* argv[])
     printf("----------------------------------\n");
 
     // Check the number of parameters to enable shortcut usage
-    if (argc == 8) {
+    if (argc == 9) {
         // Convert commandline arguments from strings
         char** endptr = NULL;
         int nrows = strtol(argv[1], endptr, 0);
         int ncols = strtol(argv[2], endptr, 0);
-        int nframes = strtol(argv[3], endptr, 0);
-        int algsteps = strtol(argv[4], endptr, 0);
-        double J = strtod(argv[5], endptr);
-        double h = strtod(argv[6], endptr);
-        double T = strtod(argv[7], endptr);
+        int startiter = strtol(argv[3], endptr, 0);
+        int stopiter = strtol(argv[4], endptr, 0);
+        int framestep = strtol(argv[5], endptr, 0);
+        double J = strtod(argv[6], endptr);
+        double h = strtod(argv[7], endptr);
+        double T = strtod(argv[8], endptr);
 
         printf("\nRunning...\n");
 
@@ -44,35 +45,38 @@ int main(int argc, const char* argv[])
         }
 
         initialize_lattice(lattice, nrows, ncols); // Randomize the lattice
-        run_simulation(lattice, nrows, ncols, nframes, algsteps, J, h, T); // Go baby go
+        run_simulation(lattice, nrows, ncols, startiter, stopiter, framestep, J, h, T); // Go baby go
         free(lattice);
     }
     else {
         // Otherwise, ask for the parameters manually
-        int nrows, ncols, nframes, algsteps;
+        int nrows, ncols, startiter, stopiter, framestep;
         double J, h, T;
 
-        printf("\nShortcut Usage: %s [nrows] [ncols] [nframes] [algsteps] [J] [h] [T]\n\n", argv[0]);
+        printf("\nShortcut Usage: %s [nrows] [ncols] [startiter] [stopiter] [framestep] [J] [h] [T]\n\n", argv[0]);
         
-        printf("Number of Rows ----------------------> ");
+        printf("Number of Rows ------------------> ");
         scanf_s("%d", &nrows);
         
-        printf("Number of Columns -------------------> ");
+        printf("Number of Columns ---------------> ");
         scanf_s("%d", &ncols);
         
-        printf("Number of Frames --------------------> ");
-        scanf_s("%d", &nframes);
-        
-        printf("Number of Iterations Between Frames -> ");
-        scanf_s("%d", &algsteps);
+        printf("Starting Iteration --------------> ");
+        scanf_s("%d", &startiter);
 
-        printf("Ferromagnetic Coupling Constant -----> ");
+        printf("Stopping Iteration --------------> ");
+        scanf_s("%d", &stopiter);
+        
+        printf("Iterations Between Frames -------> ");
+        scanf_s("%d", &framestep);
+
+        printf("Ferromagnetic Coupling Constant -> ");
         scanf_s("%lf", &J);
 
-        printf("Magnetic Field Strength -------------> ");
+        printf("Magnetic Field Strength ---------> ");
         scanf_s("%lf", &h);
 
-        printf("Temperature -------------------------> ");
+        printf("Temperature ---------------------> ");
         scanf_s("%lf", &T);
 
         printf("\n\nRunning...\n\n");
@@ -83,7 +87,7 @@ int main(int argc, const char* argv[])
         }
 
         initialize_lattice(lattice, nrows, ncols); // Randomize the lattice
-        run_simulation(lattice, nrows, ncols, nframes, algsteps, J, h, T); // Go baby go
+        run_simulation(lattice, nrows, ncols, startiter, stopiter, framestep, J, h, T); // Go baby go
         free(lattice);
     }
 
@@ -101,6 +105,7 @@ script as well.
 void pngs2video()
 {
     system("cd output && del output.mp4 && ffmpeg -nostats -loglevel 0 -i frame%d.png output.mp4 && del /Q *.png && cd ..");
+    system("ffmpeg -nostats -loglevel 0 -i output.mp4 output.gif");
 }
 
 
@@ -219,7 +224,7 @@ otherwise it's flipped with probability \f$P = e^{-\frac{dE}{k_BT}} \f$
 
 \return void
 */
-void metropolis_hastings_step(int** lattice, int nrows, int ncols, int nframes, int algsteps, double J, double h, double T) {
+void metropolis_hastings_step(int** lattice, int nrows, int ncols, double J, double h, double T) {
     // Select a random point in the lattice
     int i = rand() % nrows;
     int j = rand() % ncols;
@@ -254,17 +259,15 @@ and performs the necessary file handling by calling the subsequent functions
 @param T  Temperature
 \return void
 */
-void run_simulation(int** lattice, int nrows, int ncols, int nframes, int algsteps, double J, double h, double T) {
+void run_simulation(int** lattice, int nrows, int ncols, int startiter, int stopiter, int framestep, double J, double h, double T) {
     _mkdir("output");
     // Loop through the desired number of frames
-    for (int frame = 0; frame < nframes; frame++) {
-        lattice2png(lattice, nrows, ncols, frame); // Save the frame as a pbm file
-        //pbms2images(); // Convert pbm to png
-
-        // Loop through the intermediate algorithm steps
-        for (int step = 0; step < algsteps; step++) {
-            metropolis_hastings_step(lattice, nrows, ncols, nframes, algsteps, J, h, T);
+    for (int iter = 0; iter < stopiter; iter++) {
+        if(iter >= startiter && (iter - startiter) % framestep == 0){
+            lattice2png(lattice, nrows, ncols, (iter - startiter) / framestep); // Save the frame as a png
         }
+
+        metropolis_hastings_step(lattice, nrows, ncols, J, h, T);
     }
 
     pngs2video();
