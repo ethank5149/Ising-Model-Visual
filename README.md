@@ -4,5 +4,5 @@ Pure C implementation of the 2D Ising Model. In particular, this program produce
 ## Examples
 |   |   |
 |---|---|
-|![Example2](https://github.com/ethank5149/IsingModel-Visual-C/blob/master/examples/500x500_nframes=1000_algsteps=31250_J=1.0_h=0.0_T=0.25.gif)|![Example1](https://github.com/ethank5149/IsingModel-Visual-C/blob/master/examples/500x500_nframes=1000_algsteps=62500_J=1.0_h=0.0_T=0.25.gif)|
-|![Example2](https://github.com/ethank5149/IsingModel-Visual-C/blob/master/examples/500x500_nframes=1000_algsteps=125000_J=1.0_h=0.0_T=0.25.gif)|![Example1](https://github.com/ethank5149/IsingModel-Visual-C/blob/master/examples/500x500_nframes=1000_algsteps=250000_J=1.0_h=0.0_T=0.25.gif)|
+|![Example2](https://github.com/ethank5149/IsingModel-Visual-C/blob/master/examples/500_500_1000_31250_1p0_0p0_0p25.gif)|![Example1](https://github.com/ethank5149/IsingModel-Visual-C/blob/master/examples/500_500_1000_62500_1p0_0p0_0p25.gif)|
+|![Example2](https://github.com/ethank5149/IsingModel-Visual-C/blob/master/examples/500_500_1000_125000_1p0_0p0_0p25.gif)|![Example1](https://github.com/ethank5149/IsingModel-Visual-C/blob/master/examples/500_500_1000_250000_1p0_0p0_0p25.gif)|
