@@ -1,5 +1,5 @@
-# IsingModel-Visual-C
-A pure C implementation of the 2D Ising Model. In particular, this program produces a video of the evolution of the 
+# IsingModel-Visual
+A simulation of the 2D Ising Model. In particular, this program produces a video of the evolution of the 
 Ising model using the Metropolis-Hastings Algorithm.
 
 ## Examples
