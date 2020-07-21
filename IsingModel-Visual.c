@@ -4,6 +4,8 @@
 #include "time.h"
 #include "sys/stat.h"
 
+#include "include/metropolis_hastings_neighbors.h"
+
 /*!
 \def kB
 \brief Boltzmann constant
@@ -14,7 +16,6 @@
 void pngs2video();
 void lattice2png(int**, int, int, int);
 double prob();
-int neighbors(int**, int, int, int, int);
 void initialize_lattice(int**, int, int);
 void metropolis_hastings_step(int**, int, int, double, double, double);
 void run_simulation(int**, int, int, int, int, int, double, double, double);
@@ -205,24 +206,24 @@ double prob()
 }
 
 
-/*!
-\brief Calculates the sum of the spins of the neighbors of a specified point
-
-@param lattice  The 2D grid of spin values
-@param nrows  Number of rows
-@param ncols  Number of columns
-@param i  The row in question
-@param j  The column in question
-
-\return The resulting sum of spins
-*/
-int neighbors(int** lattice, int nrows, int ncols, int i, int j)
-{
-    return lattice[(i + 1) % nrows][j] +
-        lattice[i][(j + 1) % ncols] +
-        lattice[((i - 1) + nrows) % nrows][j] +
-        lattice[i][((j - 1) + ncols) % ncols];
-}
+///*!
+//\brief Calculates the sum of the spins of the neighbors of a specified point
+//
+//@param lattice  The 2D grid of spin values
+//@param nrows  Number of rows
+//@param ncols  Number of columns
+//@param i  The row in question
+//@param j  The column in question
+//
+//\return The resulting sum of spins
+//*/
+//int neighbors(int** lattice, int nrows, int ncols, int i, int j)
+//{
+//    return lattice[(i + 1) % nrows][j] +
+//        lattice[i][(j + 1) % ncols] +
+//        lattice[((i - 1) + nrows) % nrows][j] +
+//        lattice[i][((j - 1) + ncols) % ncols];
+//}
 
 
 /*!
