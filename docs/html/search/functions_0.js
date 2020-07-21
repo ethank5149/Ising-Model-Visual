@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['images2video_15',['images2video',['../_ising_model-_visual-_c_8c.html#a9549cfb396a3d6f11799028684478cb9',1,'IsingModel-Visual-C.c']]],
-  ['initialize_5flattice_16',['initialize_lattice',['../_ising_model-_visual-_c_8c.html#af6e3f3da8636ca210be9019a97ad598a',1,'IsingModel-Visual-C.c']]]
+  ['clean_16',['clean',['../_ising_model-_visual_8c.html#a2bbe646c052baf99f04a367ef6031d74',1,'IsingModel-Visual.c']]]
 ];

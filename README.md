@@ -2,19 +2,16 @@
 A pure C implementation of the 2D Ising Model. In particular, this program produces a video of the evolution of the 
 Ising model using the Metropolis-Hastings Algorithm.
 
-<!--
 ## Examples
 |     |     |
 | --- | --- |
-| ![Example1](examples/500_500_1000_250000_1p0_0p0_0p25.gif) 1000 frames, 250000 iterations between each frame|![Example2](examples/500_500_1000_250000_1p0_0p0_0p25.gif) 1000 frames, 250000 iterations between each frame|
-| ![Example3](examples/500_500_1000_250000_1p0_0p0_0p25.gif) 1000 frames, 250000 iterations between each frame|![Example4](examples/500_500_1000_250000_1p0_0p0_0p25.gif) 1000 frames, 250000 iterations between each frame|
--->
+| ![Example1a](examples/example1/example1a.gif) 1000 frames, 31250 iterations between each frame | ![Example1b](examples/example1/example1b.gif) 1000 frames, 62500 iterations between each frame  |
+| ![Example1c](examples/example1/example1c.gif) 1000 frames, 125000 iterations between each frame | ![Example1d](examples/example1/example1d.gif) 1000 frames, 250000 iterations between each frame |
 
-## Examples
 |     |     |
 | --- | --- |
-| ![Example1](examples/500_500_1000_31250_1p0_0p0_0p25.gif) 1000 frames, 31250 iterations between each frame| ![Example2](examples/500_500_1000_62500_1p0_0p0_0p25.gif) 1000 frames, 62500 iterations between each frame|
-| ![Example3](examples/500_500_1000_125000_1p0_0p0_0p25.gif) 1000 frames, 125000 iterations between each frame| ![Example4](examples/500_500_1000_250000_1p0_0p0_0p25.gif) 1000 frames, 250000 iterations between each frame|
+| ![Example2a](examples/example2/example2a.gif) 1000 frames, 31250 iterations between each frame | ![Example2b](examples/example2/example2b.gif) 1000 frames, 62500 iterations between each frame  |
+| ![Example2c](examples/example2/example2c.gif) 1000 frames, 125000 iterations between each frame | ![Example2d](examples/example2/example2d.gif) 1000 frames, 250000 iterations between each frame |
 
 
 ## Known Bugs

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['run_5fsimulation_23',['run_simulation',['../_ising_model-_visual-_c_8c.html#a9cdd202f004eb3c99b9a075be1b71148',1,'IsingModel-Visual-C.c']]]
+  ['neighbors_22',['neighbors',['../_ising_model-_visual_8c.html#a66d56962f8ad89ac124b3b7634bd5f7f',1,'IsingModel-Visual.c']]]
 ];

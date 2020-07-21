@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['pbms2images_9',['pbms2images',['../_ising_model-_visual-_c_8c.html#ad6817ae6be01bd80fc83862a575c7126',1,'IsingModel-Visual-C.c']]],
-  ['prob_10',['prob',['../_ising_model-_visual-_c_8c.html#a006d5efa47cda07ee4daa9e2d4190f13',1,'IsingModel-Visual-C.c']]]
+  ['main_7',['main',['../_ising_model-_visual_8c.html#ac0f2228420376f4db7e1274f2b41667c',1,'IsingModel-Visual.c']]],
+  ['metropolis_5fhastings_5fstep_8',['metropolis_hastings_step',['../_ising_model-_visual_8c.html#abdae76ed03a023535ea99f97ead8eb56',1,'IsingModel-Visual.c']]]
 ];

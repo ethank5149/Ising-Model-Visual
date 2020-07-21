@@ -1,0 +1,235 @@
+\hypertarget{_ising_model-_visual_8c}{}\doxysection{Ising\+Model-\/\+Visual.c File Reference}
+\label{_ising_model-_visual_8c}\index{IsingModel-\/Visual.c@{IsingModel-\/Visual.c}}
+{\ttfamily \#include \char`\"{}stdio.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stdlib.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}math.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}time.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}sys/stat.\+h\char`\"{}}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_ising_model-_visual_8c_a8d945950272f02a151793d09aea05627}{kB}}~1.\+0
+\begin{DoxyCompactList}\small\item\em Boltzmann constant. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_ising_model-_visual_8c_ab0e210f7c5b30017988825cfecda4d9c}{pngs2video}} ()
+\begin{DoxyCompactList}\small\item\em Runs a customizable batch script with the intent of converting the frames into a proper video. The dimensions of the video are passed to the script as well. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_ising_model-_visual_8c_a3efc57d0af3dea64e26f86ebad89c6fb}{lattice2png}} (int $\ast$$\ast$lattice, int nrows, int ncols, const int frame)
+\begin{DoxyCompactList}\small\item\em Writes and saves a pbm file fully describing the state of the lattice at a particular iteration. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{_ising_model-_visual_8c_a006d5efa47cda07ee4daa9e2d4190f13}{prob}} ()
+\begin{DoxyCompactList}\small\item\em Outputs a quasi-\/random number from 0.\+0 to 1.\+0. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_ising_model-_visual_8c_a66d56962f8ad89ac124b3b7634bd5f7f}{neighbors}} (int $\ast$$\ast$lattice, int nrows, int ncols, int i, int j)
+\begin{DoxyCompactList}\small\item\em Calculates the sum of the spins of the neighbors of a specified point. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_ising_model-_visual_8c_af6e3f3da8636ca210be9019a97ad598a}{initialize\+\_\+lattice}} (int $\ast$$\ast$lattice, int nrows, int ncols)
+\begin{DoxyCompactList}\small\item\em Performs Randomize the Ising lattice. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_ising_model-_visual_8c_abdae76ed03a023535ea99f97ead8eb56}{metropolis\+\_\+hastings\+\_\+step}} (int $\ast$$\ast$lattice, int nrows, int ncols, double J, double h, double T)
+\begin{DoxyCompactList}\small\item\em Performs one step of the Metropolis-\/\+Hastings Algorithm. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_ising_model-_visual_8c_a7a73a60e354c6193ff4664bfe5e48db0}{run\+\_\+simulation}} (int $\ast$$\ast$lattice, int nrows, int ncols, int startiter, int stopiter, int framestep, double J, double h, double T)
+\begin{DoxyCompactList}\small\item\em Run through iterations, generate files, and compile video. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_ising_model-_visual_8c_ac0f2228420376f4db7e1274f2b41667c}{main}} (int argc, const char $\ast$argv\mbox{[}$\,$\mbox{]})
+\item 
+int \mbox{\hyperlink{_ising_model-_visual_8c_a4dee73c7e2036bd114f1c272452a3f34}{exists}} (const char $\ast$fname)
+\item 
+void \mbox{\hyperlink{_ising_model-_visual_8c_a2bbe646c052baf99f04a367ef6031d74}{clean}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_ising_model-_visual_8c_a8d945950272f02a151793d09aea05627}\label{_ising_model-_visual_8c_a8d945950272f02a151793d09aea05627}} 
+\index{IsingModel-\/Visual.c@{IsingModel-\/Visual.c}!kB@{kB}}
+\index{kB@{kB}!IsingModel-\/Visual.c@{IsingModel-\/Visual.c}}
+\doxysubsubsection{\texorpdfstring{kB}{kB}}
+{\footnotesize\ttfamily \#define kB~1.\+0}
+
+
+
+Boltzmann constant. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_ising_model-_visual_8c_a2bbe646c052baf99f04a367ef6031d74}\label{_ising_model-_visual_8c_a2bbe646c052baf99f04a367ef6031d74}} 
+\index{IsingModel-\/Visual.c@{IsingModel-\/Visual.c}!clean@{clean}}
+\index{clean@{clean}!IsingModel-\/Visual.c@{IsingModel-\/Visual.c}}
+\doxysubsubsection{\texorpdfstring{clean()}{clean()}}
+{\footnotesize\ttfamily void clean (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_ising_model-_visual_8c_a4dee73c7e2036bd114f1c272452a3f34}\label{_ising_model-_visual_8c_a4dee73c7e2036bd114f1c272452a3f34}} 
+\index{IsingModel-\/Visual.c@{IsingModel-\/Visual.c}!exists@{exists}}
+\index{exists@{exists}!IsingModel-\/Visual.c@{IsingModel-\/Visual.c}}
+\doxysubsubsection{\texorpdfstring{exists()}{exists()}}
+{\footnotesize\ttfamily int exists (\begin{DoxyParamCaption}\item[{const char $\ast$}]{fname }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_ising_model-_visual_8c_af6e3f3da8636ca210be9019a97ad598a}\label{_ising_model-_visual_8c_af6e3f3da8636ca210be9019a97ad598a}} 
+\index{IsingModel-\/Visual.c@{IsingModel-\/Visual.c}!initialize\_lattice@{initialize\_lattice}}
+\index{initialize\_lattice@{initialize\_lattice}!IsingModel-\/Visual.c@{IsingModel-\/Visual.c}}
+\doxysubsubsection{\texorpdfstring{initialize\_lattice()}{initialize\_lattice()}}
+{\footnotesize\ttfamily void initialize\+\_\+lattice (\begin{DoxyParamCaption}\item[{int $\ast$$\ast$}]{lattice,  }\item[{int}]{nrows,  }\item[{int}]{ncols }\end{DoxyParamCaption})}
+
+
+
+Performs Randomize the Ising lattice. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lattice} & The 2D grid of spin values \\
+\hline
+{\em nrows} & Number of rows \\
+\hline
+{\em ncols} & Number of columns\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_ising_model-_visual_8c_a3efc57d0af3dea64e26f86ebad89c6fb}\label{_ising_model-_visual_8c_a3efc57d0af3dea64e26f86ebad89c6fb}} 
+\index{IsingModel-\/Visual.c@{IsingModel-\/Visual.c}!lattice2png@{lattice2png}}
+\index{lattice2png@{lattice2png}!IsingModel-\/Visual.c@{IsingModel-\/Visual.c}}
+\doxysubsubsection{\texorpdfstring{lattice2png()}{lattice2png()}}
+{\footnotesize\ttfamily void lattice2png (\begin{DoxyParamCaption}\item[{int $\ast$$\ast$}]{lattice,  }\item[{int}]{nrows,  }\item[{int}]{ncols,  }\item[{const int}]{frame }\end{DoxyParamCaption})}
+
+
+
+Writes and saves a pbm file fully describing the state of the lattice at a particular iteration. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lattice} & The 2D grid of spin values \\
+\hline
+{\em nrows} & Number of rows \\
+\hline
+{\em ncols} & Number of columns \\
+\hline
+{\em frame} & The index of the frame being saved\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_ising_model-_visual_8c_ac0f2228420376f4db7e1274f2b41667c}\label{_ising_model-_visual_8c_ac0f2228420376f4db7e1274f2b41667c}} 
+\index{IsingModel-\/Visual.c@{IsingModel-\/Visual.c}!main@{main}}
+\index{main@{main}!IsingModel-\/Visual.c@{IsingModel-\/Visual.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{const char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_ising_model-_visual_8c_abdae76ed03a023535ea99f97ead8eb56}\label{_ising_model-_visual_8c_abdae76ed03a023535ea99f97ead8eb56}} 
+\index{IsingModel-\/Visual.c@{IsingModel-\/Visual.c}!metropolis\_hastings\_step@{metropolis\_hastings\_step}}
+\index{metropolis\_hastings\_step@{metropolis\_hastings\_step}!IsingModel-\/Visual.c@{IsingModel-\/Visual.c}}
+\doxysubsubsection{\texorpdfstring{metropolis\_hastings\_step()}{metropolis\_hastings\_step()}}
+{\footnotesize\ttfamily void metropolis\+\_\+hastings\+\_\+step (\begin{DoxyParamCaption}\item[{int $\ast$$\ast$}]{lattice,  }\item[{int}]{nrows,  }\item[{int}]{ncols,  }\item[{double}]{J,  }\item[{double}]{h,  }\item[{double}]{T }\end{DoxyParamCaption})}
+
+
+
+Performs one step of the Metropolis-\/\+Hastings Algorithm. 
+
+Selects a point at random and calculates the energy difference. If this difference is less than zero, the spin is automatically flipped, otherwise it\textquotesingle{}s flipped with probability $P = e^{-\frac{dE}{k_BT}} $
+
+
+\begin{DoxyParams}{Parameters}
+{\em lattice} & The 2D grid of spin values \\
+\hline
+{\em nrows} & Number of rows \\
+\hline
+{\em ncols} & Number of columns \\
+\hline
+{\em nframes} & The number of frames desired to visualize the system \\
+\hline
+{\em algsteps} & The number of algorithm steps between each recorded frame \\
+\hline
+{\em J} & Ferromagnetic Coupling Constant \\
+\hline
+{\em h} & Magnetic field strength \\
+\hline
+{\em T} & Temperature\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_ising_model-_visual_8c_a66d56962f8ad89ac124b3b7634bd5f7f}\label{_ising_model-_visual_8c_a66d56962f8ad89ac124b3b7634bd5f7f}} 
+\index{IsingModel-\/Visual.c@{IsingModel-\/Visual.c}!neighbors@{neighbors}}
+\index{neighbors@{neighbors}!IsingModel-\/Visual.c@{IsingModel-\/Visual.c}}
+\doxysubsubsection{\texorpdfstring{neighbors()}{neighbors()}}
+{\footnotesize\ttfamily int neighbors (\begin{DoxyParamCaption}\item[{int $\ast$$\ast$}]{lattice,  }\item[{int}]{nrows,  }\item[{int}]{ncols,  }\item[{int}]{i,  }\item[{int}]{j }\end{DoxyParamCaption})}
+
+
+
+Calculates the sum of the spins of the neighbors of a specified point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lattice} & The 2D grid of spin values \\
+\hline
+{\em nrows} & Number of rows \\
+\hline
+{\em ncols} & Number of columns \\
+\hline
+{\em i} & The row in question \\
+\hline
+{\em j} & The column in question\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The resulting sum of spins 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_ising_model-_visual_8c_ab0e210f7c5b30017988825cfecda4d9c}\label{_ising_model-_visual_8c_ab0e210f7c5b30017988825cfecda4d9c}} 
+\index{IsingModel-\/Visual.c@{IsingModel-\/Visual.c}!pngs2video@{pngs2video}}
+\index{pngs2video@{pngs2video}!IsingModel-\/Visual.c@{IsingModel-\/Visual.c}}
+\doxysubsubsection{\texorpdfstring{pngs2video()}{pngs2video()}}
+{\footnotesize\ttfamily void pngs2video (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Runs a customizable batch script with the intent of converting the frames into a proper video. The dimensions of the video are passed to the script as well. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_ising_model-_visual_8c_a006d5efa47cda07ee4daa9e2d4190f13}\label{_ising_model-_visual_8c_a006d5efa47cda07ee4daa9e2d4190f13}} 
+\index{IsingModel-\/Visual.c@{IsingModel-\/Visual.c}!prob@{prob}}
+\index{prob@{prob}!IsingModel-\/Visual.c@{IsingModel-\/Visual.c}}
+\doxysubsubsection{\texorpdfstring{prob()}{prob()}}
+{\footnotesize\ttfamily double prob (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Outputs a quasi-\/random number from 0.\+0 to 1.\+0. 
+
+\begin{DoxyReturn}{Returns}
+The quasi-\/random number 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_ising_model-_visual_8c_a7a73a60e354c6193ff4664bfe5e48db0}\label{_ising_model-_visual_8c_a7a73a60e354c6193ff4664bfe5e48db0}} 
+\index{IsingModel-\/Visual.c@{IsingModel-\/Visual.c}!run\_simulation@{run\_simulation}}
+\index{run\_simulation@{run\_simulation}!IsingModel-\/Visual.c@{IsingModel-\/Visual.c}}
+\doxysubsubsection{\texorpdfstring{run\_simulation()}{run\_simulation()}}
+{\footnotesize\ttfamily void run\+\_\+simulation (\begin{DoxyParamCaption}\item[{int $\ast$$\ast$}]{lattice,  }\item[{int}]{nrows,  }\item[{int}]{ncols,  }\item[{int}]{startiter,  }\item[{int}]{stopiter,  }\item[{int}]{framestep,  }\item[{double}]{J,  }\item[{double}]{h,  }\item[{double}]{T }\end{DoxyParamCaption})}
+
+
+
+Run through iterations, generate files, and compile video. 
+
+Loops through the total number of algorithm iterations (nframes $\ast$ algsteps) and performs the necessary file handling by calling the subsequent functions
+
+
+\begin{DoxyParams}{Parameters}
+{\em lattice} & The 2D grid of spin values \\
+\hline
+{\em nrows} & Number of rows \\
+\hline
+{\em ncols} & Number of columns \\
+\hline
+{\em nframes} & The number of frames desired to visualize the system \\
+\hline
+{\em algsteps} & The number of algorithm steps between each recorded frame \\
+\hline
+{\em J} & Ferromagnetic Coupling Constant \\
+\hline
+{\em h} & Magnetic field strength \\
+\hline
+{\em T} & Temperature \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}

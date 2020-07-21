@@ -1,3 +1,31 @@
-Pure C implementation of the 2D Ising Model. In particular, this program produces the frames required to animate the evolution of the Ising lattice
+A pure C implementation of the 2D Ising Model. In particular, this program produces a video of the evolution of the Ising model using the Metropolis-\/\+Hastings Algorithm.\hypertarget{md__r_e_a_d_m_e_autotoc_md1}{}\doxysection{Examples}\label{md__r_e_a_d_m_e_autotoc_md1}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ }\\\cline{1-2}
+\endhead
+ 1000 frames, 31250 iterations between each frame & 1000 frames, 62500 iterations between each frame  \\\cline{1-2}
+ 1000 frames, 125000 iterations between each frame & 1000 frames, 250000 iterations between each frame  \\\cline{1-2}
+\end{longtabu}
 
- 
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ }\\\cline{1-2}
+\endhead
+ 1000 frames, 31250 iterations between each frame & 1000 frames, 62500 iterations between each frame  \\\cline{1-2}
+ 1000 frames, 125000 iterations between each frame & 1000 frames, 250000 iterations between each frame  \\\cline{1-2}
+\end{longtabu}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md2}{}\doxysection{Known Bugs}\label{md__r_e_a_d_m_e_autotoc_md2}
+When given non-\/square dimensions, this program produces \textquotesingle{}interesting\textquotesingle{} visual glitches, they seem to be something to do with selecting/iterating through the bounded indices? 

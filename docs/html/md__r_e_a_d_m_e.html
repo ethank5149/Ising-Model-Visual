@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>IsingModel-Visual-C: IsingModel-Visual-C</title>
+<title>IsingModel-Visual: IsingModel-Visual-C</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -28,7 +28,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">IsingModel-Visual-C
+   <div id="projectname">IsingModel-Visual
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
    <div id="projectbrief">A visual simulation of the 2D Ising model.</div>
@@ -74,8 +74,28 @@ $(function() {
 <div class="title">IsingModel-Visual-C </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Pure C implementation of the 2D Ising Model. In particular, this program produces the frames required to animate the evolution of the Ising lattice</p>
-<p><img src="https://github.com/ethank5149/IsingModel-Visual-C/blob/master/isinganimation.gif" alt="Example" class="inline"/> </p>
+<div class="textblock"><p>A pure C implementation of the 2D Ising Model. In particular, this program produces a video of the evolution of the Ising model using the Metropolis-Hastings Algorithm.</p>
+<h1><a class="anchor" id="autotoc_md1"></a>
+Examples</h1>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone"></th><th class="markdownTableHeadNone"></th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><img src="examples/example1/example1a.gif" alt="Example1a" class="inline"/> 1000 frames, 31250 iterations between each frame </td><td class="markdownTableBodyNone"><img src="examples/example1/example1b.gif" alt="Example1b" class="inline"/> 1000 frames, 62500 iterations between each frame  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><img src="examples/example1/example1c.gif" alt="Example1c" class="inline"/> 1000 frames, 125000 iterations between each frame </td><td class="markdownTableBodyNone"><img src="examples/example1/example1d.gif" alt="Example1d" class="inline"/> 1000 frames, 250000 iterations between each frame  </td></tr>
+</table>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone"></th><th class="markdownTableHeadNone"></th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><img src="examples/example2/example2a.gif" alt="Example2a" class="inline"/> 1000 frames, 31250 iterations between each frame </td><td class="markdownTableBodyNone"><img src="examples/example2/example2b.gif" alt="Example2b" class="inline"/> 1000 frames, 62500 iterations between each frame  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><img src="examples/example2/example2c.gif" alt="Example2c" class="inline"/> 1000 frames, 125000 iterations between each frame </td><td class="markdownTableBodyNone"><img src="examples/example2/example2d.gif" alt="Example2d" class="inline"/> 1000 frames, 250000 iterations between each frame  </td></tr>
+</table>
+<h1><a class="anchor" id="autotoc_md2"></a>
+Known Bugs</h1>
+<p>When given non-square dimensions, this program produces 'interesting' visual glitches, they seem to be something to do with selecting/iterating through the bounded indices? </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 <!-- start footer part -->

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['main_18',['main',['../_ising_model-_visual-_c_8c.html#ac0f2228420376f4db7e1274f2b41667c',1,'IsingModel-Visual-C.c']]],
-  ['metropolis_5fhastings_5fstep_19',['metropolis_hastings_step',['../_ising_model-_visual-_c_8c.html#acc1d5e01292129ba57878465488368c3',1,'IsingModel-Visual-C.c']]]
+  ['initialize_5flattice_18',['initialize_lattice',['../_ising_model-_visual_8c.html#af6e3f3da8636ca210be9019a97ad598a',1,'IsingModel-Visual.c']]]
 ];
