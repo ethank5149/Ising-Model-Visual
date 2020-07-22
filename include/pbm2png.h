@@ -1,6 +1,6 @@
-//
-// Created by ethan on 7/22/2020.
-//
+///\headerfile pbm2png.h
+///\author Ethan Knox
+///\date 7/22/2020.
 
 #ifndef ISINGMODEL_VISUAL_PBM2PNG_H
 #define ISINGMODEL_VISUAL_PBM2PNG_H

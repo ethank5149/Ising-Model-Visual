@@ -1,6 +1,6 @@
-//
-// Created by ethan on 7/22/2020.
-//
+///\headerfile metropolis_hastings_neighbors.h
+///\author Ethan Knox
+///\date 7/22/2020.
 
 #ifndef ISINGMODEL_VISUAL_METROPOLIS_HASTINGS_NEIGHBORS_H
 #define ISINGMODEL_VISUAL_METROPOLIS_HASTINGS_NEIGHBORS_H

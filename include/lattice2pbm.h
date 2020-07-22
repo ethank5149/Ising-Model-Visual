@@ -1,6 +1,6 @@
-//
-// Created by ethan on 7/22/2020.
-//
+///\headerfile lattice2pbm.h
+///\author Ethan Knox
+///\date 7/22/2020.
 
 #ifndef ISINGMODEL_VISUAL_LATTICE2PBM_H
 #define ISINGMODEL_VISUAL_LATTICE2PBM_H
