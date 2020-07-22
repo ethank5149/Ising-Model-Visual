@@ -1,9 +1,17 @@
-//
-// Created by ethan on 7/22/2020.
-//
+///\file lattice2pbm.cpp
+///\author Ethan Knox
+///\date 7/22/2020.
 
 #include "../include/lattice2pbm.h"
 
+/// \brief Writes an Ising lattice to a ".pbm" file
+///
+/// \param lattice
+/// \param nrows
+/// \param ncols
+/// \param frame
+///
+/// \return void
 void lattice2pbm(int** lattice, int nrows, int ncols, const long frame)
 {
     // Appropriately format the numbered filename

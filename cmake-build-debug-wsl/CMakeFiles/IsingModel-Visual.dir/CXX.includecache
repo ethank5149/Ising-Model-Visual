@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/file_management.h
+/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/Ising_Params.h
 
-/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/ising_struct.h
+/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/file_management.h
 
 /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/lattice2pbm.h
 cstdio
@@ -23,10 +23,10 @@ cmath
 -
 random_generators.h
 /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/random_generators.h
-ising_struct.h
-/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/ising_struct.h
 metropolis_hastings_neighbors.h
 /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/metropolis_hastings_neighbors.h
+Ising_Params.h
+/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/Ising_Params.h
 
 /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/pbm2png.h
 cstdio
@@ -53,8 +53,8 @@ sys/stat.h
 /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/sys/stat.h
 unistd.h
 /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/unistd.h
-ising_struct.h
-/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/ising_struct.h
+Ising_Params.h
+/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/Ising_Params.h
 metropolis_hastings_step.h
 /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/metropolis_hastings_step.h
 file_management.h
@@ -71,46 +71,20 @@ cstdio
 -
 cstdlib
 -
-../include/ising_struct.h
-/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/ising_struct.h
+../include/Ising_Params.h
+/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/Ising_Params.h
 ../include/randomize_lattice.h
 /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/randomize_lattice.h
 ../include/run_simulation.h
 /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/run_simulation.h
 
-/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/file_management.cpp
-../include/file_management.h
-/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/file_management.h
-cstdio
--
-cstdlib
--
-sys/stat.h
-/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/sys/stat.h
-
-/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/lattice2pbm.cpp
-../include/lattice2pbm.h
-/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/lattice2pbm.h
-
-/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/metropolis_hastings_neighbors.cpp
-../include/metropolis_hastings_neighbors.h
-/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/metropolis_hastings_neighbors.h
+/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/Ising_Params.cpp
+../include/Ising_Params.h
+/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/Ising_Params.h
 
 /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/metropolis_hastings_step.cpp
 ../include/metropolis_hastings_step.h
 /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/metropolis_hastings_step.h
-
-/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/pbm2png.cpp
-../include/pbm2png.h
-/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/pbm2png.h
-
-/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/pngs2video.cpp
-../include/pngs2video.h
-/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/pngs2video.h
-
-/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/randomize_lattice.cpp
-../include/randomize_lattice.h
-/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/randomize_lattice.h
 
 /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/run_simulation.cpp
 ../include/run_simulation.h

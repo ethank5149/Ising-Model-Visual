@@ -1,5 +1,5 @@
-//
-// Created by ethan on 7/22/2020.
-//
+///\file Ising_Params.cpp
+///\author Ethan Knox
+///\date 7/22/2020.
 
-#include "Ising_Params.h"
+#include "../include/Ising_Params.h"

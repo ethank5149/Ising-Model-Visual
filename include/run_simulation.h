@@ -8,10 +8,10 @@
 #include "sys/stat.h"
 #include "unistd.h"
 
-#include "ising_struct.h"
+#include "Ising_Params.h"
 #include "metropolis_hastings_step.h"
 #include "file_management.h"
-#include "../include/lattice2pbm.h"
+#include "lattice2pbm.h"
 #include "pbm2png.h"
 #include "pngs2video.h"
 

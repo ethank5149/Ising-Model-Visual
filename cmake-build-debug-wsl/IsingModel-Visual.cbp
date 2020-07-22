@@ -82,10 +82,10 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/file_management.h">
+		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/Ising_Params.h">
 			<Option target="IsingModel-Visual"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/ising_struct.h">
+		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/file_management.h">
 			<Option target="IsingModel-Visual"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/lattice2pbm.h">
@@ -113,6 +113,9 @@
 			<Option target="IsingModel-Visual"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/IsingModel-Visual.cpp">
+			<Option target="IsingModel-Visual"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/Ising_Params.cpp">
 			<Option target="IsingModel-Visual"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/file_management.cpp">

@@ -1,14 +1,14 @@
 ﻿#include <cstdio>
 #include <cstdlib>
 
-#include "../include/ising_struct.h"
+#include "../include/Ising_Params.h"
 #include "../include/randomize_lattice.h"
 #include "../include/run_simulation.h"
 
 
 int main(int argc, const char* argv[])
 {
-    ising_params p{};
+    Ising_Params p{};
 
     printf("\n2D ISING MODEL - VISUAL SIMULATION\n");
     printf(  "----------------------------------\n\n");

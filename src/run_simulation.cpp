@@ -1,26 +1,19 @@
-//
-// Created by ethan on 7/22/2020.
-//
+///\file run_simulation.cpp
+///\author Ethan Knox
+///\date 7/22/2020.
 
 #include "../include/run_simulation.h"
 
-/*!
-\brief Run through iterations, generate files, and compile video
-
-Loops through the total number of algorithm iterations (nframes * algsteps)
-and performs the necessary file handling by calling the subsequent functions
-
-@param lattice  The 2D grid of spin values
-@param nrows  Number of rows
-@param ncols  Number of columns
-@param nframes  The number of frames desired to visualize the system
-@param algsteps  The number of algorithm steps between each recorded frame
-@param J  Ferromagnetic Coupling Constant
-@param h  Magnetic field strength
-@param T  Temperature
-\return void
-*/
-void run_simulation(int** lattice, ising_params &p)
+/// \brief Run through iterations, generate files, and compile video
+///
+/// Loops through the total number of algorithm iterations (nframes * algsteps)
+/// and performs the necessary file handling by calling the subsequent functions
+///
+/// \param lattice  The 2D grid of spin values
+/// \param p  An instance of Ising_Params
+///
+/// \return void
+void run_simulation(int** lattice, Ising_Params &p)
 {
     long framenumber;
 
@@ -28,7 +21,7 @@ void run_simulation(int** lattice, ising_params &p)
     chdir("output");
 
     //const char* method = "metropolis";
-    void (*step)(int** lattice, ising_params &p) = &metropolis_hastings_step;
+    void (*step)(int** lattice, Ising_Params &p) = &metropolis_hastings_step;
 
     //if (method == "metropolis") {
     //    *step = &metropolis_hastings_step;

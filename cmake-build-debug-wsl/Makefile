@@ -150,6 +150,33 @@ src/IsingModel-Visual.cpp.s:
 	$(MAKE) -f CMakeFiles/IsingModel-Visual.dir/build.make CMakeFiles/IsingModel-Visual.dir/src/IsingModel-Visual.cpp.s
 .PHONY : src/IsingModel-Visual.cpp.s
 
+src/Ising_Params.o: src/Ising_Params.cpp.o
+
+.PHONY : src/Ising_Params.o
+
+# target to build an object file
+src/Ising_Params.cpp.o:
+	$(MAKE) -f CMakeFiles/IsingModel-Visual.dir/build.make CMakeFiles/IsingModel-Visual.dir/src/Ising_Params.cpp.o
+.PHONY : src/Ising_Params.cpp.o
+
+src/Ising_Params.i: src/Ising_Params.cpp.i
+
+.PHONY : src/Ising_Params.i
+
+# target to preprocess a source file
+src/Ising_Params.cpp.i:
+	$(MAKE) -f CMakeFiles/IsingModel-Visual.dir/build.make CMakeFiles/IsingModel-Visual.dir/src/Ising_Params.cpp.i
+.PHONY : src/Ising_Params.cpp.i
+
+src/Ising_Params.s: src/Ising_Params.cpp.s
+
+.PHONY : src/Ising_Params.s
+
+# target to generate assembly for a file
+src/Ising_Params.cpp.s:
+	$(MAKE) -f CMakeFiles/IsingModel-Visual.dir/build.make CMakeFiles/IsingModel-Visual.dir/src/Ising_Params.cpp.s
+.PHONY : src/Ising_Params.cpp.s
+
 src/file_management.o: src/file_management.cpp.o
 
 .PHONY : src/file_management.o
@@ -378,6 +405,9 @@ help:
 	@echo "... src/IsingModel-Visual.o"
 	@echo "... src/IsingModel-Visual.i"
 	@echo "... src/IsingModel-Visual.s"
+	@echo "... src/Ising_Params.o"
+	@echo "... src/Ising_Params.i"
+	@echo "... src/Ising_Params.s"
 	@echo "... src/file_management.o"
 	@echo "... src/file_management.i"
 	@echo "... src/file_management.s"
