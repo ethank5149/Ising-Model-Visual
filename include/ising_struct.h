@@ -9,11 +9,12 @@ struct ising_params{
     int nrows;
     int ncols;
     int startiter;
-    int stopiter;
-    int framestep;
+    long stopiter;
+    long framestep;
     double J;
     double h;
     double T;
+    double k_B = 1.0;
 };
 
 #endif //ISINGMODEL_VISUAL_ISING_STRUCT_H

@@ -51,7 +51,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/cmake-build-debug-wsl
+CMAKE_BINARY_DIR = /mnt/c/Users/ethan/clionprojects/isingmodel-visual/cmake-build-debug-wsl
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/cmake-build-debug-wsl/CMakeFiles /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/cmake-build-debug-wsl/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ethan/clionprojects/isingmodel-visual/cmake-build-debug-wsl/CMakeFiles /mnt/c/Users/ethan/clionprojects/isingmodel-visual/cmake-build-debug-wsl/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/cmake-build-debug-wsl/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ethan/clionprojects/isingmodel-visual/cmake-build-debug-wsl/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -177,6 +177,195 @@ src/file_management.cpp.s:
 	$(MAKE) -f CMakeFiles/IsingModel-Visual.dir/build.make CMakeFiles/IsingModel-Visual.dir/src/file_management.cpp.s
 .PHONY : src/file_management.cpp.s
 
+src/lattice2pbm.o: src/lattice2pbm.cpp.o
+
+.PHONY : src/lattice2pbm.o
+
+# target to build an object file
+src/lattice2pbm.cpp.o:
+	$(MAKE) -f CMakeFiles/IsingModel-Visual.dir/build.make CMakeFiles/IsingModel-Visual.dir/src/lattice2pbm.cpp.o
+.PHONY : src/lattice2pbm.cpp.o
+
+src/lattice2pbm.i: src/lattice2pbm.cpp.i
+
+.PHONY : src/lattice2pbm.i
+
+# target to preprocess a source file
+src/lattice2pbm.cpp.i:
+	$(MAKE) -f CMakeFiles/IsingModel-Visual.dir/build.make CMakeFiles/IsingModel-Visual.dir/src/lattice2pbm.cpp.i
+.PHONY : src/lattice2pbm.cpp.i
+
+src/lattice2pbm.s: src/lattice2pbm.cpp.s
+
+.PHONY : src/lattice2pbm.s
+
+# target to generate assembly for a file
+src/lattice2pbm.cpp.s:
+	$(MAKE) -f CMakeFiles/IsingModel-Visual.dir/build.make CMakeFiles/IsingModel-Visual.dir/src/lattice2pbm.cpp.s
+.PHONY : src/lattice2pbm.cpp.s
+
+src/metropolis_hastings_neighbors.o: src/metropolis_hastings_neighbors.cpp.o
+
+.PHONY : src/metropolis_hastings_neighbors.o
+
+# target to build an object file
+src/metropolis_hastings_neighbors.cpp.o:
+	$(MAKE) -f CMakeFiles/IsingModel-Visual.dir/build.make CMakeFiles/IsingModel-Visual.dir/src/metropolis_hastings_neighbors.cpp.o
+.PHONY : src/metropolis_hastings_neighbors.cpp.o
+
+src/metropolis_hastings_neighbors.i: src/metropolis_hastings_neighbors.cpp.i
+
+.PHONY : src/metropolis_hastings_neighbors.i
+
+# target to preprocess a source file
+src/metropolis_hastings_neighbors.cpp.i:
+	$(MAKE) -f CMakeFiles/IsingModel-Visual.dir/build.make CMakeFiles/IsingModel-Visual.dir/src/metropolis_hastings_neighbors.cpp.i
+.PHONY : src/metropolis_hastings_neighbors.cpp.i
+
+src/metropolis_hastings_neighbors.s: src/metropolis_hastings_neighbors.cpp.s
+
+.PHONY : src/metropolis_hastings_neighbors.s
+
+# target to generate assembly for a file
+src/metropolis_hastings_neighbors.cpp.s:
+	$(MAKE) -f CMakeFiles/IsingModel-Visual.dir/build.make CMakeFiles/IsingModel-Visual.dir/src/metropolis_hastings_neighbors.cpp.s
+.PHONY : src/metropolis_hastings_neighbors.cpp.s
+
+src/metropolis_hastings_step.o: src/metropolis_hastings_step.cpp.o
+
+.PHONY : src/metropolis_hastings_step.o
+
+# target to build an object file
+src/metropolis_hastings_step.cpp.o:
+	$(MAKE) -f CMakeFiles/IsingModel-Visual.dir/build.make CMakeFiles/IsingModel-Visual.dir/src/metropolis_hastings_step.cpp.o
+.PHONY : src/metropolis_hastings_step.cpp.o
+
+src/metropolis_hastings_step.i: src/metropolis_hastings_step.cpp.i
+
+.PHONY : src/metropolis_hastings_step.i
+
+# target to preprocess a source file
+src/metropolis_hastings_step.cpp.i:
+	$(MAKE) -f CMakeFiles/IsingModel-Visual.dir/build.make CMakeFiles/IsingModel-Visual.dir/src/metropolis_hastings_step.cpp.i
+.PHONY : src/metropolis_hastings_step.cpp.i
+
+src/metropolis_hastings_step.s: src/metropolis_hastings_step.cpp.s
+
+.PHONY : src/metropolis_hastings_step.s
+
+# target to generate assembly for a file
+src/metropolis_hastings_step.cpp.s:
+	$(MAKE) -f CMakeFiles/IsingModel-Visual.dir/build.make CMakeFiles/IsingModel-Visual.dir/src/metropolis_hastings_step.cpp.s
+.PHONY : src/metropolis_hastings_step.cpp.s
+
+src/pbm2png.o: src/pbm2png.cpp.o
+
+.PHONY : src/pbm2png.o
+
+# target to build an object file
+src/pbm2png.cpp.o:
+	$(MAKE) -f CMakeFiles/IsingModel-Visual.dir/build.make CMakeFiles/IsingModel-Visual.dir/src/pbm2png.cpp.o
+.PHONY : src/pbm2png.cpp.o
+
+src/pbm2png.i: src/pbm2png.cpp.i
+
+.PHONY : src/pbm2png.i
+
+# target to preprocess a source file
+src/pbm2png.cpp.i:
+	$(MAKE) -f CMakeFiles/IsingModel-Visual.dir/build.make CMakeFiles/IsingModel-Visual.dir/src/pbm2png.cpp.i
+.PHONY : src/pbm2png.cpp.i
+
+src/pbm2png.s: src/pbm2png.cpp.s
+
+.PHONY : src/pbm2png.s
+
+# target to generate assembly for a file
+src/pbm2png.cpp.s:
+	$(MAKE) -f CMakeFiles/IsingModel-Visual.dir/build.make CMakeFiles/IsingModel-Visual.dir/src/pbm2png.cpp.s
+.PHONY : src/pbm2png.cpp.s
+
+src/pngs2video.o: src/pngs2video.cpp.o
+
+.PHONY : src/pngs2video.o
+
+# target to build an object file
+src/pngs2video.cpp.o:
+	$(MAKE) -f CMakeFiles/IsingModel-Visual.dir/build.make CMakeFiles/IsingModel-Visual.dir/src/pngs2video.cpp.o
+.PHONY : src/pngs2video.cpp.o
+
+src/pngs2video.i: src/pngs2video.cpp.i
+
+.PHONY : src/pngs2video.i
+
+# target to preprocess a source file
+src/pngs2video.cpp.i:
+	$(MAKE) -f CMakeFiles/IsingModel-Visual.dir/build.make CMakeFiles/IsingModel-Visual.dir/src/pngs2video.cpp.i
+.PHONY : src/pngs2video.cpp.i
+
+src/pngs2video.s: src/pngs2video.cpp.s
+
+.PHONY : src/pngs2video.s
+
+# target to generate assembly for a file
+src/pngs2video.cpp.s:
+	$(MAKE) -f CMakeFiles/IsingModel-Visual.dir/build.make CMakeFiles/IsingModel-Visual.dir/src/pngs2video.cpp.s
+.PHONY : src/pngs2video.cpp.s
+
+src/randomize_lattice.o: src/randomize_lattice.cpp.o
+
+.PHONY : src/randomize_lattice.o
+
+# target to build an object file
+src/randomize_lattice.cpp.o:
+	$(MAKE) -f CMakeFiles/IsingModel-Visual.dir/build.make CMakeFiles/IsingModel-Visual.dir/src/randomize_lattice.cpp.o
+.PHONY : src/randomize_lattice.cpp.o
+
+src/randomize_lattice.i: src/randomize_lattice.cpp.i
+
+.PHONY : src/randomize_lattice.i
+
+# target to preprocess a source file
+src/randomize_lattice.cpp.i:
+	$(MAKE) -f CMakeFiles/IsingModel-Visual.dir/build.make CMakeFiles/IsingModel-Visual.dir/src/randomize_lattice.cpp.i
+.PHONY : src/randomize_lattice.cpp.i
+
+src/randomize_lattice.s: src/randomize_lattice.cpp.s
+
+.PHONY : src/randomize_lattice.s
+
+# target to generate assembly for a file
+src/randomize_lattice.cpp.s:
+	$(MAKE) -f CMakeFiles/IsingModel-Visual.dir/build.make CMakeFiles/IsingModel-Visual.dir/src/randomize_lattice.cpp.s
+.PHONY : src/randomize_lattice.cpp.s
+
+src/run_simulation.o: src/run_simulation.cpp.o
+
+.PHONY : src/run_simulation.o
+
+# target to build an object file
+src/run_simulation.cpp.o:
+	$(MAKE) -f CMakeFiles/IsingModel-Visual.dir/build.make CMakeFiles/IsingModel-Visual.dir/src/run_simulation.cpp.o
+.PHONY : src/run_simulation.cpp.o
+
+src/run_simulation.i: src/run_simulation.cpp.i
+
+.PHONY : src/run_simulation.i
+
+# target to preprocess a source file
+src/run_simulation.cpp.i:
+	$(MAKE) -f CMakeFiles/IsingModel-Visual.dir/build.make CMakeFiles/IsingModel-Visual.dir/src/run_simulation.cpp.i
+.PHONY : src/run_simulation.cpp.i
+
+src/run_simulation.s: src/run_simulation.cpp.s
+
+.PHONY : src/run_simulation.s
+
+# target to generate assembly for a file
+src/run_simulation.cpp.s:
+	$(MAKE) -f CMakeFiles/IsingModel-Visual.dir/build.make CMakeFiles/IsingModel-Visual.dir/src/run_simulation.cpp.s
+.PHONY : src/run_simulation.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -192,6 +381,27 @@ help:
 	@echo "... src/file_management.o"
 	@echo "... src/file_management.i"
 	@echo "... src/file_management.s"
+	@echo "... src/lattice2pbm.o"
+	@echo "... src/lattice2pbm.i"
+	@echo "... src/lattice2pbm.s"
+	@echo "... src/metropolis_hastings_neighbors.o"
+	@echo "... src/metropolis_hastings_neighbors.i"
+	@echo "... src/metropolis_hastings_neighbors.s"
+	@echo "... src/metropolis_hastings_step.o"
+	@echo "... src/metropolis_hastings_step.i"
+	@echo "... src/metropolis_hastings_step.s"
+	@echo "... src/pbm2png.o"
+	@echo "... src/pbm2png.i"
+	@echo "... src/pbm2png.s"
+	@echo "... src/pngs2video.o"
+	@echo "... src/pngs2video.i"
+	@echo "... src/pngs2video.s"
+	@echo "... src/randomize_lattice.o"
+	@echo "... src/randomize_lattice.i"
+	@echo "... src/randomize_lattice.s"
+	@echo "... src/run_simulation.o"
+	@echo "... src/run_simulation.i"
+	@echo "... src/run_simulation.s"
 .PHONY : help
 
 

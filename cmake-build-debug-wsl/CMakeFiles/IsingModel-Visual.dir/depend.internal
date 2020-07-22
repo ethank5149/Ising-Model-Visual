@@ -4,7 +4,49 @@
 CMakeFiles/IsingModel-Visual.dir/src/IsingModel-Visual.cpp.o
  /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/file_management.h
  /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/ising_struct.h
+ /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/lattice2pbm.h
+ /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/metropolis_hastings_neighbors.h
+ /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/metropolis_hastings_step.h
+ /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/pbm2png.h
+ /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/pngs2video.h
+ /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/random_generators.h
+ /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/randomize_lattice.h
+ /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/run_simulation.h
  /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/IsingModel-Visual.cpp
 CMakeFiles/IsingModel-Visual.dir/src/file_management.cpp.o
  /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/file_management.h
  /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/file_management.cpp
+CMakeFiles/IsingModel-Visual.dir/src/lattice2pbm.cpp.o
+ /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/lattice2pbm.h
+ /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/lattice2pbm.cpp
+CMakeFiles/IsingModel-Visual.dir/src/metropolis_hastings_neighbors.cpp.o
+ /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/metropolis_hastings_neighbors.h
+ /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/metropolis_hastings_neighbors.cpp
+CMakeFiles/IsingModel-Visual.dir/src/metropolis_hastings_step.cpp.o
+ /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/ising_struct.h
+ /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/metropolis_hastings_neighbors.h
+ /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/metropolis_hastings_step.h
+ /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/random_generators.h
+ /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/metropolis_hastings_step.cpp
+CMakeFiles/IsingModel-Visual.dir/src/pbm2png.cpp.o
+ /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/pbm2png.h
+ /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/pbm2png.cpp
+CMakeFiles/IsingModel-Visual.dir/src/pngs2video.cpp.o
+ /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/file_management.h
+ /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/pngs2video.h
+ /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/pngs2video.cpp
+CMakeFiles/IsingModel-Visual.dir/src/randomize_lattice.cpp.o
+ /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/random_generators.h
+ /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/randomize_lattice.h
+ /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/randomize_lattice.cpp
+CMakeFiles/IsingModel-Visual.dir/src/run_simulation.cpp.o
+ /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/file_management.h
+ /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/ising_struct.h
+ /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/lattice2pbm.h
+ /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/metropolis_hastings_neighbors.h
+ /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/metropolis_hastings_step.h
+ /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/pbm2png.h
+ /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/pngs2video.h
+ /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/random_generators.h
+ /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/run_simulation.h
+ /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/run_simulation.cpp
