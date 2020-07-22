@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/file_management.h
+
+/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/ising_struct.h
+
+/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/IsingModel-Visual.cpp
+cstdio
+-
+cstdlib
+-
+cmath
+-
+ctime
+-
+sys/stat.h
+/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/sys/stat.h
+unistd.h
+/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/unistd.h
+../include/file_management.h
+/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/file_management.h
+../include/ising_struct.h
+/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/ising_struct.h
+
+/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/file_management.cpp
+../include/file_management.h
+/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/file_management.h
+cstdio
+-
+cstdlib
+-
+sys/stat.h
+/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/sys/stat.h
+

@@ -1,3 +1,0 @@
-/mnt/c/Users/ethan/source/repos/IsingModel-visual/out/build/WSL-GCC-Release/CMakeFiles/rebuild_cache.dir
-/mnt/c/Users/ethan/source/repos/IsingModel-visual/out/build/WSL-GCC-Release/CMakeFiles/IsingModel-Visual.dir
-/mnt/c/Users/ethan/source/repos/IsingModel-visual/out/build/WSL-GCC-Release/CMakeFiles/edit_cache.dir

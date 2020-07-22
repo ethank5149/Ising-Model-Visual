@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="IsingModel-Visual" targetName="IsingModel-Visual" />
+    </generated>
+  </component>
+  <component name="CMakeSettings" AUTO_RELOAD="true">
+    <configurations>
+      <configuration PROFILE_NAME="Debug-WSL" CONFIG_NAME="Debug" TOOLCHAIN_NAME="WSL" />
+      <configuration PROFILE_NAME="Release-WSL" CONFIG_NAME="Release" TOOLCHAIN_NAME="WSL" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="72b9ae13-8593-44b2-9ee4-c1270d9df5d7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/file_management.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/ising_struct.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/file_management.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IsingModel-Visual.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IsingModel-Visual.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/IsingModel-Visual.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IsingModel-Visual.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ising_struct.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metropolis_hastings_neighbors.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metropolis_hastings_neighbors.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metropolis_hastings_step.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metropolis_hastings_step.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/WSL-GCC-Debug/.cmake/api/v1/query/client-MicrosoftVS/query.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/WSL-GCC-Debug/.cmake/api/v1/reply/cache-v2-bc82f489af343eaccf8b.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/WSL-GCC-Debug/.cmake/api/v1/reply/cmakeFiles-v1-a29867cdd973adc89e57.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/WSL-GCC-Debug/.cmake/api/v1/reply/codemodel-v2-c1e69b471a0055bef7be.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/WSL-GCC-Debug/.cmake/api/v1/reply/index-2020-07-22T00-28-47-0288.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/WSL-GCC-Debug/.cmake/api/v1/reply/target-IsingModel-Visual-Debug-fe4a7acf164618d0ee26.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/WSL-GCC-Debug/.ninja_deps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/WSL-GCC-Debug/.ninja_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/WSL-GCC-Debug/CMakeCache.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/WSL-GCC-Debug/CMakeFiles/3.17.3587832-MSVC_2/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/WSL-GCC-Debug/CMakeFiles/3.17.3587832-MSVC_2/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/WSL-GCC-Debug/CMakeFiles/3.17.3587832-MSVC_2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/WSL-GCC-Debug/CMakeFiles/3.17.3587832-MSVC_2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/WSL-GCC-Debug/CMakeFiles/3.17.3587832-MSVC_2/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/WSL-GCC-Debug/CMakeFiles/3.17.3587832-MSVC_2/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/WSL-GCC-Debug/CMakeFiles/3.17.3587832-MSVC_2/CompilerIdC/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/WSL-GCC-Debug/CMakeFiles/3.17.3587832-MSVC_2/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/WSL-GCC-Debug/CMakeFiles/3.17.3587832-MSVC_2/CompilerIdCXX/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/WSL-GCC-Debug/CMakeFiles/IsingModel-Visual.dir/IsingModel-Visual.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/WSL-GCC-Debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/WSL-GCC-Debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/WSL-GCC-Debug/IsingModel-Visual" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/WSL-GCC-Debug/build.ninja" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/WSL-GCC-Debug/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/WSL-GCC-Debug/output/output.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/WSL-GCC-Debug/output/output.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/WSL-GCC-Debug/rules.ninja" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/WSL-GCC-Release/.cmake/api/v1/query/client-MicrosoftVS/query.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/WSL-GCC-Release/.cmake/api/v1/reply/cache-v2-4e0131c88564f05d1cee.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/WSL-GCC-Release/.cmake/api/v1/reply/cmakeFiles-v1-702989a95d8da398a5d2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/WSL-GCC-Release/.cmake/api/v1/reply/codemodel-v2-6ac67d6cde3a8f3ef019.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/WSL-GCC-Release/.cmake/api/v1/reply/index-2020-07-21T21-35-42-0701.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/WSL-GCC-Release/.cmake/api/v1/reply/target-IsingModel-Visual-RelWithDebInfo-d47e97a8059bce51f1c6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/WSL-GCC-Release/.ninja_deps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/WSL-GCC-Release/.ninja_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/WSL-GCC-Release/CMakeCache.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/WSL-GCC-Release/CMakeFiles/3.17.3587832-MSVC_2/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/WSL-GCC-Release/CMakeFiles/3.17.3587832-MSVC_2/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/WSL-GCC-Release/CMakeFiles/3.17.3587832-MSVC_2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/WSL-GCC-Release/CMakeFiles/3.17.3587832-MSVC_2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/WSL-GCC-Release/CMakeFiles/3.17.3587832-MSVC_2/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/WSL-GCC-Release/CMakeFiles/3.17.3587832-MSVC_2/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/WSL-GCC-Release/CMakeFiles/3.17.3587832-MSVC_2/CompilerIdC/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/WSL-GCC-Release/CMakeFiles/3.17.3587832-MSVC_2/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/WSL-GCC-Release/CMakeFiles/3.17.3587832-MSVC_2/CompilerIdCXX/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/WSL-GCC-Release/CMakeFiles/IsingModel-Visual.dir/IsingModel-Visual.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/WSL-GCC-Release/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/WSL-GCC-Release/CMakeFiles/cmake.check_cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/WSL-GCC-Release/IsingModel-Visual" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/WSL-GCC-Release/build.ninja" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/WSL-GCC-Release/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/WSL-GCC-Release/rules.ninja" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/isenseconfig/WSL-GCC-Debug/iconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/isenseconfig/WSL-GCC-Release/iconfig.json" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug-WSL" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1edG0iArKJYi9fKXqzwFPAYv0F0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/source/repos/IsingModel-Visual-C/README.md" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="CMakeSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ethan\CLionProjects\ising\include" />
+      <recent name="C:\Users\ethan\CLionProjects\ising\src" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ethan\CLionProjects\ising" />
+    </key>
+  </component>
+  <component name="RunManager" selected="CMake Application.IsingModel-Visual">
+    <configuration name="IsingModel-Visual" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="IsingModel-Visual" TARGET_NAME="IsingModel-Visual" CONFIG_NAME="Release-WSL" RUN_TARGET_PROJECT_NAME="IsingModel-Visual" RUN_TARGET_NAME="IsingModel-Visual">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="convert_to_image" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="ising" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\ethan\CLionProjects\ising\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cmake-build-debug" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cmake-build-debug/convert_to_image.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.IsingModel-Visual" />
+      <item itemvalue="Python.convert_to_image" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="72b9ae13-8593-44b2-9ee4-c1270d9df5d7" name="Default Changelist" comment="" />
+      <created>1594643834502</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1594643834502</updated>
+      <workItem from="1594643839509" duration="27177000" />
+      <workItem from="1594693939520" duration="2875000" />
+      <workItem from="1594732726843" duration="670000" />
+      <workItem from="1594760134383" duration="23033000" />
+      <workItem from="1594814489178" duration="14003000" />
+      <workItem from="1594957118687" duration="2045000" />
+      <workItem from="1594968731213" duration="1999000" />
+      <workItem from="1594987228868" duration="1363000" />
+      <workItem from="1595011766095" duration="4550000" />
+      <workItem from="1595023561070" duration="16675000" />
+      <workItem from="1595213491666" duration="11000" />
+      <workItem from="1595220948300" duration="79000" />
+      <workItem from="1595221134956" duration="23000" />
+      <workItem from="1595221202011" duration="2619000" />
+      <workItem from="1595225837115" duration="1050000" />
+      <workItem from="1595279500788" duration="70000" />
+      <workItem from="1595385001232" duration="6325000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="76" y="166" key="#SSH_Configurations" timestamp="1595386652475">
+      <screen x="0" y="0" width="1620" height="1040" />
+    </state>
+    <state x="76" y="166" key="#SSH_Configurations/0.0.1620.1040@0.0.1620.1040" timestamp="1595386652475" />
+    <state x="266" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595385287415">
+      <screen x="0" y="0" width="1620" height="1040" />
+    </state>
+    <state x="266" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1620.1040@0.0.1620.1040" timestamp="1595385287415" />
+    <state x="541" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1595385330045">
+      <screen x="0" y="0" width="1620" height="1040" />
+    </state>
+    <state x="541" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1620.1040@0.0.1620.1040" timestamp="1595385330045" />
+    <state x="519" y="106" key="#convert_to_image" timestamp="1594667888306">
+      <screen x="0" y="0" width="1620" height="1040" />
+    </state>
+    <state x="519" y="106" key="#convert_to_image/0.0.1620.1040@0.0.1620.1040" timestamp="1594667888306" />
+    <state x="591" y="275" key="FileChooserDialogImpl" timestamp="1595220999817">
+      <screen x="0" y="0" width="1620" height="1040" />
+    </state>
+    <state x="591" y="275" key="FileChooserDialogImpl/0.0.1620.1040@0.0.1620.1040" timestamp="1595220999817" />
+    <state width="1578" height="113" key="GridCell.Tab.0.bottom" timestamp="1595393081526">
+      <screen x="0" y="0" width="1620" height="1040" />
+    </state>
+    <state width="1578" height="113" key="GridCell.Tab.0.bottom/0.0.1620.1040@0.0.1620.1040" timestamp="1595393081526" />
+    <state width="1578" height="113" key="GridCell.Tab.0.center" timestamp="1595393081525">
+      <screen x="0" y="0" width="1620" height="1040" />
+    </state>
+    <state width="1578" height="113" key="GridCell.Tab.0.center/0.0.1620.1040@0.0.1620.1040" timestamp="1595393081525" />
+    <state width="1578" height="113" key="GridCell.Tab.0.left" timestamp="1595393081525">
+      <screen x="0" y="0" width="1620" height="1040" />
+    </state>
+    <state width="1578" height="113" key="GridCell.Tab.0.left/0.0.1620.1040@0.0.1620.1040" timestamp="1595393081525" />
+    <state width="1578" height="113" key="GridCell.Tab.0.right" timestamp="1595393081526">
+      <screen x="0" y="0" width="1620" height="1040" />
+    </state>
+    <state width="1578" height="113" key="GridCell.Tab.0.right/0.0.1620.1040@0.0.1620.1040" timestamp="1595393081526" />
+    <state x="0" y="165" key="SettingsEditor" timestamp="1595388503538">
+      <screen x="0" y="0" width="1620" height="1040" />
+    </state>
+    <state x="0" y="165" key="SettingsEditor/0.0.1620.1040@0.0.1620.1040" timestamp="1595388503538" />
+    <state x="469" y="242" key="run.anything.popup" timestamp="1595385498436">
+      <screen x="0" y="0" width="1620" height="1040" />
+    </state>
+    <state x="469" y="242" key="run.anything.popup/0.0.1620.1040@0.0.1620.1040" timestamp="1595385498436" />
+    <state x="473" y="226" width="672" height="678" key="search.everywhere.popup" timestamp="1595012232863">
+      <screen x="0" y="0" width="1620" height="1040" />
+    </state>
+    <state x="473" y="226" width="672" height="678" key="search.everywhere.popup/0.0.1620.1040@0.0.1620.1040" timestamp="1595012232863" />
+  </component>
+</project>
