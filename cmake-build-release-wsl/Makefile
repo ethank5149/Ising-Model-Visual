@@ -51,7 +51,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/ethan/clionprojects/isingmodel-visual/cmake-build-release-wsl
+CMAKE_BINARY_DIR = /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/cmake-build-release-wsl
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ethan/clionprojects/isingmodel-visual/cmake-build-release-wsl/CMakeFiles /mnt/c/Users/ethan/clionprojects/isingmodel-visual/cmake-build-release-wsl/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/cmake-build-release-wsl/CMakeFiles /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/cmake-build-release-wsl/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ethan/clionprojects/isingmodel-visual/cmake-build-release-wsl/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/cmake-build-release-wsl/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -176,6 +176,33 @@ src/Ising_Params.s: src/Ising_Params.cpp.s
 src/Ising_Params.cpp.s:
 	$(MAKE) -f CMakeFiles/IsingModel-Visual.dir/build.make CMakeFiles/IsingModel-Visual.dir/src/Ising_Params.cpp.s
 .PHONY : src/Ising_Params.cpp.s
+
+src/Lattice.o: src/Lattice.cpp.o
+
+.PHONY : src/Lattice.o
+
+# target to build an object file
+src/Lattice.cpp.o:
+	$(MAKE) -f CMakeFiles/IsingModel-Visual.dir/build.make CMakeFiles/IsingModel-Visual.dir/src/Lattice.cpp.o
+.PHONY : src/Lattice.cpp.o
+
+src/Lattice.i: src/Lattice.cpp.i
+
+.PHONY : src/Lattice.i
+
+# target to preprocess a source file
+src/Lattice.cpp.i:
+	$(MAKE) -f CMakeFiles/IsingModel-Visual.dir/build.make CMakeFiles/IsingModel-Visual.dir/src/Lattice.cpp.i
+.PHONY : src/Lattice.cpp.i
+
+src/Lattice.s: src/Lattice.cpp.s
+
+.PHONY : src/Lattice.s
+
+# target to generate assembly for a file
+src/Lattice.cpp.s:
+	$(MAKE) -f CMakeFiles/IsingModel-Visual.dir/build.make CMakeFiles/IsingModel-Visual.dir/src/Lattice.cpp.s
+.PHONY : src/Lattice.cpp.s
 
 src/file_management.o: src/file_management.cpp.o
 
@@ -408,6 +435,9 @@ help:
 	@echo "... src/Ising_Params.o"
 	@echo "... src/Ising_Params.i"
 	@echo "... src/Ising_Params.s"
+	@echo "... src/Lattice.o"
+	@echo "... src/Lattice.i"
+	@echo "... src/Lattice.s"
 	@echo "... src/file_management.o"
 	@echo "... src/file_management.i"
 	@echo "... src/file_management.s"

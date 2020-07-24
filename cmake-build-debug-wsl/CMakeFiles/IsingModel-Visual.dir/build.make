@@ -46,7 +46,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/ethan/clionprojects/isingmodel-visual/cmake-build-debug-wsl
+CMAKE_BINARY_DIR = /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/cmake-build-debug-wsl
 
 # Include any dependencies generated for this target.
 include CMakeFiles/IsingModel-Visual.dir/depend.make
@@ -58,8 +58,8 @@ include CMakeFiles/IsingModel-Visual.dir/progress.make
 include CMakeFiles/IsingModel-Visual.dir/flags.make
 
 CMakeFiles/IsingModel-Visual.dir/src/IsingModel-Visual.cpp.o: CMakeFiles/IsingModel-Visual.dir/flags.make
-CMakeFiles/IsingModel-Visual.dir/src/IsingModel-Visual.cpp.o: /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/IsingModel-Visual.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/ethan/clionprojects/isingmodel-visual/cmake-build-debug-wsl/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/IsingModel-Visual.dir/src/IsingModel-Visual.cpp.o"
+CMakeFiles/IsingModel-Visual.dir/src/IsingModel-Visual.cpp.o: ../src/IsingModel-Visual.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/cmake-build-debug-wsl/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/IsingModel-Visual.dir/src/IsingModel-Visual.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/IsingModel-Visual.dir/src/IsingModel-Visual.cpp.o -c /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/IsingModel-Visual.cpp
 
 CMakeFiles/IsingModel-Visual.dir/src/IsingModel-Visual.cpp.i: cmake_force
@@ -71,8 +71,8 @@ CMakeFiles/IsingModel-Visual.dir/src/IsingModel-Visual.cpp.s: cmake_force
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/IsingModel-Visual.cpp -o CMakeFiles/IsingModel-Visual.dir/src/IsingModel-Visual.cpp.s
 
 CMakeFiles/IsingModel-Visual.dir/src/file_management.cpp.o: CMakeFiles/IsingModel-Visual.dir/flags.make
-CMakeFiles/IsingModel-Visual.dir/src/file_management.cpp.o: /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/file_management.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/ethan/clionprojects/isingmodel-visual/cmake-build-debug-wsl/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/IsingModel-Visual.dir/src/file_management.cpp.o"
+CMakeFiles/IsingModel-Visual.dir/src/file_management.cpp.o: ../src/file_management.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/cmake-build-debug-wsl/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/IsingModel-Visual.dir/src/file_management.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/IsingModel-Visual.dir/src/file_management.cpp.o -c /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/file_management.cpp
 
 CMakeFiles/IsingModel-Visual.dir/src/file_management.cpp.i: cmake_force
@@ -84,8 +84,8 @@ CMakeFiles/IsingModel-Visual.dir/src/file_management.cpp.s: cmake_force
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/file_management.cpp -o CMakeFiles/IsingModel-Visual.dir/src/file_management.cpp.s
 
 CMakeFiles/IsingModel-Visual.dir/src/lattice2pbm.cpp.o: CMakeFiles/IsingModel-Visual.dir/flags.make
-CMakeFiles/IsingModel-Visual.dir/src/lattice2pbm.cpp.o: /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/lattice2pbm.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/ethan/clionprojects/isingmodel-visual/cmake-build-debug-wsl/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/IsingModel-Visual.dir/src/lattice2pbm.cpp.o"
+CMakeFiles/IsingModel-Visual.dir/src/lattice2pbm.cpp.o: ../src/lattice2pbm.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/cmake-build-debug-wsl/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/IsingModel-Visual.dir/src/lattice2pbm.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/IsingModel-Visual.dir/src/lattice2pbm.cpp.o -c /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/lattice2pbm.cpp
 
 CMakeFiles/IsingModel-Visual.dir/src/lattice2pbm.cpp.i: cmake_force
@@ -97,8 +97,8 @@ CMakeFiles/IsingModel-Visual.dir/src/lattice2pbm.cpp.s: cmake_force
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/lattice2pbm.cpp -o CMakeFiles/IsingModel-Visual.dir/src/lattice2pbm.cpp.s
 
 CMakeFiles/IsingModel-Visual.dir/src/metropolis_hastings_neighbors.cpp.o: CMakeFiles/IsingModel-Visual.dir/flags.make
-CMakeFiles/IsingModel-Visual.dir/src/metropolis_hastings_neighbors.cpp.o: /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/metropolis_hastings_neighbors.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/ethan/clionprojects/isingmodel-visual/cmake-build-debug-wsl/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/IsingModel-Visual.dir/src/metropolis_hastings_neighbors.cpp.o"
+CMakeFiles/IsingModel-Visual.dir/src/metropolis_hastings_neighbors.cpp.o: ../src/metropolis_hastings_neighbors.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/cmake-build-debug-wsl/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/IsingModel-Visual.dir/src/metropolis_hastings_neighbors.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/IsingModel-Visual.dir/src/metropolis_hastings_neighbors.cpp.o -c /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/metropolis_hastings_neighbors.cpp
 
 CMakeFiles/IsingModel-Visual.dir/src/metropolis_hastings_neighbors.cpp.i: cmake_force
@@ -110,8 +110,8 @@ CMakeFiles/IsingModel-Visual.dir/src/metropolis_hastings_neighbors.cpp.s: cmake_
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/metropolis_hastings_neighbors.cpp -o CMakeFiles/IsingModel-Visual.dir/src/metropolis_hastings_neighbors.cpp.s
 
 CMakeFiles/IsingModel-Visual.dir/src/pbm2png.cpp.o: CMakeFiles/IsingModel-Visual.dir/flags.make
-CMakeFiles/IsingModel-Visual.dir/src/pbm2png.cpp.o: /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/pbm2png.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/ethan/clionprojects/isingmodel-visual/cmake-build-debug-wsl/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/IsingModel-Visual.dir/src/pbm2png.cpp.o"
+CMakeFiles/IsingModel-Visual.dir/src/pbm2png.cpp.o: ../src/pbm2png.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/cmake-build-debug-wsl/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/IsingModel-Visual.dir/src/pbm2png.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/IsingModel-Visual.dir/src/pbm2png.cpp.o -c /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/pbm2png.cpp
 
 CMakeFiles/IsingModel-Visual.dir/src/pbm2png.cpp.i: cmake_force
@@ -123,8 +123,8 @@ CMakeFiles/IsingModel-Visual.dir/src/pbm2png.cpp.s: cmake_force
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/pbm2png.cpp -o CMakeFiles/IsingModel-Visual.dir/src/pbm2png.cpp.s
 
 CMakeFiles/IsingModel-Visual.dir/src/pngs2video.cpp.o: CMakeFiles/IsingModel-Visual.dir/flags.make
-CMakeFiles/IsingModel-Visual.dir/src/pngs2video.cpp.o: /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/pngs2video.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/ethan/clionprojects/isingmodel-visual/cmake-build-debug-wsl/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/IsingModel-Visual.dir/src/pngs2video.cpp.o"
+CMakeFiles/IsingModel-Visual.dir/src/pngs2video.cpp.o: ../src/pngs2video.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/cmake-build-debug-wsl/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/IsingModel-Visual.dir/src/pngs2video.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/IsingModel-Visual.dir/src/pngs2video.cpp.o -c /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/pngs2video.cpp
 
 CMakeFiles/IsingModel-Visual.dir/src/pngs2video.cpp.i: cmake_force
@@ -136,8 +136,8 @@ CMakeFiles/IsingModel-Visual.dir/src/pngs2video.cpp.s: cmake_force
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/pngs2video.cpp -o CMakeFiles/IsingModel-Visual.dir/src/pngs2video.cpp.s
 
 CMakeFiles/IsingModel-Visual.dir/src/randomize_lattice.cpp.o: CMakeFiles/IsingModel-Visual.dir/flags.make
-CMakeFiles/IsingModel-Visual.dir/src/randomize_lattice.cpp.o: /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/randomize_lattice.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/ethan/clionprojects/isingmodel-visual/cmake-build-debug-wsl/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/IsingModel-Visual.dir/src/randomize_lattice.cpp.o"
+CMakeFiles/IsingModel-Visual.dir/src/randomize_lattice.cpp.o: ../src/randomize_lattice.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/cmake-build-debug-wsl/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/IsingModel-Visual.dir/src/randomize_lattice.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/IsingModel-Visual.dir/src/randomize_lattice.cpp.o -c /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/randomize_lattice.cpp
 
 CMakeFiles/IsingModel-Visual.dir/src/randomize_lattice.cpp.i: cmake_force
@@ -149,8 +149,8 @@ CMakeFiles/IsingModel-Visual.dir/src/randomize_lattice.cpp.s: cmake_force
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/randomize_lattice.cpp -o CMakeFiles/IsingModel-Visual.dir/src/randomize_lattice.cpp.s
 
 CMakeFiles/IsingModel-Visual.dir/src/metropolis_hastings_step.cpp.o: CMakeFiles/IsingModel-Visual.dir/flags.make
-CMakeFiles/IsingModel-Visual.dir/src/metropolis_hastings_step.cpp.o: /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/metropolis_hastings_step.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/ethan/clionprojects/isingmodel-visual/cmake-build-debug-wsl/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/IsingModel-Visual.dir/src/metropolis_hastings_step.cpp.o"
+CMakeFiles/IsingModel-Visual.dir/src/metropolis_hastings_step.cpp.o: ../src/metropolis_hastings_step.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/cmake-build-debug-wsl/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/IsingModel-Visual.dir/src/metropolis_hastings_step.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/IsingModel-Visual.dir/src/metropolis_hastings_step.cpp.o -c /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/metropolis_hastings_step.cpp
 
 CMakeFiles/IsingModel-Visual.dir/src/metropolis_hastings_step.cpp.i: cmake_force
@@ -162,8 +162,8 @@ CMakeFiles/IsingModel-Visual.dir/src/metropolis_hastings_step.cpp.s: cmake_force
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/metropolis_hastings_step.cpp -o CMakeFiles/IsingModel-Visual.dir/src/metropolis_hastings_step.cpp.s
 
 CMakeFiles/IsingModel-Visual.dir/src/run_simulation.cpp.o: CMakeFiles/IsingModel-Visual.dir/flags.make
-CMakeFiles/IsingModel-Visual.dir/src/run_simulation.cpp.o: /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/run_simulation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/ethan/clionprojects/isingmodel-visual/cmake-build-debug-wsl/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/IsingModel-Visual.dir/src/run_simulation.cpp.o"
+CMakeFiles/IsingModel-Visual.dir/src/run_simulation.cpp.o: ../src/run_simulation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/cmake-build-debug-wsl/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/IsingModel-Visual.dir/src/run_simulation.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/IsingModel-Visual.dir/src/run_simulation.cpp.o -c /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/run_simulation.cpp
 
 CMakeFiles/IsingModel-Visual.dir/src/run_simulation.cpp.i: cmake_force
@@ -175,8 +175,8 @@ CMakeFiles/IsingModel-Visual.dir/src/run_simulation.cpp.s: cmake_force
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/run_simulation.cpp -o CMakeFiles/IsingModel-Visual.dir/src/run_simulation.cpp.s
 
 CMakeFiles/IsingModel-Visual.dir/src/Ising_Params.cpp.o: CMakeFiles/IsingModel-Visual.dir/flags.make
-CMakeFiles/IsingModel-Visual.dir/src/Ising_Params.cpp.o: /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/Ising_Params.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/ethan/clionprojects/isingmodel-visual/cmake-build-debug-wsl/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/IsingModel-Visual.dir/src/Ising_Params.cpp.o"
+CMakeFiles/IsingModel-Visual.dir/src/Ising_Params.cpp.o: ../src/Ising_Params.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/cmake-build-debug-wsl/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/IsingModel-Visual.dir/src/Ising_Params.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/IsingModel-Visual.dir/src/Ising_Params.cpp.o -c /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/Ising_Params.cpp
 
 CMakeFiles/IsingModel-Visual.dir/src/Ising_Params.cpp.i: cmake_force
@@ -186,6 +186,19 @@ CMakeFiles/IsingModel-Visual.dir/src/Ising_Params.cpp.i: cmake_force
 CMakeFiles/IsingModel-Visual.dir/src/Ising_Params.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/IsingModel-Visual.dir/src/Ising_Params.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/Ising_Params.cpp -o CMakeFiles/IsingModel-Visual.dir/src/Ising_Params.cpp.s
+
+CMakeFiles/IsingModel-Visual.dir/src/Lattice.cpp.o: CMakeFiles/IsingModel-Visual.dir/flags.make
+CMakeFiles/IsingModel-Visual.dir/src/Lattice.cpp.o: ../src/Lattice.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/cmake-build-debug-wsl/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/IsingModel-Visual.dir/src/Lattice.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/IsingModel-Visual.dir/src/Lattice.cpp.o -c /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/Lattice.cpp
+
+CMakeFiles/IsingModel-Visual.dir/src/Lattice.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/IsingModel-Visual.dir/src/Lattice.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/Lattice.cpp > CMakeFiles/IsingModel-Visual.dir/src/Lattice.cpp.i
+
+CMakeFiles/IsingModel-Visual.dir/src/Lattice.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/IsingModel-Visual.dir/src/Lattice.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/Lattice.cpp -o CMakeFiles/IsingModel-Visual.dir/src/Lattice.cpp.s
 
 # Object files for target IsingModel-Visual
 IsingModel__Visual_OBJECTS = \
@@ -198,7 +211,8 @@ IsingModel__Visual_OBJECTS = \
 "CMakeFiles/IsingModel-Visual.dir/src/randomize_lattice.cpp.o" \
 "CMakeFiles/IsingModel-Visual.dir/src/metropolis_hastings_step.cpp.o" \
 "CMakeFiles/IsingModel-Visual.dir/src/run_simulation.cpp.o" \
-"CMakeFiles/IsingModel-Visual.dir/src/Ising_Params.cpp.o"
+"CMakeFiles/IsingModel-Visual.dir/src/Ising_Params.cpp.o" \
+"CMakeFiles/IsingModel-Visual.dir/src/Lattice.cpp.o"
 
 # External object files for target IsingModel-Visual
 IsingModel__Visual_EXTERNAL_OBJECTS =
@@ -213,9 +227,10 @@ IsingModel-Visual: CMakeFiles/IsingModel-Visual.dir/src/randomize_lattice.cpp.o
 IsingModel-Visual: CMakeFiles/IsingModel-Visual.dir/src/metropolis_hastings_step.cpp.o
 IsingModel-Visual: CMakeFiles/IsingModel-Visual.dir/src/run_simulation.cpp.o
 IsingModel-Visual: CMakeFiles/IsingModel-Visual.dir/src/Ising_Params.cpp.o
+IsingModel-Visual: CMakeFiles/IsingModel-Visual.dir/src/Lattice.cpp.o
 IsingModel-Visual: CMakeFiles/IsingModel-Visual.dir/build.make
 IsingModel-Visual: CMakeFiles/IsingModel-Visual.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/ethan/clionprojects/isingmodel-visual/cmake-build-debug-wsl/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable IsingModel-Visual"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/cmake-build-debug-wsl/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable IsingModel-Visual"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/IsingModel-Visual.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -228,6 +243,6 @@ CMakeFiles/IsingModel-Visual.dir/clean:
 .PHONY : CMakeFiles/IsingModel-Visual.dir/clean
 
 CMakeFiles/IsingModel-Visual.dir/depend:
-	cd /mnt/c/Users/ethan/clionprojects/isingmodel-visual/cmake-build-debug-wsl && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual /mnt/c/Users/ethan/clionprojects/isingmodel-visual/cmake-build-debug-wsl /mnt/c/Users/ethan/clionprojects/isingmodel-visual/cmake-build-debug-wsl /mnt/c/Users/ethan/clionprojects/isingmodel-visual/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/cmake-build-debug-wsl && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/cmake-build-debug-wsl /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/cmake-build-debug-wsl /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/IsingModel-Visual.dir/depend
 

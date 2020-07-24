@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/IsingModel-Visual.dir/src/IsingModel-Visual.cpp.o"
   "CMakeFiles/IsingModel-Visual.dir/src/Ising_Params.cpp.o"
+  "CMakeFiles/IsingModel-Visual.dir/src/Lattice.cpp.o"
   "CMakeFiles/IsingModel-Visual.dir/src/file_management.cpp.o"
   "CMakeFiles/IsingModel-Visual.dir/src/lattice2pbm.cpp.o"
   "CMakeFiles/IsingModel-Visual.dir/src/metropolis_hastings_neighbors.cpp.o"

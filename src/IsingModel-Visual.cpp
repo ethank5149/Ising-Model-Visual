@@ -5,20 +5,19 @@
 #include "../include/randomize_lattice.h"
 #include "../include/run_simulation.h"
 
-
-int main(int argc, const char* argv[])
+int main(int argc, const char *argv[])
 {
     Ising_Params p{};
 
     printf("\n2D ISING MODEL - VISUAL SIMULATION\n");
-    printf(  "----------------------------------\n\n");
+    printf("----------------------------------\n\n");
 
     // Check the number of parameters to enable shortcut usage
     if (argc == 2)
     {
         printf("Getting Parameters From File...\n");
 
-        FILE* file;
+        FILE *file;
         file = fopen(argv[1], "r");
 
         fscanf(file, "%*s %*s %d", &p.nrows);
@@ -37,7 +36,7 @@ int main(int argc, const char* argv[])
     else if (argc == 9)
     {
         // Convert commandline arguments from strings
-        char** endptr = nullptr;
+        char **endptr = nullptr;
         p.nrows = atoi(argv[1]);
         p.ncols = strtol(argv[2], endptr, 0);
         p.startiter = strtol(argv[3], endptr, 0);
@@ -83,10 +82,10 @@ int main(int argc, const char* argv[])
 
     printf("Running...\n");
 
-    int** lattice = (int**)malloc(p.nrows * sizeof(int*));
+    int **lattice = (int **)malloc(p.nrows * sizeof(int *));
     for (int i = 0; i < p.nrows; i++)
     {
-        lattice[i] = (int*)malloc(p.ncols * sizeof(int));
+        lattice[i] = (int *)malloc(p.ncols * sizeof(int));
     }
 
     randomize_lattice(lattice, p.nrows, p.ncols);

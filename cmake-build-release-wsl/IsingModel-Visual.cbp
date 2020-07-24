@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/mnt/c/Users/ethan/clionprojects/isingmodel-visual/cmake-build-release-wsl"/>
+				<Option working_dir="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/cmake-build-release-wsl"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ethan/clionprojects/isingmodel-visual/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ethan/clionprojects/isingmodel-visual/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ethan/clionprojects/isingmodel-visual/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ethan/clionprojects/isingmodel-visual/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/mnt/c/Users/ethan/clionprojects/isingmodel-visual/cmake-build-release-wsl"/>
+				<Option working_dir="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/cmake-build-release-wsl"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ethan/clionprojects/isingmodel-visual/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ethan/clionprojects/isingmodel-visual/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ethan/clionprojects/isingmodel-visual/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ethan/clionprojects/isingmodel-visual/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/mnt/c/Users/ethan/clionprojects/isingmodel-visual/cmake-build-release-wsl"/>
+				<Option working_dir="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/cmake-build-release-wsl"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ethan/clionprojects/isingmodel-visual/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ethan/clionprojects/isingmodel-visual/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ethan/clionprojects/isingmodel-visual/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ethan/clionprojects/isingmodel-visual/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="IsingModel-Visual">
-				<Option output="/mnt/c/Users/ethan/clionprojects/isingmodel-visual/cmake-build-release-wsl/IsingModel-Visual" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/mnt/c/Users/ethan/clionprojects/isingmodel-visual/cmake-build-release-wsl"/>
+				<Option output="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/cmake-build-release-wsl/IsingModel-Visual" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/cmake-build-release-wsl"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -53,15 +53,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ethan/clionprojects/isingmodel-visual/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 IsingModel-Visual"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ethan/clionprojects/isingmodel-visual/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ethan/clionprojects/isingmodel-visual/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ethan/clionprojects/isingmodel-visual/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 IsingModel-Visual"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="IsingModel-Visual/fast">
-				<Option output="/mnt/c/Users/ethan/clionprojects/isingmodel-visual/cmake-build-release-wsl/IsingModel-Visual" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/mnt/c/Users/ethan/clionprojects/isingmodel-visual/cmake-build-release-wsl"/>
+				<Option output="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/cmake-build-release-wsl/IsingModel-Visual" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/cmake-build-release-wsl"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -75,14 +75,17 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ethan/clionprojects/isingmodel-visual/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 IsingModel-Visual/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ethan/clionprojects/isingmodel-visual/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ethan/clionprojects/isingmodel-visual/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ethan/clionprojects/isingmodel-visual/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 IsingModel-Visual/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
 		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/Ising_Params.h">
+			<Option target="IsingModel-Visual"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/Lattice.h">
 			<Option target="IsingModel-Visual"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/file_management.h">
@@ -116,6 +119,9 @@
 			<Option target="IsingModel-Visual"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/Ising_Params.cpp">
+			<Option target="IsingModel-Visual"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/Lattice.cpp">
 			<Option target="IsingModel-Visual"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/file_management.cpp">
