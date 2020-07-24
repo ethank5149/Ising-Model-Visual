@@ -115,6 +115,9 @@
 		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/run_simulation.h">
 			<Option target="IsingModel-Visual"/>
 		</Unit>
+		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/wolff_step.h">
+			<Option target="IsingModel-Visual"/>
+		</Unit>
 		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/IsingModel-Visual.cpp">
 			<Option target="IsingModel-Visual"/>
 		</Unit>
@@ -146,6 +149,9 @@
 			<Option target="IsingModel-Visual"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/run_simulation.cpp">
+			<Option target="IsingModel-Visual"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/wolff_step.cpp">
 			<Option target="IsingModel-Visual"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/CMakeLists.txt">

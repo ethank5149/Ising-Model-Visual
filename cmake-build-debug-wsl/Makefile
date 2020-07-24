@@ -420,6 +420,33 @@ src/run_simulation.cpp.s:
 	$(MAKE) -f CMakeFiles/IsingModel-Visual.dir/build.make CMakeFiles/IsingModel-Visual.dir/src/run_simulation.cpp.s
 .PHONY : src/run_simulation.cpp.s
 
+src/wolff_step.o: src/wolff_step.cpp.o
+
+.PHONY : src/wolff_step.o
+
+# target to build an object file
+src/wolff_step.cpp.o:
+	$(MAKE) -f CMakeFiles/IsingModel-Visual.dir/build.make CMakeFiles/IsingModel-Visual.dir/src/wolff_step.cpp.o
+.PHONY : src/wolff_step.cpp.o
+
+src/wolff_step.i: src/wolff_step.cpp.i
+
+.PHONY : src/wolff_step.i
+
+# target to preprocess a source file
+src/wolff_step.cpp.i:
+	$(MAKE) -f CMakeFiles/IsingModel-Visual.dir/build.make CMakeFiles/IsingModel-Visual.dir/src/wolff_step.cpp.i
+.PHONY : src/wolff_step.cpp.i
+
+src/wolff_step.s: src/wolff_step.cpp.s
+
+.PHONY : src/wolff_step.s
+
+# target to generate assembly for a file
+src/wolff_step.cpp.s:
+	$(MAKE) -f CMakeFiles/IsingModel-Visual.dir/build.make CMakeFiles/IsingModel-Visual.dir/src/wolff_step.cpp.s
+.PHONY : src/wolff_step.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -462,6 +489,9 @@ help:
 	@echo "... src/run_simulation.o"
 	@echo "... src/run_simulation.i"
 	@echo "... src/run_simulation.s"
+	@echo "... src/wolff_step.o"
+	@echo "... src/wolff_step.i"
+	@echo "... src/wolff_step.s"
 .PHONY : help
 
 

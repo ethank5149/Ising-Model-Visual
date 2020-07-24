@@ -6,6 +6,7 @@
 #define ISINGMODEL_VISUAL_LATTICE_H
 
 #include <cstdlib>
+#include <vector>
 #include "random_generators.h"
 
 class Lattice {
@@ -22,8 +23,9 @@ public:
 
     void flip(int);
     void flip(int, int);
-
     void randomize();
+    std::vector<int> neighbors(int, int) const;
+
 };
 
 

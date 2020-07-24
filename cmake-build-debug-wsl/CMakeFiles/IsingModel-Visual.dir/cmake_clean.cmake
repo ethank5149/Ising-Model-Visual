@@ -10,6 +10,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/IsingModel-Visual.dir/src/pngs2video.cpp.o"
   "CMakeFiles/IsingModel-Visual.dir/src/randomize_lattice.cpp.o"
   "CMakeFiles/IsingModel-Visual.dir/src/run_simulation.cpp.o"
+  "CMakeFiles/IsingModel-Visual.dir/src/wolff_step.cpp.o"
   "IsingModel-Visual"
   "IsingModel-Visual.pdb"
 )

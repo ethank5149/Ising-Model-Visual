@@ -37,4 +37,11 @@ void Lattice::randomize() {
 
 }
 
-
+std::vector<int> Lattice::neighbors(int i, int j) const {
+    std::vector<int> nbs(4);
+    nbs[0] = (i + 1) % _rows + _cols * j;
+    nbs[1] = i + _cols * ((j + 1) % _cols);
+    nbs[2] = ((i - 1) + _rows) % _rows + _cols * j;
+    nbs[2] = i + _cols * (((j - 1) + _cols) % _cols);
+    return nbs;
+}

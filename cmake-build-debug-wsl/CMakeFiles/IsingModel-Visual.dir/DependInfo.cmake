@@ -15,6 +15,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/pngs2video.cpp" "/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/src/pngs2video.cpp.o"
   "/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/randomize_lattice.cpp" "/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/src/randomize_lattice.cpp.o"
   "/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/run_simulation.cpp" "/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/src/run_simulation.cpp.o"
+  "/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/wolff_step.cpp" "/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/src/wolff_step.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

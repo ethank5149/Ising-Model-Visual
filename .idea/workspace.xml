@@ -36,44 +36,32 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="72b9ae13-8593-44b2-9ee4-c1270d9df5d7" name="Default Changelist" comment="just a little more tidying">
-      <change afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/Lattice.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lattice.cpp" afterDir="false" />
+    <list default="true" id="72b9ae13-8593-44b2-9ee4-c1270d9df5d7" name="Default Changelist" comment="created a lattice class">
+      <change afterPath="$PROJECT_DIR$/include/wolff_step.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/wolff_step.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/build.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/cmake_clean.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/link.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/Makefile.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/clion-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/IsingModel-Visual.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-wsl/IsingModel-Visual.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-wsl/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-wsl/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/IsingModel-Visual.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/IsingModel-Visual.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/IsingModel-Visual.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/IsingModel-Visual.dir/build.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/IsingModel-Visual.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/IsingModel-Visual.dir/cmake_clean.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/IsingModel-Visual.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/IsingModel-Visual.dir/link.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/IsingModel-Visual.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/IsingModel-Visual.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/Makefile.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/clion-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release-wsl/IsingModel-Visual.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-wsl/IsingModel-Visual.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release-wsl/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-wsl/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release-wsl/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-wsl/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/Lattice.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/Lattice.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/random_generators.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/random_generators.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IsingModel-Visual.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/IsingModel-Visual.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lattice.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lattice.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,7 +188,7 @@
       <workItem from="1595442813727" duration="145000" />
       <workItem from="1595554776519" duration="38000" />
       <workItem from="1595554904853" duration="37000" />
-      <workItem from="1595587151353" duration="3064000" />
+      <workItem from="1595587151353" duration="6624000" />
     </task>
     <task id="LOCAL-00001" summary="separated functions into individual sources/headers">
       <created>1595423147231</created>
@@ -216,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595436337992</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="created a lattice class">
+      <created>1595590293970</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1595590293970</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,7 +233,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="separated functions into individual sources/headers" />
     <MESSAGE value="just a little more tidying" />
-    <option name="LAST_COMMIT_MESSAGE" value="just a little more tidying" />
+    <MESSAGE value="created a lattice class" />
+    <option name="LAST_COMMIT_MESSAGE" value="created a lattice class" />
   </component>
   <component name="WindowStateProjectService">
     <state x="76" y="166" key="#SSH_Configurations" timestamp="1595386652475">
@@ -285,10 +281,14 @@
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
     <state x="0" y="165" key="SettingsEditor/0.0.1620.1040@0.0.1620.1040" timestamp="1595388503538" />
-    <state x="403" y="253" key="Vcs.Push.Dialog.v2" timestamp="1595436351953">
+    <state x="403" y="253" key="Vcs.Push.Dialog.v2" timestamp="1595590328094">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
-    <state x="403" y="253" key="Vcs.Push.Dialog.v2/0.0.1620.1040@0.0.1620.1040" timestamp="1595436351953" />
+    <state x="403" y="253" key="Vcs.Push.Dialog.v2/0.0.1620.1040@0.0.1620.1040" timestamp="1595590328094" />
+    <state x="618" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1595590317557">
+      <screen x="0" y="0" width="1620" height="1040" />
+    </state>
+    <state x="618" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1620.1040@0.0.1620.1040" timestamp="1595590317557" />
     <state x="469" y="242" key="run.anything.popup" timestamp="1595385498436">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
