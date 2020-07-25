@@ -21,7 +21,8 @@ void run_simulation(int** lattice, Ising_Params &p)
     chdir("output");
 
     //const char* method = "metropolis";
-    void (*step)(int** lattice, Ising_Params &p) = &metropolis_hastings_step;
+//    void (*step)(int** lattice, Ising_Params &p) = &metropolis_hastings_step;
+    void (*step)(int** lattice, Ising_Params &p) = &wolff_step;
 
     //if (method == "metropolis") {
     //    *step = &metropolis_hastings_step;

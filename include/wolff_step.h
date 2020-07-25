@@ -6,8 +6,13 @@
 #define ISINGMODEL_VISUAL_WOLFF_STEP_H
 
 #include <cmath>
+#include <vector>
+#include <utility>
 #include <algorithm>
-#include "Lattice.h"
 #include "random_generators.h"
+#include "Ising_Params.h"
+#include "wolff_neighbors.h"
+
+void wolff_step(int**, Ising_Params &);
 
 #endif //ISINGMODEL_VISUAL_WOLFF_STEP_H

@@ -10,6 +10,7 @@
 
 #include "Ising_Params.h"
 #include "metropolis_hastings_step.h"
+#include "wolff_step.h"
 #include "file_management.h"
 #include "lattice2pbm.h"
 #include "pbm2png.h"
