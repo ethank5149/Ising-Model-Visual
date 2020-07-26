@@ -1,0 +1,46 @@
+\hypertarget{metropolis__hastings__neighbors_8cpp}{}\doxysection{src/metropolis\+\_\+hastings\+\_\+neighbors.cpp File Reference}
+\label{metropolis__hastings__neighbors_8cpp}\index{src/metropolis\_hastings\_neighbors.cpp@{src/metropolis\_hastings\_neighbors.cpp}}
+{\ttfamily \#include \char`\"{}../include/metropolis\+\_\+hastings\+\_\+neighbors.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{metropolis__hastings__neighbors_8cpp_a026a2295807554c059d447e521abe314}{metropolis\+\_\+hastings\+\_\+neighbors}} (int $\ast$$\ast$lattice, int nrows, int ncols, int i, int j)
+\begin{DoxyCompactList}\small\item\em Calculates the sum of the spins of the neighbors of a specified point. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Ethan Knox 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/22/2020. 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{metropolis__hastings__neighbors_8cpp_a026a2295807554c059d447e521abe314}\label{metropolis__hastings__neighbors_8cpp_a026a2295807554c059d447e521abe314}} 
+\index{metropolis\_hastings\_neighbors.cpp@{metropolis\_hastings\_neighbors.cpp}!metropolis\_hastings\_neighbors@{metropolis\_hastings\_neighbors}}
+\index{metropolis\_hastings\_neighbors@{metropolis\_hastings\_neighbors}!metropolis\_hastings\_neighbors.cpp@{metropolis\_hastings\_neighbors.cpp}}
+\doxysubsubsection{\texorpdfstring{metropolis\_hastings\_neighbors()}{metropolis\_hastings\_neighbors()}}
+{\footnotesize\ttfamily int metropolis\+\_\+hastings\+\_\+neighbors (\begin{DoxyParamCaption}\item[{int $\ast$$\ast$}]{lattice,  }\item[{int}]{nrows,  }\item[{int}]{ncols,  }\item[{int}]{i,  }\item[{int}]{j }\end{DoxyParamCaption})}
+
+
+
+Calculates the sum of the spins of the neighbors of a specified point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lattice} & The 2D grid of spin values \\
+\hline
+{\em nrows} & Number of rows \\
+\hline
+{\em ncols} & Number of columns \\
+\hline
+{\em i} & The row in question \\
+\hline
+{\em j} & The column in question\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The resulting sum of spins 
+\end{DoxyReturn}

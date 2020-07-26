@@ -1,0 +1,42 @@
+\hypertarget{metropolis__hastings__step_8cpp}{}\doxysection{src/metropolis\+\_\+hastings\+\_\+step.cpp File Reference}
+\label{metropolis__hastings__step_8cpp}\index{src/metropolis\_hastings\_step.cpp@{src/metropolis\_hastings\_step.cpp}}
+{\ttfamily \#include \char`\"{}../include/metropolis\+\_\+hastings\+\_\+step.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{metropolis__hastings__step_8cpp_a39b73a77df6e713e2dc3dd1cc88d52a8}{metropolis\+\_\+hastings\+\_\+step}} (int $\ast$$\ast$lattice, \mbox{\hyperlink{class_ising___params}{Ising\+\_\+\+Params}} \&p)
+\begin{DoxyCompactList}\small\item\em Performs one step of the Metropolis-\/\+Hastings Algorithm. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Ethan Knox 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/22/2020. 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{metropolis__hastings__step_8cpp_a39b73a77df6e713e2dc3dd1cc88d52a8}\label{metropolis__hastings__step_8cpp_a39b73a77df6e713e2dc3dd1cc88d52a8}} 
+\index{metropolis\_hastings\_step.cpp@{metropolis\_hastings\_step.cpp}!metropolis\_hastings\_step@{metropolis\_hastings\_step}}
+\index{metropolis\_hastings\_step@{metropolis\_hastings\_step}!metropolis\_hastings\_step.cpp@{metropolis\_hastings\_step.cpp}}
+\doxysubsubsection{\texorpdfstring{metropolis\_hastings\_step()}{metropolis\_hastings\_step()}}
+{\footnotesize\ttfamily void metropolis\+\_\+hastings\+\_\+step (\begin{DoxyParamCaption}\item[{int $\ast$$\ast$}]{lattice,  }\item[{\mbox{\hyperlink{class_ising___params}{Ising\+\_\+\+Params}} \&}]{p }\end{DoxyParamCaption})}
+
+
+
+Performs one step of the Metropolis-\/\+Hastings Algorithm. 
+
+Selects a point at random and calculates the energy difference. If this difference is less than zero, the spin is automatically flipped, otherwise it\textquotesingle{}s flipped with probability $ P = e^{-\frac{dE}{k_BT}} $
+
+
+\begin{DoxyParams}{Parameters}
+{\em lattice} & The 2D grid of spin values \\
+\hline
+{\em p} & Instance of an \mbox{\hyperlink{class_ising___params}{Ising\+\_\+\+Params}} class\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}

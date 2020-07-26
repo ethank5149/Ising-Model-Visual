@@ -1,0 +1,42 @@
+\hypertarget{run__simulation_8cpp}{}\doxysection{src/run\+\_\+simulation.cpp File Reference}
+\label{run__simulation_8cpp}\index{src/run\_simulation.cpp@{src/run\_simulation.cpp}}
+{\ttfamily \#include \char`\"{}../include/run\+\_\+simulation.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{run__simulation_8cpp_ab1a78e7d459096ff6ba44bdf98870454}{run\+\_\+simulation}} (int $\ast$$\ast$lattice, \mbox{\hyperlink{class_ising___params}{Ising\+\_\+\+Params}} \&p)
+\begin{DoxyCompactList}\small\item\em Run through iterations, generate files, and compile video. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Ethan Knox 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/22/2020. 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{run__simulation_8cpp_ab1a78e7d459096ff6ba44bdf98870454}\label{run__simulation_8cpp_ab1a78e7d459096ff6ba44bdf98870454}} 
+\index{run\_simulation.cpp@{run\_simulation.cpp}!run\_simulation@{run\_simulation}}
+\index{run\_simulation@{run\_simulation}!run\_simulation.cpp@{run\_simulation.cpp}}
+\doxysubsubsection{\texorpdfstring{run\_simulation()}{run\_simulation()}}
+{\footnotesize\ttfamily void run\+\_\+simulation (\begin{DoxyParamCaption}\item[{int $\ast$$\ast$}]{lattice,  }\item[{\mbox{\hyperlink{class_ising___params}{Ising\+\_\+\+Params}} \&}]{p }\end{DoxyParamCaption})}
+
+
+
+Run through iterations, generate files, and compile video. 
+
+Loops through the total number of algorithm iterations (nframes $\ast$ algsteps) and performs the necessary file handling by calling the subsequent functions
+
+
+\begin{DoxyParams}{Parameters}
+{\em lattice} & The 2D grid of spin values \\
+\hline
+{\em p} & An instance of \mbox{\hyperlink{class_ising___params}{Ising\+\_\+\+Params}}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
