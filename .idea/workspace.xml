@@ -36,114 +36,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="72b9ae13-8593-44b2-9ee4-c1270d9df5d7" name="Default Changelist" comment="First draft of the Wolff algorithm">
-      <change afterPath="$PROJECT_DIR$/.vs/CMake Overview" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.vs/IsingModel-Visual/v16/.suo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.vs/IsingModel-Visual/v16/Browse.VC.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.vs/IsingModel-Visual/v16/ipch/AutoPCH/2c0911ee56d360e1/ISINGMODEL-VISUAL.ipch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.vs/ProjectSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.vs/VSWorkspaceState.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.vs/slnx.sqlite" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lattice.h" afterDir="false" />
+    <list default="true" id="72b9ae13-8593-44b2-9ee4-c1270d9df5d7" name="Default Changelist" comment="Tidying up file io (std::filesystem)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeSettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeCache.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/3.16.3/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/3.16.3/CMakeCXXCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/3.16.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/3.16.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/3.16.3/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/3.16.3/CompilerIdC/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/3.16.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/3.16.3/CompilerIdCXX/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/CMakeOutput.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/CXX.includecache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/depend.internal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/link.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/src/IsingModel-Visual.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/src/file_management.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/Makefile.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/Makefile2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/clion-environment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/clion-log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/cmake.check_cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/progress.marks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/IsingModel-Visual" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/IsingModel-Visual.cbp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeCache.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/3.16.3/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/3.16.3/CMakeCXXCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/3.16.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/3.16.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/3.16.3/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/3.16.3/CompilerIdC/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/3.16.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/3.16.3/CompilerIdCXX/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/CMakeOutput.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/IsingModel-Visual.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/IsingModel-Visual.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/IsingModel-Visual.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/IsingModel-Visual.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/IsingModel-Visual.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/IsingModel-Visual.dir/link.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/IsingModel-Visual.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/Makefile.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/Makefile2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/clion-environment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/clion-log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/cmake.check_cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/progress.marks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release-wsl/IsingModel-Visual" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release-wsl/IsingModel-Visual.cbp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release-wsl/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release-wsl/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/example2/example2a.config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/example2/example2a.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/example2/example2b.config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/example2/example2b.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/example2/example2c.config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/example2/example2c.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/example2/example2d.config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/example2/example2d.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/Ising_Params.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/Ising_Params.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/file_management.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/lattice2pbm.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/lattice2pbm.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/metropolis_hastings_neighbors.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/metropolis_hastings_step.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/metropolis_hastings_step.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/neighbors.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/neighbors.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/pbm2png.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/pbm2png.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/pngs2video.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/pngs2video.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/randomize_lattice.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/randomize_lattice.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/run_simulation.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/run_simulation.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/wolff_step.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/wolff_step.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IsingModel-Visual.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/IsingModel-Visual.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ising_Params.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ising_Params.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/file_management.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lattice2pbm.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lattice2pbm.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/metropolis_hastings_neighbors.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/metropolis_hastings_step.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/metropolis_hastings_step.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/neighbors.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/neighbors.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pbm2png.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/pbm2png.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pngs2video.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/pngs2video.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/randomize_lattice.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/randomize_lattice.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/run_simulation.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/run_simulation.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/wolff_step.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/wolff_step.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -280,7 +175,7 @@
       <workItem from="1595724551842" duration="15831000" />
       <workItem from="1595742890985" duration="97000" />
       <workItem from="1595767942497" duration="7366000" />
-      <workItem from="1595776766222" duration="13036000" />
+      <workItem from="1595776766222" duration="13605000" />
     </task>
     <task id="LOCAL-00001" summary="separated functions into individual sources/headers">
       <created>1595423147231</created>
@@ -317,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595742541708</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Tidying up file io (std::filesystem)">
+      <created>1595789874369</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1595789874369</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -354,7 +256,8 @@
     <MESSAGE value="created a lattice class" />
     <MESSAGE value="First working example of the Wolff algorithm" />
     <MESSAGE value="First draft of the Wolff algorithm" />
-    <option name="LAST_COMMIT_MESSAGE" value="First draft of the Wolff algorithm" />
+    <MESSAGE value="Tidying up file io (std::filesystem)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tidying up file io (std::filesystem)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="76" y="166" key="#SSH_Configurations" timestamp="1595386652475">
@@ -385,22 +288,22 @@
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
     <state x="591" y="275" key="FileChooserDialogImpl/0.0.1620.1040@0.0.1620.1040" timestamp="1595220999817" />
-    <state width="1578" height="189" key="GridCell.Tab.0.bottom" timestamp="1595789735194">
+    <state width="1578" height="189" key="GridCell.Tab.0.bottom" timestamp="1595789822001">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
-    <state width="1578" height="189" key="GridCell.Tab.0.bottom/0.0.1620.1040@0.0.1620.1040" timestamp="1595789735194" />
-    <state width="1578" height="189" key="GridCell.Tab.0.center" timestamp="1595789735194">
+    <state width="1578" height="189" key="GridCell.Tab.0.bottom/0.0.1620.1040@0.0.1620.1040" timestamp="1595789822001" />
+    <state width="1578" height="189" key="GridCell.Tab.0.center" timestamp="1595789822001">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
-    <state width="1578" height="189" key="GridCell.Tab.0.center/0.0.1620.1040@0.0.1620.1040" timestamp="1595789735194" />
-    <state width="1578" height="189" key="GridCell.Tab.0.left" timestamp="1595789735193">
+    <state width="1578" height="189" key="GridCell.Tab.0.center/0.0.1620.1040@0.0.1620.1040" timestamp="1595789822001" />
+    <state width="1578" height="189" key="GridCell.Tab.0.left" timestamp="1595789822001">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
-    <state width="1578" height="189" key="GridCell.Tab.0.left/0.0.1620.1040@0.0.1620.1040" timestamp="1595789735193" />
-    <state width="1578" height="189" key="GridCell.Tab.0.right" timestamp="1595789735194">
+    <state width="1578" height="189" key="GridCell.Tab.0.left/0.0.1620.1040@0.0.1620.1040" timestamp="1595789822001" />
+    <state width="1578" height="189" key="GridCell.Tab.0.right" timestamp="1595789822001">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
-    <state width="1578" height="189" key="GridCell.Tab.0.right/0.0.1620.1040@0.0.1620.1040" timestamp="1595789735194" />
+    <state width="1578" height="189" key="GridCell.Tab.0.right/0.0.1620.1040@0.0.1620.1040" timestamp="1595789822001" />
     <state width="1578" height="397" key="GridCell.Tab.1.bottom" timestamp="1595784885145">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
@@ -421,10 +324,10 @@
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
     <state x="0" y="165" key="SettingsEditor/0.0.1620.1040@0.0.1620.1040" timestamp="1595789312281" />
-    <state x="403" y="253" key="Vcs.Push.Dialog.v2" timestamp="1595742555211">
+    <state x="403" y="253" key="Vcs.Push.Dialog.v2" timestamp="1595789886250">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
-    <state x="403" y="253" key="Vcs.Push.Dialog.v2/0.0.1620.1040@0.0.1620.1040" timestamp="1595742555211" />
+    <state x="403" y="253" key="Vcs.Push.Dialog.v2/0.0.1620.1040@0.0.1620.1040" timestamp="1595789886250" />
     <state x="618" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1595590317557">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
