@@ -13,20 +13,20 @@
 /// \param p  An instance of Ising_Params
 ///
 /// \return void
-void run_simulation(int** lattice, Ising_Params &p)
+void run_simulation(int* lattice, Ising_Params &p)
 {
     long framenumber;
 
     mkdir("output", S_IRWXU);
     chdir("output");
 
-    //const char* method = "metropolis";
-//    void (*step)(int** lattice, Ising_Params &p) = &metropolis_hastings_step;
-    void (*step)(int** lattice, Ising_Params &p) = &wolff_step;
-
-    //if (method == "metropolis") {
-    //    *step = &metropolis_hastings_step;
-    //}
+    void (*step)(int *, Ising_Params &);
+    if (p.method == 'M') {
+        step = &metropolis_hastings_step;
+    }
+    else if(p.method == 'W'){
+        step = &wolff_step;
+    }
 
     clean();
     // Loop through the desired number of frames

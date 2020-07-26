@@ -11,6 +11,6 @@
 #include "metropolis_hastings_neighbors.h"
 #include "Ising_Params.h"
 
-void metropolis_hastings_step(int** lattice, Ising_Params &p);
+void metropolis_hastings_step(int* lattice, Ising_Params &p);
 
 #endif //ISINGMODEL_VISUAL_METROPOLIS_HASTINGS_STEP_H

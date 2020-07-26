@@ -1,5 +1,6 @@
 ﻿#include <cstdio>
 #include <cstdlib>
+#include <string>
 
 #include "../include/Ising_Params.h"
 #include "../include/randomize_lattice.h"
@@ -29,6 +30,7 @@ int main(int argc, const char* argv[])
         fscanf(file, "%*s %*s %lf", &p.J);
         fscanf(file, "%*s %*s %lf", &p.h);
         fscanf(file, "%*s %*s %lf", &p.T);
+        fscanf(file, "%*s %*s %s", &p.method);
 
         fclose(file);
         printf("Done!\n\n");
@@ -46,6 +48,7 @@ int main(int argc, const char* argv[])
         p.J = strtod(argv[6], endptr);
         p.h = strtod(argv[7], endptr);
         p.T = strtod(argv[8], endptr);
+        p.method = argv[9][0];
     }
     else
     {
@@ -74,20 +77,20 @@ int main(int argc, const char* argv[])
 
         printf("Temperature ---------------------> ");
         scanf("%lf", &p.T);
+
+        printf("Method --------------------------> ");
+        scanf("%s", &p.method);
     }
 
     printf("Parameters:\n");
     printf("nrows, ncols = %d, %d\n", p.nrows, p.ncols);
     printf("startiter, stopiter, framestep = %d, %ld, %ld\n", p.startiter, p.stopiter, p.framestep);
     printf("J, h, T = %f, %f, %f\n\n", p.J, p.h, p.T);
+    printf("Method = %c\n\n", p.method);
 
     printf("Running...\n");
 
-    int** lattice = (int**)malloc(p.nrows * sizeof(int*));
-    for (int i = 0; i < p.nrows; i++)
-    {
-        lattice[i] = (int*)malloc(p.ncols * sizeof(int));
-    }
+    int* lattice = (int*)malloc(p.nrows*p.ncols * sizeof(int));
 
     randomize_lattice(lattice, p.nrows, p.ncols);
     run_simulation(lattice, p); // Go baby go

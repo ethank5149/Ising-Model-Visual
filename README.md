@@ -4,15 +4,19 @@ Ising model using the Metropolis-Hastings Algorithm.
 
 
 ## Examples
-|                          |                          |
-| ------------------------ | ------------------------ |
-| ![Example 1a][example1a] | ![Example 1b][example1b] |
-| ![Example 1c][example1c] | ![Example 1d][example1d] |
 
-[example1a]: examples/example1/example1a.gif "Example 1a"
-[example1b]: examples/example1/example1b.gif "Example 1b"
+<img src="examples/wolff_examples/wolff_example1.gif"  width="500" height="500"/>
+
+
+|                                                                                            |                                                                                   |
+| ------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------- |
+| ![Metropolis Example 1][metropolis_1]                                                      | <img src="examples/wolff_examples/wolff_example1.gif"  width="200" height="200"/> |
+| <img src="examples/metropolis_examples/metropolis_example1.gif" width="500" height="500"/> | ![Wolff Example 2][wolff_2]                                                       |
+
+[metropolis_1]: examples/metropolis_examples/metropolis_example1.gif "Metropolis Example 1"
+[wolff_1]: <img src="examples/wolff_examples/wolff_example1.gif" width="250" height="250"/> "Wolff Example 1"
 [example1c]: examples/example1/example1c.gif "Example 1c"
-[example1d]: examples/example1/example1d.gif "Example 1d"
+[wolff_2]: examples/wolff_examples/wolff_example2.gif "Wolff Example 2"
 
 |                          |                          |
 | ------------------------ | ------------------------ |

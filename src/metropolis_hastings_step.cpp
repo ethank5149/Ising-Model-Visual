@@ -14,19 +14,23 @@
 /// \param p  Instance of an Ising_Params class
 ///
 /// \return void
-void metropolis_hastings_step(int** lattice, Ising_Params &p)
+void metropolis_hastings_step(int* lattice, Ising_Params &p)
 {
     // Select a random point in the lattice
-    int i = randint(0, p.nrows);
-    int j = randint(0, p.ncols);
+    int idx = randint(0, p.nrows*p.ncols);
 
     // Calculates the change in energy if this spin is flipped
-    double dE = 2 * (p.J * metropolis_hastings_neighbors(lattice, p.nrows, p.ncols, i, j) - p.h) * lattice[i][j];
+    int neighbor_sum = 0;
+    for(int spin : neighbors(p, idx)){
+        neighbor_sum += lattice[spin];
+    }
+
+    double dE = 2 * (p.J * neighbor_sum - p.h) * lattice[idx];
 
     // If the system is in a lower energy state afterwards, immediately accept
     // Otherwise, accept with a probability $P = e^{-\frac{dE}{k_B T}}$
     if ((dE < 0.0) || (uniform(0.0, 1.0) < exp(-dE / (p.k_B * p.T))))
     {
-        lattice[i][j] *= -1;
+        lattice[idx] *= -1;
     }
 }

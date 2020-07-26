@@ -12,7 +12,7 @@
 /// \param frame
 ///
 /// \return void
-void lattice2pbm(int** lattice, int nrows, int ncols, const long frame)
+void lattice2pbm(const int* lattice, int nrows, int ncols, const long frame)
 {
     // Appropriately format the numbered filename
     char savefile[0x100];
@@ -23,13 +23,9 @@ void lattice2pbm(int** lattice, int nrows, int ncols, const long frame)
 
     fprintf(file, "P1\n");
     fprintf(file, "%d %d\n", nrows, ncols);
-    for (int i = 0; i < nrows; i++)
+    for (int i = 0; i < nrows * ncols; i++)
     {
-        for (int j = 0; j < ncols; j++)
-        {
-            fprintf(file, "%d ", (lattice[i][j] == 1 ? 1 : 0));
-        }
-        fprintf(file, "\n");
+            fprintf(file, "%d ", (lattice[i] == 1 ? 1 : 0));
     }
 
     fclose(file);

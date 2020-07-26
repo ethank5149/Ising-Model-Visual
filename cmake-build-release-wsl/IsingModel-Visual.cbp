@@ -85,9 +85,6 @@
 		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/Ising_Params.h">
 			<Option target="IsingModel-Visual"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/Lattice.h">
-			<Option target="IsingModel-Visual"/>
-		</Unit>
 		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/file_management.h">
 			<Option target="IsingModel-Visual"/>
 		</Unit>
@@ -98,6 +95,9 @@
 			<Option target="IsingModel-Visual"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/metropolis_hastings_step.h">
+			<Option target="IsingModel-Visual"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/neighbors.h">
 			<Option target="IsingModel-Visual"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/pbm2png.h">
@@ -124,9 +124,6 @@
 		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/Ising_Params.cpp">
 			<Option target="IsingModel-Visual"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/Lattice.cpp">
-			<Option target="IsingModel-Visual"/>
-		</Unit>
 		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/file_management.cpp">
 			<Option target="IsingModel-Visual"/>
 		</Unit>
@@ -137,6 +134,9 @@
 			<Option target="IsingModel-Visual"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/metropolis_hastings_step.cpp">
+			<Option target="IsingModel-Visual"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/neighbors.cpp">
 			<Option target="IsingModel-Visual"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/pbm2png.cpp">

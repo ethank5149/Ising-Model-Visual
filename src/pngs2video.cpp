@@ -12,9 +12,9 @@
 /// \return void
 void pngs2video()
 {
-    system("ffmpeg -nostats -loglevel 0 -i frame%d.png output.mp4 && rm *.png");
-    if (exists("output.mp4"))
+    system("ffmpeg -nostats -loglevel 0 -i frame%d.png output.avi && rm *.png");
+    if (exists("output.avi"))
     {
-        system("ffmpeg -nostats -loglevel 0 -i output.mp4 output.gif");
+        system("ffmpeg -nostats -loglevel 0 -i output.avi output.gif");
     }
 }

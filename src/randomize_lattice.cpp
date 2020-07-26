@@ -11,20 +11,17 @@
 /// \param ncols  Number of columns
 ///
 /// \return void
-void randomize_lattice(int** lattice, int nrows, int ncols)
+void randomize_lattice(int* lattice, int nrows, int ncols)
 {
-    for (int i = 0; i < nrows; i++)
+    for (int i = 0; i < nrows * ncols; i++)
     {
-        for (int j = 0; j < ncols; j++)
+        if (uniform(0.0, 1.0) > 0.5)
         {
-            if (uniform(0.0, 1.0) > 0.5)
-            {
-                lattice[i][j] = 1;
-            }
-            else
-            {
-                lattice[i][j] = -1;
-            }
+            lattice[i] = 1;
+        }
+        else
+        {
+            lattice[i] = -1;
         }
     }
 }

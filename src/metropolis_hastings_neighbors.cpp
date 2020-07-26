@@ -13,10 +13,10 @@
 /// \param j  The column in question
 ///
 /// \return The resulting sum of spins
-int metropolis_hastings_neighbors(int** lattice, int nrows, int ncols, int i, int j)
+int metropolis_hastings_neighbors(int* lattice, Ising_Params &p, long idx)
 {
-    return lattice[(i + 1) % nrows][j] +
-           lattice[i][(j + 1) % ncols] +
-           lattice[((i - 1) + nrows) % nrows][j] +
-           lattice[i][((j - 1) + ncols) % ncols];
+    return lattice[neighbors(p, idx)[0]] +
+           lattice[neighbors(p, idx)[1]] +
+           lattice[neighbors(p, idx)[2]] +
+           lattice[neighbors(p, idx)[3]];
 }

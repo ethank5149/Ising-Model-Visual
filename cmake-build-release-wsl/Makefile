@@ -177,33 +177,6 @@ src/Ising_Params.cpp.s:
 	$(MAKE) -f CMakeFiles/IsingModel-Visual.dir/build.make CMakeFiles/IsingModel-Visual.dir/src/Ising_Params.cpp.s
 .PHONY : src/Ising_Params.cpp.s
 
-src/Lattice.o: src/Lattice.cpp.o
-
-.PHONY : src/Lattice.o
-
-# target to build an object file
-src/Lattice.cpp.o:
-	$(MAKE) -f CMakeFiles/IsingModel-Visual.dir/build.make CMakeFiles/IsingModel-Visual.dir/src/Lattice.cpp.o
-.PHONY : src/Lattice.cpp.o
-
-src/Lattice.i: src/Lattice.cpp.i
-
-.PHONY : src/Lattice.i
-
-# target to preprocess a source file
-src/Lattice.cpp.i:
-	$(MAKE) -f CMakeFiles/IsingModel-Visual.dir/build.make CMakeFiles/IsingModel-Visual.dir/src/Lattice.cpp.i
-.PHONY : src/Lattice.cpp.i
-
-src/Lattice.s: src/Lattice.cpp.s
-
-.PHONY : src/Lattice.s
-
-# target to generate assembly for a file
-src/Lattice.cpp.s:
-	$(MAKE) -f CMakeFiles/IsingModel-Visual.dir/build.make CMakeFiles/IsingModel-Visual.dir/src/Lattice.cpp.s
-.PHONY : src/Lattice.cpp.s
-
 src/file_management.o: src/file_management.cpp.o
 
 .PHONY : src/file_management.o
@@ -311,6 +284,33 @@ src/metropolis_hastings_step.s: src/metropolis_hastings_step.cpp.s
 src/metropolis_hastings_step.cpp.s:
 	$(MAKE) -f CMakeFiles/IsingModel-Visual.dir/build.make CMakeFiles/IsingModel-Visual.dir/src/metropolis_hastings_step.cpp.s
 .PHONY : src/metropolis_hastings_step.cpp.s
+
+src/neighbors.o: src/neighbors.cpp.o
+
+.PHONY : src/neighbors.o
+
+# target to build an object file
+src/neighbors.cpp.o:
+	$(MAKE) -f CMakeFiles/IsingModel-Visual.dir/build.make CMakeFiles/IsingModel-Visual.dir/src/neighbors.cpp.o
+.PHONY : src/neighbors.cpp.o
+
+src/neighbors.i: src/neighbors.cpp.i
+
+.PHONY : src/neighbors.i
+
+# target to preprocess a source file
+src/neighbors.cpp.i:
+	$(MAKE) -f CMakeFiles/IsingModel-Visual.dir/build.make CMakeFiles/IsingModel-Visual.dir/src/neighbors.cpp.i
+.PHONY : src/neighbors.cpp.i
+
+src/neighbors.s: src/neighbors.cpp.s
+
+.PHONY : src/neighbors.s
+
+# target to generate assembly for a file
+src/neighbors.cpp.s:
+	$(MAKE) -f CMakeFiles/IsingModel-Visual.dir/build.make CMakeFiles/IsingModel-Visual.dir/src/neighbors.cpp.s
+.PHONY : src/neighbors.cpp.s
 
 src/pbm2png.o: src/pbm2png.cpp.o
 
@@ -462,9 +462,6 @@ help:
 	@echo "... src/Ising_Params.o"
 	@echo "... src/Ising_Params.i"
 	@echo "... src/Ising_Params.s"
-	@echo "... src/Lattice.o"
-	@echo "... src/Lattice.i"
-	@echo "... src/Lattice.s"
 	@echo "... src/file_management.o"
 	@echo "... src/file_management.i"
 	@echo "... src/file_management.s"
@@ -477,6 +474,9 @@ help:
 	@echo "... src/metropolis_hastings_step.o"
 	@echo "... src/metropolis_hastings_step.i"
 	@echo "... src/metropolis_hastings_step.s"
+	@echo "... src/neighbors.o"
+	@echo "... src/neighbors.i"
+	@echo "... src/neighbors.s"
 	@echo "... src/pbm2png.o"
 	@echo "... src/pbm2png.i"
 	@echo "... src/pbm2png.s"

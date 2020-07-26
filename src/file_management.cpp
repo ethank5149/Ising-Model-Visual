@@ -35,9 +35,9 @@ void clean()
         system("rm *.png");
     }
 
-    if (exists("output.mp4"))
+    if (exists("output.avi"))
     {
-        system("rm output.mp4");
+        system("rm output.avi");
     }
 
     if (exists("output.gif"))

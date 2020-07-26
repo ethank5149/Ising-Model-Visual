@@ -19,8 +19,8 @@
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
@@ -36,32 +36,64 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="72b9ae13-8593-44b2-9ee4-c1270d9df5d7" name="Default Changelist" comment="created a lattice class">
-      <change afterPath="$PROJECT_DIR$/include/wolff_step.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/wolff_step.cpp" afterDir="false" />
+    <list default="true" id="72b9ae13-8593-44b2-9ee4-c1270d9df5d7" name="Default Changelist" comment="First working example of the Wolff algorithm">
+      <change afterPath="$PROJECT_DIR$/include/neighbors.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/neighbors.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_algorithm.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/build.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/src/IsingModel-Visual.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/src/IsingModel-Visual.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/src/file_management.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/src/file_management.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/IsingModel-Visual" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-wsl/IsingModel-Visual" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/IsingModel-Visual.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-wsl/IsingModel-Visual.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-wsl/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/output/output.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/output/output.mp4" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/IsingModel-Visual.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/IsingModel-Visual.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/IsingModel-Visual.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/IsingModel-Visual.dir/build.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/IsingModel-Visual.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/IsingModel-Visual.dir/cmake_clean.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/IsingModel-Visual.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/IsingModel-Visual.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/IsingModel-Visual.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/IsingModel-Visual.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-wsl/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release-wsl/IsingModel-Visual.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-wsl/IsingModel-Visual.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release-wsl/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-wsl/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/Lattice.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/Lattice.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/random_generators.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/random_generators.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lattice.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lattice.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/example1/example1a.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/example1/example1a.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/example1/example1b.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/example1/example1b.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/example1/example1c.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/example1/example1c.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/example1/example1d.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/example1/example1d.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/example3/example3.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/Ising_Params.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/Ising_Params.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/Lattice.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/lattice2pbm.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/lattice2pbm.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/metropolis_hastings_neighbors.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/metropolis_hastings_neighbors.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/metropolis_hastings_step.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/metropolis_hastings_step.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/randomize_lattice.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/randomize_lattice.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/run_simulation.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/run_simulation.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/wolff_neighbors.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/wolff_step.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/wolff_step.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map2torus.lyx" beforeDir="false" afterPath="$PROJECT_DIR$/map2torus.lyx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IsingModel-Visual.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/IsingModel-Visual.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ising_Params.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ising_Params.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lattice.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/file_management.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/file_management.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lattice2pbm.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lattice2pbm.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/metropolis_hastings_neighbors.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/metropolis_hastings_neighbors.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/metropolis_hastings_step.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/metropolis_hastings_step.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pngs2video.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/pngs2video.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/randomize_lattice.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/randomize_lattice.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/run_simulation.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/run_simulation.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wolff_neighbors.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wolff_step.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/wolff_step.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +112,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="7d3f6e9a10427e2d6932ac427ba73e79eb2f9a91" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GithubPullRequestsUISettings">
@@ -111,19 +148,19 @@
     <property name="settings.editor.selected.configurable" value="CMakeSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\ethan\CLionProjects\IsingModel-Visual\images" />
-      <recent name="C:\Users\ethan\CLionProjects\ising" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ethan\CLionProjects\IsingModel-Visual\include" />
       <recent name="C:\Users\ethan\CLionProjects\IsingModel-Visual\src" />
       <recent name="C:\Users\ethan\CLionProjects\ising\include" />
       <recent name="C:\Users\ethan\CLionProjects\ising\src" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ethan\CLionProjects\IsingModel-Visual\images" />
+      <recent name="C:\Users\ethan\CLionProjects\ising" />
+    </key>
   </component>
   <component name="RunManager" selected="CMake Application.IsingModel-Visual">
-    <configuration name="IsingModel-Visual" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="IsingModel-Visual" TARGET_NAME="IsingModel-Visual" CONFIG_NAME="Release-WSL" RUN_TARGET_PROJECT_NAME="IsingModel-Visual" RUN_TARGET_NAME="IsingModel-Visual">
+    <configuration name="IsingModel-Visual" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="../examples/metropolis_examples/metropolis_example1.config" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="IsingModel-Visual" TARGET_NAME="IsingModel-Visual" CONFIG_NAME="Debug-WSL" RUN_TARGET_PROJECT_NAME="IsingModel-Visual" RUN_TARGET_NAME="IsingModel-Visual">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -189,6 +226,8 @@
       <workItem from="1595554776519" duration="38000" />
       <workItem from="1595554904853" duration="37000" />
       <workItem from="1595587151353" duration="6624000" />
+      <workItem from="1595674629749" duration="1459000" />
+      <workItem from="1595724551842" duration="15775000" />
     </task>
     <task id="LOCAL-00001" summary="separated functions into individual sources/headers">
       <created>1595423147231</created>
@@ -211,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595590293970</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="First working example of the Wolff algorithm">
+      <created>1595642849829</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1595642849829</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,7 +268,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -234,17 +292,18 @@
     <MESSAGE value="separated functions into individual sources/headers" />
     <MESSAGE value="just a little more tidying" />
     <MESSAGE value="created a lattice class" />
-    <option name="LAST_COMMIT_MESSAGE" value="created a lattice class" />
+    <MESSAGE value="First working example of the Wolff algorithm" />
+    <option name="LAST_COMMIT_MESSAGE" value="First working example of the Wolff algorithm" />
   </component>
   <component name="WindowStateProjectService">
     <state x="76" y="166" key="#SSH_Configurations" timestamp="1595386652475">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
     <state x="76" y="166" key="#SSH_Configurations/0.0.1620.1040@0.0.1620.1040" timestamp="1595386652475" />
-    <state x="266" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595385287415">
+    <state x="266" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595738653630">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
-    <state x="266" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1620.1040@0.0.1620.1040" timestamp="1595385287415" />
+    <state x="266" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1620.1040@0.0.1620.1040" timestamp="1595738653630" />
     <state x="93" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1595554802315">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
@@ -257,34 +316,54 @@
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
     <state x="519" y="106" key="#convert_to_image/0.0.1620.1040@0.0.1620.1040" timestamp="1594667888306" />
+    <state x="680" y="273" key="#xdebugger.XInspectDialog" timestamp="1595653767704">
+      <screen x="0" y="0" width="1620" height="1040" />
+    </state>
+    <state x="680" y="273" key="#xdebugger.XInspectDialog/0.0.1620.1040@0.0.1620.1040" timestamp="1595653767704" />
     <state x="591" y="275" key="FileChooserDialogImpl" timestamp="1595220999817">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
     <state x="591" y="275" key="FileChooserDialogImpl/0.0.1620.1040@0.0.1620.1040" timestamp="1595220999817" />
-    <state width="1578" height="427" key="GridCell.Tab.0.bottom" timestamp="1595393484014">
+    <state width="1578" height="193" key="GridCell.Tab.0.bottom" timestamp="1595741528507">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
-    <state width="1578" height="427" key="GridCell.Tab.0.bottom/0.0.1620.1040@0.0.1620.1040" timestamp="1595393484014" />
-    <state width="1578" height="427" key="GridCell.Tab.0.center" timestamp="1595393484014">
+    <state width="1578" height="193" key="GridCell.Tab.0.bottom/0.0.1620.1040@0.0.1620.1040" timestamp="1595741528507" />
+    <state width="1578" height="193" key="GridCell.Tab.0.center" timestamp="1595741528506">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
-    <state width="1578" height="427" key="GridCell.Tab.0.center/0.0.1620.1040@0.0.1620.1040" timestamp="1595393484014" />
-    <state width="1578" height="427" key="GridCell.Tab.0.left" timestamp="1595393484013">
+    <state width="1578" height="193" key="GridCell.Tab.0.center/0.0.1620.1040@0.0.1620.1040" timestamp="1595741528506" />
+    <state width="1578" height="193" key="GridCell.Tab.0.left" timestamp="1595741528506">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
-    <state width="1578" height="427" key="GridCell.Tab.0.left/0.0.1620.1040@0.0.1620.1040" timestamp="1595393484013" />
-    <state width="1578" height="427" key="GridCell.Tab.0.right" timestamp="1595393484014">
+    <state width="1578" height="193" key="GridCell.Tab.0.left/0.0.1620.1040@0.0.1620.1040" timestamp="1595741528506" />
+    <state width="1578" height="193" key="GridCell.Tab.0.right" timestamp="1595741528507">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
-    <state width="1578" height="427" key="GridCell.Tab.0.right/0.0.1620.1040@0.0.1620.1040" timestamp="1595393484014" />
+    <state width="1578" height="193" key="GridCell.Tab.0.right/0.0.1620.1040@0.0.1620.1040" timestamp="1595741528507" />
+    <state width="1578" height="397" key="GridCell.Tab.1.bottom" timestamp="1595729100514">
+      <screen x="0" y="0" width="1620" height="1040" />
+    </state>
+    <state width="1578" height="397" key="GridCell.Tab.1.bottom/0.0.1620.1040@0.0.1620.1040" timestamp="1595729100514" />
+    <state width="1578" height="397" key="GridCell.Tab.1.center" timestamp="1595729100514">
+      <screen x="0" y="0" width="1620" height="1040" />
+    </state>
+    <state width="1578" height="397" key="GridCell.Tab.1.center/0.0.1620.1040@0.0.1620.1040" timestamp="1595729100514" />
+    <state width="1578" height="397" key="GridCell.Tab.1.left" timestamp="1595729100514">
+      <screen x="0" y="0" width="1620" height="1040" />
+    </state>
+    <state width="1578" height="397" key="GridCell.Tab.1.left/0.0.1620.1040@0.0.1620.1040" timestamp="1595729100514" />
+    <state width="1578" height="397" key="GridCell.Tab.1.right" timestamp="1595729100514">
+      <screen x="0" y="0" width="1620" height="1040" />
+    </state>
+    <state width="1578" height="397" key="GridCell.Tab.1.right/0.0.1620.1040@0.0.1620.1040" timestamp="1595729100514" />
     <state x="0" y="165" key="SettingsEditor" timestamp="1595388503538">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
     <state x="0" y="165" key="SettingsEditor/0.0.1620.1040@0.0.1620.1040" timestamp="1595388503538" />
-    <state x="403" y="253" key="Vcs.Push.Dialog.v2" timestamp="1595590328094">
+    <state x="403" y="253" key="Vcs.Push.Dialog.v2" timestamp="1595642879600">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
-    <state x="403" y="253" key="Vcs.Push.Dialog.v2/0.0.1620.1040@0.0.1620.1040" timestamp="1595590328094" />
+    <state x="403" y="253" key="Vcs.Push.Dialog.v2/0.0.1620.1040@0.0.1620.1040" timestamp="1595642879600" />
     <state x="618" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1595590317557">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
@@ -297,5 +376,12 @@
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
     <state x="474" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1620.1040@0.0.1620.1040" timestamp="1595424780339" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="CMakeRunConfiguration">
+        <watch expression="neighbors" language="ObjectiveC" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

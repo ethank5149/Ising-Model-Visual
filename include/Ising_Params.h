@@ -16,18 +16,31 @@
 ///\param J  Ferromagnetic Coupling Constant
 ///\param h  Magnetic field strength
 ///\param T  Temperature
-class Ising_Params {
+
+#include <vector>
+
+class Ising_Params
+{
 public:
     int nrows{};
     int ncols{};
     int startiter{};
+    std::vector<long> cluster{};
+    std::vector<long> perimeter{};
     long stopiter{};
     long framestep{};
     double J{};
     double h{};
     double T{};
     double k_B = 1.0;
-};
+    char method{};
 
+
+    Ising_Params();
+
+    long flatten(long, long) const;
+    long stacki(long) const;
+    long stackj(long) const;
+};
 
 #endif //ISINGMODEL_VISUAL_ISING_PARAMS_H

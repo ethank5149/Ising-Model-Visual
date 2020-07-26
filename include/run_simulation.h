@@ -16,6 +16,6 @@
 #include "pbm2png.h"
 #include "pngs2video.h"
 
-void run_simulation(int** lattice, Ising_Params &p);
+void run_simulation(int* lattice, Ising_Params &p);
 
 #endif //ISINGMODEL_VISUAL_RUN_SIMULATION_H

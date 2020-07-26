@@ -5,6 +5,9 @@
 #ifndef ISINGMODEL_VISUAL_METROPOLIS_HASTINGS_NEIGHBORS_H
 #define ISINGMODEL_VISUAL_METROPOLIS_HASTINGS_NEIGHBORS_H
 
-int metropolis_hastings_neighbors(int**, int, int, int, int);
+#include "Ising_Params.h"
+#include "neighbors.h"
+
+int metropolis_hastings_neighbors(int*, Ising_Params &, long);
 
 #endif //ISINGMODEL_VISUAL_METROPOLIS_HASTINGS_NEIGHBORS_H

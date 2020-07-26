@@ -15,4 +15,4 @@ add_executable (IsingModel-Visual "src/IsingModel-Visual.cpp"
         src/randomize_lattice.cpp include/randomize_lattice.h
         src/metropolis_hastings_step.cpp include/metropolis_hastings_step.h
         src/run_simulation.cpp include/run_simulation.h
-        include/random_generators.h src/Ising_Params.cpp include/Ising_Params.h src/Lattice.cpp include/Lattice.h src/wolff_step.cpp include/wolff_step.h)
+        include/random_generators.h src/Ising_Params.cpp include/Ising_Params.h src/wolff_step.cpp include/wolff_step.h src/neighbors.cpp include/neighbors.h)
