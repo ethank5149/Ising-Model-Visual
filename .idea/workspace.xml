@@ -36,15 +36,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="72b9ae13-8593-44b2-9ee4-c1270d9df5d7" name="Default Changelist" comment="Debug README.md">
-      <change beforePath="$PROJECT_DIR$/.vs/CMake Overview" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/IsingModel-Visual/v16/.suo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/IsingModel-Visual/v16/Browse.VC.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/IsingModel-Visual/v16/ipch/AutoPCH/2c0911ee56d360e1/ISINGMODEL-VISUAL.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/ProjectSettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/VSWorkspaceState.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/slnx.sqlite" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
+    <list default="true" id="72b9ae13-8593-44b2-9ee4-c1270d9df5d7" name="Default Changelist" comment="Adding docs and examples back">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +174,7 @@
       <workItem from="1595724551842" duration="15831000" />
       <workItem from="1595742890985" duration="97000" />
       <workItem from="1595767942497" duration="7366000" />
-      <workItem from="1595776766222" duration="13756000" />
+      <workItem from="1595776766222" duration="13983000" />
     </task>
     <task id="LOCAL-00001" summary="separated functions into individual sources/headers">
       <created>1595423147231</created>
@@ -232,7 +225,21 @@
       <option name="project" value="LOCAL" />
       <updated>1595790410876</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="deleting unnecessary files">
+      <created>1595790573619</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1595790573619</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Adding docs and examples back">
+      <created>1595790635338</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1595790635338</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,7 +278,9 @@
     <MESSAGE value="First draft of the Wolff algorithm" />
     <MESSAGE value="Tidying up file io (std::filesystem)" />
     <MESSAGE value="Debug README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Debug README.md" />
+    <MESSAGE value="deleting unnecessary files" />
+    <MESSAGE value="Adding docs and examples back" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding docs and examples back" />
   </component>
   <component name="WindowStateProjectService">
     <state x="76" y="166" key="#SSH_Configurations" timestamp="1595386652475">
@@ -338,10 +347,10 @@
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
     <state x="0" y="165" key="SettingsEditor/0.0.1620.1040@0.0.1620.1040" timestamp="1595789312281" />
-    <state x="403" y="253" key="Vcs.Push.Dialog.v2" timestamp="1595790420020">
+    <state x="403" y="253" key="Vcs.Push.Dialog.v2" timestamp="1595790650882">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
-    <state x="403" y="253" key="Vcs.Push.Dialog.v2/0.0.1620.1040@0.0.1620.1040" timestamp="1595790420020" />
+    <state x="403" y="253" key="Vcs.Push.Dialog.v2/0.0.1620.1040@0.0.1620.1040" timestamp="1595790650882" />
     <state x="618" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1595590317557">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
