@@ -24,10 +24,7 @@ Ising model using both the Metropolis-Hastings Algorithm and the Wolff Algorithm
         </figure>
     </td>
   </tr>
-    <tr>
-    <td><span></span></td>
-    <td><span></span></td>
-  </tr>
+
     <tr>
     <td>
         <figure>
