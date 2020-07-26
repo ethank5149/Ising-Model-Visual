@@ -6,7 +6,9 @@
 #define ISINGMODEL_VISUAL_NEIGHBORS_H
 
 #include <vector>
+
 #include "Ising_Params.h"
+
 
 std::vector<long> neighbors(Ising_Params &, long);
 

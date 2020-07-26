@@ -1,6 +1,5 @@
 ﻿#include <cstdio>
 #include <cstdlib>
-#include <string>
 
 #include "../include/Ising_Params.h"
 #include "../include/randomize_lattice.h"
@@ -12,7 +11,7 @@ int main(int argc, const char* argv[])
     Ising_Params p{};
 
     printf("\n2D ISING MODEL - VISUAL SIMULATION\n");
-    printf(  "----------------------------------\n\n");
+    printf(  "----------------------------------\n");
 
     // Check the number of parameters to enable shortcut usage
     if (argc == 2)
@@ -85,7 +84,7 @@ int main(int argc, const char* argv[])
     printf("Parameters:\n");
     printf("nrows, ncols = %d, %d\n", p.nrows, p.ncols);
     printf("startiter, stopiter, framestep = %d, %ld, %ld\n", p.startiter, p.stopiter, p.framestep);
-    printf("J, h, T = %f, %f, %f\n\n", p.J, p.h, p.T);
+    printf("J, h, T = %f, %f, %f\n", p.J, p.h, p.T);
     printf("Method = %c\n\n", p.method);
 
     printf("Running...\n");

@@ -4,6 +4,7 @@
 
 #include "../include/metropolis_hastings_step.h"
 
+
 /// \brief Performs one step of the Metropolis-Hastings Algorithm
 ///
 /// Selects a point at random and calculates the energy difference.

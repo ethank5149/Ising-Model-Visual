@@ -4,6 +4,7 @@
 
 #include "../include/run_simulation.h"
 
+
 /// \brief Run through iterations, generate files, and compile video
 ///
 /// Loops through the total number of algorithm iterations (nframes * algsteps)
@@ -16,9 +17,17 @@
 void run_simulation(int* lattice, Ising_Params &p)
 {
     long framenumber;
+    mkdir(p.outputdir.c_str(), S_IRWXU);
+    std::filesystem::current_path(p.tempdir);
 
-    mkdir("output", S_IRWXU);
-    chdir("output");
+    // If a run was quit early and a temporary directory is reused, it might not be empty.
+    // If so, empty it manually to overcome pesky permission errors (At least in Unix).
+    if(!std::filesystem::is_empty(p.tempdir)){
+        system("rm *.png");
+        system("rm *.pbm");
+    }
+    std::filesystem::remove(p.outputdir/"output.mp4");
+    std::filesystem::remove(p.outputdir/"output.gif");
 
     void (*step)(int *, Ising_Params &);
     if (p.method == 'M') {
@@ -28,7 +37,6 @@ void run_simulation(int* lattice, Ising_Params &p)
         step = &wolff_step;
     }
 
-    clean();
     // Loop through the desired number of frames
     for (long iter = 0; iter < p.stopiter; iter++)
     {
@@ -37,12 +45,12 @@ void run_simulation(int* lattice, Ising_Params &p)
             framenumber = (iter - p.startiter) / p.framestep;
 
             // Save the frame as a png
-            lattice2pbm(lattice, p.nrows, p.ncols, framenumber);
+            lattice2pbm(lattice, p, framenumber);
             pbm2png(framenumber);
         }
 
         step(lattice, p);
     }
 
-    pngs2video();
+    pngs2video(p);
 }

@@ -4,15 +4,15 @@
 
 #include "../include/lattice2pbm.h"
 
+
 /// \brief Writes an Ising lattice to a ".pbm" file
 ///
 /// \param lattice
-/// \param nrows
-/// \param ncols
+/// \param p
 /// \param frame
 ///
 /// \return void
-void lattice2pbm(const int* lattice, int nrows, int ncols, const long frame)
+void lattice2pbm(const int* lattice, Ising_Params &p, const long frame)
 {
     // Appropriately format the numbered filename
     char savefile[0x100];
@@ -22,8 +22,8 @@ void lattice2pbm(const int* lattice, int nrows, int ncols, const long frame)
     file = fopen(savefile, "wb");
 
     fprintf(file, "P1\n");
-    fprintf(file, "%d %d\n", nrows, ncols);
-    for (int i = 0; i < nrows * ncols; i++)
+    fprintf(file, "%d %d\n", p.nrows, p.ncols);
+    for (int i = 0; i < p.nrows * p.ncols; i++)
     {
             fprintf(file, "%d ", (lattice[i] == 1 ? 1 : 0));
     }

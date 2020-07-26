@@ -4,6 +4,7 @@
 
 #include "../include/randomize_lattice.h"
 
+
 /// \brief Randomizes the spins of the Ising lattice
 ///
 /// \param lattice  The 2D grid of spin values

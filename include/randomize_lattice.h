@@ -7,6 +7,7 @@
 
 #include "random_generators.h"
 
+
 void randomize_lattice(int*, int, int);
 
 #endif //ISINGMODEL_VISUAL_RANDOMIZE_LATTICE_H

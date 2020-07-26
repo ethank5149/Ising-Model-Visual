@@ -5,16 +5,20 @@
 #ifndef ISINGMODEL_VISUAL_RUN_SIMULATION_H
 #define ISINGMODEL_VISUAL_RUN_SIMULATION_H
 
-#include "sys/stat.h"
-#include "unistd.h"
+#include <unistd.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <filesystem>
+#include <iostream>
+#include <stdlib.h>
 
 #include "Ising_Params.h"
 #include "metropolis_hastings_step.h"
 #include "wolff_step.h"
-#include "file_management.h"
 #include "lattice2pbm.h"
 #include "pbm2png.h"
 #include "pngs2video.h"
+
 
 void run_simulation(int* lattice, Ising_Params &p);
 

@@ -9,6 +9,7 @@
 #include <vector>
 #include <utility>
 #include <algorithm>
+
 #include "random_generators.h"
 #include "Ising_Params.h"
 #include "neighbors.h"

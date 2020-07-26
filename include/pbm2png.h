@@ -8,6 +8,7 @@
 #include <cstdio>
 #include <cstdlib>
 
+
 void pbm2png(long);
 
 #endif //ISINGMODEL_VISUAL_PBM2PNG_H

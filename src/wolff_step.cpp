@@ -1,8 +1,9 @@
-//
-// Created by ethan on 7/24/2020.
-//
+///\file wolff_step.cpp
+///\author Ethan Knox
+///\date 7/24/2020.
 
 #include "../include/wolff_step.h"
+
 
 void wolff_step(int *lattice, Ising_Params &p)
 {

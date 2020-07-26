@@ -18,6 +18,8 @@
 ///\param T  Temperature
 
 #include <vector>
+#include <filesystem>
+#include <iostream>
 
 class Ising_Params
 {
@@ -35,6 +37,8 @@ public:
     double k_B = 1.0;
     char method{};
 
+    std::filesystem::path outputdir = std::filesystem::current_path() / "output";
+    std::filesystem::path tempdir = std::filesystem::temp_directory_path();
 
     Ising_Params();
 

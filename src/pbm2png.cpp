@@ -4,6 +4,7 @@
 
 #include "../include/pbm2png.h"
 
+
 /// \brief Converts a pbm file into a png and deletes the parent file in order to save space
 ///
 /// \param frame  The index of the frame being converted
@@ -16,5 +17,6 @@ void pbm2png(const long frame)
     snprintf(convertcommand, sizeof(convertcommand),
              "ffmpeg -nostats -loglevel 0 -i frame%ld.pbm frame%ld.png && rm frame%ld.pbm",
              frame, frame, frame);
+
     system(convertcommand);
 }

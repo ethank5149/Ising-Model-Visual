@@ -8,6 +8,9 @@
 #include <cstdio>
 #include <cstdlib>
 
-void lattice2pbm(const int*, int, int, long);
+#include "Ising_Params.h"
+
+
+void lattice2pbm(const int*, Ising_Params &, long);
 
 #endif //ISINGMODEL_VISUAL_LATTICE2PBM_H
