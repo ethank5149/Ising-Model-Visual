@@ -23,7 +23,6 @@ int main(int argc, const char* argv[])
 
         fscanf(file, "%*s %*s %d", &p.nrows);
         fscanf(file, "%*s %*s %d", &p.ncols);
-        fscanf(file, "%*s %*s %d", &p.startiter);
         fscanf(file, "%*s %*s %ld", &p.stopiter);
         fscanf(file, "%*s %*s %ld", &p.framestep);
         fscanf(file, "%*s %*s %lf", &p.J);
@@ -39,9 +38,8 @@ int main(int argc, const char* argv[])
     {
         // Convert commandline arguments from strings
         char** endptr = nullptr;
-        p.nrows = atoi(argv[1]);
+        p.nrows = strtol(argv[1], endptr, 0);
         p.ncols = strtol(argv[2], endptr, 0);
-        p.startiter = strtol(argv[3], endptr, 0);
         p.stopiter = strtol(argv[4], endptr, 0);
         p.framestep = strtol(argv[5], endptr, 0);
         p.J = strtod(argv[6], endptr);
@@ -58,9 +56,6 @@ int main(int argc, const char* argv[])
 
         printf("Number of Columns ---------------> ");
         scanf("%d", &p.ncols);
-
-        printf("Starting Iteration --------------> ");
-        scanf("%d", &p.startiter);
 
         printf("Stopping Iteration --------------> ");
         scanf("%ld", &p.stopiter);

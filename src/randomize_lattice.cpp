@@ -16,7 +16,7 @@ void randomize_lattice(int* lattice, int nrows, int ncols)
 {
     for (int i = 0; i < nrows * ncols; i++)
     {
-        if (uniform(0.0, 1.0) > 0.5)
+        if (uniformfloating(1.0) > 0.5)
         {
             lattice[i] = 1;
         }

@@ -17,7 +17,7 @@
 ///\param h  Magnetic field strength
 ///\param T  Temperature
 
-#include <vector>
+#include <unordered_set>
 #include <filesystem>
 #include <iostream>
 
@@ -27,8 +27,8 @@ public:
     int nrows{};
     int ncols{};
     int startiter{};
-    std::vector<long> cluster{};
-    std::vector<long> perimeter{};
+    std::unordered_set<long> cluster{};
+    std::unordered_set<long> perimeter{};
     long stopiter{};
     long framestep{};
     double J{};

@@ -18,7 +18,7 @@
 void metropolis_hastings_step(int* lattice, Ising_Params &p)
 {
     // Select a random point in the lattice
-    int idx = randint(0, p.nrows*p.ncols);
+    int idx = uniformintegral(p.nrows*p.ncols);
 
     // Calculates the change in energy if this spin is flipped
     int neighbor_sum = 0;
@@ -30,7 +30,7 @@ void metropolis_hastings_step(int* lattice, Ising_Params &p)
 
     // If the system is in a lower energy state afterwards, immediately accept
     // Otherwise, accept with a probability $P = e^{-\frac{dE}{k_B T}}$
-    if ((dE < 0.0) || (uniform(0.0, 1.0) < exp(-dE / (p.k_B * p.T))))
+    if ((dE < 0.0) || (uniformfloating(1.0) < exp(-dE / (p.k_B * p.T))))
     {
         lattice[idx] *= -1;
     }

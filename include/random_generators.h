@@ -14,13 +14,13 @@
 /// \param min
 /// \param max
 /// \return uniform random double
-inline double uniform(double min, double max)
+inline double uniformfloating(double max)
 {
-    thread_local static std::mt19937 mt{std::random_device{}()};
-    thread_local static std::uniform_real_distribution<double> dist;
+    static std::mt19937 mt{std::random_device{}()};
+    static std::uniform_real_distribution<double> dist;
     using pick = std::uniform_real_distribution<double>::param_type;
 
-    return dist(mt, pick(min, max));
+    return dist(mt, pick((double_t)0.0, max));
 }
 
 /// \brief Reusable uniform random integer function
@@ -30,13 +30,13 @@ inline double uniform(double min, double max)
 /// \param min
 /// \param max
 /// \return uniform random integer
-inline int randint(int min, int max)
+inline int uniformintegral(int max)
 {
-    thread_local static std::mt19937 mt{std::random_device{}()};
-    thread_local static std::uniform_int_distribution<int> dist;
+    static std::mt19937 mt{std::random_device{}()};
+    static std::uniform_int_distribution<int> dist;
     using pick = std::uniform_int_distribution<int>::param_type;
 
-    return dist(mt, pick(min, max - 1));
+    return dist(mt, pick(0, max - 1));
 }
 
 #endif //ISINGMODEL_VISUAL_RANDOM_GENERATORS_H

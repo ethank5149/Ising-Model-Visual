@@ -40,15 +40,15 @@ void run_simulation(int* lattice, Ising_Params &p)
     // Loop through the desired number of frames
     for (long iter = 0; iter < p.stopiter; iter++)
     {
-        if (iter >= p.startiter && (iter - p.startiter) % p.framestep == 0)
+        if (iter % p.framestep == 0)
         {
-            framenumber = (iter - p.startiter) / p.framestep;
+            framenumber = iter / p.framestep;
 
             // Save the frame as a png
             lattice2pbm(lattice, p, framenumber);
             pbm2png(framenumber);
         }
-
+        // TODO: When trying a 1000x1000 grid, we segfault here
         step(lattice, p);
     }
 

@@ -8,44 +8,40 @@
 void wolff_step(int *lattice, Ising_Params &p)
 {
     double P = 1.0 - exp(-2.0 * p.J / p.T);
-    long choice, chosen;
+    size_t chosen;
 
-    int seed = randint(0, p.nrows * p.ncols);
-    p.cluster.push_back(seed);
+    size_t seed = uniformintegral(p.nrows * p.ncols);
+    p.cluster.insert(seed);
 
-    for (long neighbor : neighbors(p, seed))//For each neighbor
+    for (size_t neighbor : neighbors(p, seed))//For each neighbor
     {
         if (lattice[neighbor] == lattice[seed])//If the spins are parallel
         {
-            p.perimeter.push_back(neighbor);//Add it to the perimeter
+            p.perimeter.insert(neighbor);//Add it to the perimeter
         }
     }
 
     while (!p.perimeter.empty()) //While the perimeter list is still full
     {
-        choice = randint(0, p.perimeter.size());
-        chosen = p.perimeter[choice]; //Pick a random spin from the perimeter list
+        chosen = *std::next(p.perimeter.begin(), uniformintegral(p.perimeter.size())); //Pick a random spin from the perimeter list
+        p.perimeter.erase(chosen); //We don't need it in the perimeter anymore
 
-        if (uniform(0.0, 1.0) < P)//Decide if a bond exists
+        if (uniformfloating(1.0) < P)//Decide if a bond exists
         {
-            if(std::count(p.cluster.begin(), p.cluster.end(), chosen) == 0)//Make sure spin isn't already in the cluster
-            {
-                p.cluster.push_back(chosen);
-                p.perimeter.erase(p.perimeter.begin()+choice);
+            p.cluster.insert(chosen); // Move it to the cluster
 
-                for (long neighbor : neighbors(p, chosen))
+            for (size_t neighbor : neighbors(p, chosen)) // For each of this new spin's neighbors
+            {
+                if (lattice[neighbor] == lattice[seed]) // See if they're parallel to the seed
                 {
-                    if (lattice[neighbor] == lattice[chosen] /*debug-> &&std::count(p.perimeter.begin(), p.perimeter.end(), neighbor)*/)
-                    {
-                        p.perimeter.push_back(neighbor);
+                    if(!p.cluster.count(neighbor)){ // Dont add it to the perimeter if its already in the cluster
+                        p.perimeter.insert(neighbor); // Add them to the perimeter as well
                     }
                 }
             }
-            else {p.perimeter.erase(p.perimeter.begin()+choice);}
         }
-        else {p.perimeter.erase(p.perimeter.begin()+choice);}
-
     }
 
-    for (long spin : p.cluster) {lattice[spin] *= -1;}
-}
+    for (size_t spin : p.cluster) {lattice[spin] *= -1;} // Flip all these spins
+
+    p.cluster.clear();}
