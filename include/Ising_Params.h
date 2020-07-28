@@ -18,17 +18,19 @@
 ///\param T  Temperature
 
 #include <unordered_set>
+#include <vector>
 #include <filesystem>
 #include <iostream>
+
+#include "../include/random_generators.h"
+#include "../include/sqr_neighbors.h"
+#include "../include/hex_neighbors.h"
 
 class Ising_Params
 {
 public:
-    int nrows{};
-    int ncols{};
-    int startiter{};
-    std::unordered_set<long> cluster{};
-    std::unordered_set<long> perimeter{};
+    long nrows{};
+    long ncols{};
     long stopiter{};
     long framestep{};
     double J{};
@@ -36,15 +38,21 @@ public:
     double T{};
     double k_B = 1.0;
     char method{};
+    char geometry{};
+    int * lattice{};
+
+
+    std::unordered_set<long> cluster{};
+    std::unordered_set<long> perimeter{};
 
     std::filesystem::path outputdir = std::filesystem::current_path() / "output";
     std::filesystem::path tempdir = std::filesystem::temp_directory_path();
 
-    Ising_Params();
+    std::vector<long> (*neighbors)(long, long, long){};
 
-    long flatten(long, long) const;
-    long stacki(long) const;
-    long stackj(long) const;
+    void randomize();
+
+    Ising_Params(long, long, long, long, double, double, double, char, char);
 };
 
 #endif //ISINGMODEL_VISUAL_ISING_PARAMS_H

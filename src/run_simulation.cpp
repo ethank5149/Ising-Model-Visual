@@ -14,7 +14,7 @@
 /// \param p  An instance of Ising_Params
 ///
 /// \return void
-void run_simulation(int* lattice, Ising_Params &p)
+void run_simulation(Ising_Params &p)
 {
     long framenumber;
     mkdir(p.outputdir.c_str(), S_IRWXU);
@@ -29,7 +29,7 @@ void run_simulation(int* lattice, Ising_Params &p)
     std::filesystem::remove(p.outputdir/"output.mp4");
     std::filesystem::remove(p.outputdir/"output.gif");
 
-    void (*step)(int *, Ising_Params &);
+    void (*step)(Ising_Params &);
     if (p.method == 'M') {
         step = &metropolis_hastings_step;
     }
@@ -45,11 +45,11 @@ void run_simulation(int* lattice, Ising_Params &p)
             framenumber = iter / p.framestep;
 
             // Save the frame as a png
-            lattice2pbm(lattice, p, framenumber);
-            pbm2png(framenumber);
+            lattice2png(p, framenumber);
+            std::cout << "Saving frame " << framenumber << " out of " << p.stopiter / p.framestep << std::endl;
         }
         // TODO: When trying a 1000x1000 grid, we segfault here
-        step(lattice, p);
+        step(p);
     }
 
     pngs2video(p);

@@ -8,10 +8,10 @@
 #include <cmath>
 
 #include "random_generators.h"
-#include "neighbors.h"
+#include "sqr_neighbors.h"
 #include "Ising_Params.h"
 
 
-void metropolis_hastings_step(int* lattice, Ising_Params &p);
+void metropolis_hastings_step(Ising_Params &);
 
 #endif //ISINGMODEL_VISUAL_METROPOLIS_HASTINGS_STEP_H

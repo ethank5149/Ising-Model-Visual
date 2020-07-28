@@ -16,13 +16,7 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </select>
+    <select />
   </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
@@ -36,7 +30,47 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8852d543-114e-468e-8a5b-1e4abcf2b464" name="Default Changelist" comment="Optimized wolff_step.cpp" />
+    <list default="true" id="8852d543-114e-468e-8a5b-1e4abcf2b464" name="Default Changelist" comment="Optimized wolff_step.cpp">
+      <change afterPath="$PROJECT_DIR$/include/hex_neighbors.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hex_neighbors.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sqr_neighbors.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeSettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/metropolis_examples/example1a.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/metropolis_examples/example1b.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/metropolis_examples/example1b.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/metropolis_examples/example1c.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/metropolis_examples/example1c.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/metropolis_examples/example1d.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/metropolis_examples/example1d.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/metropolis_examples/metropolis_example1.config" beforeDir="false" afterPath="$PROJECT_DIR$/examples/metropolis_examples/metropolis_example1.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/metropolis_examples/metropolis_example1.gif" beforeDir="false" afterPath="$PROJECT_DIR$/examples/metropolis_examples/metropolis_example1.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/metropolis_examples/metropolis_example1.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/examples/metropolis_examples/metropolis_example1.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/metropolis_examples/metropolis_example2.config" beforeDir="false" afterPath="$PROJECT_DIR$/examples/metropolis_examples/metropolis_example2.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/wolff_examples/wolff_example1.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/wolff_examples/wolff_example1.config" beforeDir="false" afterPath="$PROJECT_DIR$/examples/wolff_examples/wolff_example1.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/wolff_examples/wolff_example2.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/wolff_examples/wolff_example2.config" beforeDir="false" afterPath="$PROJECT_DIR$/examples/wolff_examples/wolff_example2.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/Ising_Params.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/Ising_Params.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/lattice2pbm.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/lattice2png.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/metropolis_hastings_step.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/metropolis_hastings_step.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/neighbors.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/sqr_neighbors.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/pbm2png.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/randomize_lattice.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/run_simulation.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/run_simulation.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/wolff_step.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/wolff_step.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IsingModel-Visual.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/IsingModel-Visual.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ising_Params.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ising_Params.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lattice.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lattice2pbm.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lattice2png.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/metropolis_hastings_step.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/metropolis_hastings_step.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/neighbors.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pbm2png.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/randomize_lattice.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/run_simulation.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/run_simulation.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wolff_step.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/wolff_step.cpp" afterDir="false" />
+    </list>
     <list id="3775d31b-5cb5-45ec-91ee-223373dc3def" name="Revert &quot;broken&quot;" comment="Revert &quot;broken&quot;&#10;&#10;This reverts commit 051849dd" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,19 +126,19 @@
     <property name="settings.editor.selected.configurable" value="CMakeSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ethan\CLionProjects\IsingModel-Visual\images" />
+      <recent name="C:\Users\ethan\CLionProjects\ising" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ethan\CLionProjects\IsingModel-Visual\include" />
       <recent name="C:\Users\ethan\CLionProjects\IsingModel-Visual\src" />
       <recent name="C:\Users\ethan\CLionProjects\ising\include" />
       <recent name="C:\Users\ethan\CLionProjects\ising\src" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\ethan\CLionProjects\IsingModel-Visual\images" />
-      <recent name="C:\Users\ethan\CLionProjects\ising" />
-    </key>
   </component>
   <component name="RunManager" selected="CMake Application.IsingModel-Visual">
-    <configuration name="IsingModel-Visual" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="../examples/metropolis_examples/metropolis_example1.config" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="IsingModel-Visual" TARGET_NAME="IsingModel-Visual" CONFIG_NAME="Release-WSL" RUN_TARGET_PROJECT_NAME="IsingModel-Visual" RUN_TARGET_NAME="IsingModel-Visual">
+    <configuration name="IsingModel-Visual" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="IsingModel-Visual" TARGET_NAME="IsingModel-Visual" CONFIG_NAME="Debug-WSL" RUN_TARGET_PROJECT_NAME="IsingModel-Visual" RUN_TARGET_NAME="IsingModel-Visual">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -260,7 +294,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595792044276</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Optimized wolff_step.cpp">
+      <created>1595883371681</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1595883371681</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,81 +343,90 @@
     <MESSAGE value="deleting unnecessary files" />
     <MESSAGE value="Adding docs and examples back" />
     <MESSAGE value="update README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="update README.md" />
+    <MESSAGE value="Optimized wolff_step.cpp" />
+    <option name="LAST_COMMIT_MESSAGE" value="Optimized wolff_step.cpp" />
   </component>
   <component name="WindowStateProjectService">
     <state x="76" y="166" key="#SSH_Configurations" timestamp="1595386652475">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
     <state x="76" y="166" key="#SSH_Configurations/0.0.1620.1040@0.0.1620.1040" timestamp="1595386652475" />
-    <state x="266" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595789733009">
+    <state x="266" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595903223941">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
-    <state x="266" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1620.1040@0.0.1620.1040" timestamp="1595789733009" />
+    <state x="266" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1620.1040@0.0.1620.1040" timestamp="1595903223941" />
     <state x="93" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1595554802315">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
     <state x="93" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1620.1040@0.0.1620.1040" timestamp="1595554802315" />
-    <state x="541" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1595789426578">
+    <state x="541" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1595897499594">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
-    <state x="541" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1620.1040@0.0.1620.1040" timestamp="1595789426578" />
+    <state x="541" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1620.1040@0.0.1620.1040" timestamp="1595897499594" />
     <state x="519" y="106" key="#convert_to_image" timestamp="1594667888306">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
     <state x="519" y="106" key="#convert_to_image/0.0.1620.1040@0.0.1620.1040" timestamp="1594667888306" />
-    <state x="680" y="273" key="#xdebugger.XInspectDialog" timestamp="1595653767704">
+    <state x="680" y="273" key="#xdebugger.XInspectDialog" timestamp="1595899681538">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
-    <state x="680" y="273" key="#xdebugger.XInspectDialog/0.0.1620.1040@0.0.1620.1040" timestamp="1595653767704" />
+    <state x="680" y="273" key="#xdebugger.XInspectDialog/0.0.1620.1040@0.0.1620.1040" timestamp="1595899681538" />
     <state x="591" y="275" key="FileChooserDialogImpl" timestamp="1595220999817">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
     <state x="591" y="275" key="FileChooserDialogImpl/0.0.1620.1040@0.0.1620.1040" timestamp="1595220999817" />
-    <state width="1578" height="189" key="GridCell.Tab.0.bottom" timestamp="1595789822001">
+    <state width="765" height="282" key="GridCell.Tab.0.bottom" timestamp="1595903227089">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
-    <state width="1578" height="189" key="GridCell.Tab.0.bottom/0.0.1620.1040@0.0.1620.1040" timestamp="1595789822001" />
-    <state width="1578" height="189" key="GridCell.Tab.0.center" timestamp="1595789822001">
+    <state width="765" height="282" key="GridCell.Tab.0.bottom/0.0.1620.1040@0.0.1620.1040" timestamp="1595903227089" />
+    <state width="765" height="282" key="GridCell.Tab.0.center" timestamp="1595903227089">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
-    <state width="1578" height="189" key="GridCell.Tab.0.center/0.0.1620.1040@0.0.1620.1040" timestamp="1595789822001" />
-    <state width="1578" height="189" key="GridCell.Tab.0.left" timestamp="1595789822001">
+    <state width="765" height="282" key="GridCell.Tab.0.center/0.0.1620.1040@0.0.1620.1040" timestamp="1595903227089" />
+    <state width="765" height="282" key="GridCell.Tab.0.left" timestamp="1595903227089">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
-    <state width="1578" height="189" key="GridCell.Tab.0.left/0.0.1620.1040@0.0.1620.1040" timestamp="1595789822001" />
-    <state width="1578" height="189" key="GridCell.Tab.0.right" timestamp="1595789822001">
+    <state width="765" height="282" key="GridCell.Tab.0.left/0.0.1620.1040@0.0.1620.1040" timestamp="1595903227089" />
+    <state width="765" height="282" key="GridCell.Tab.0.right" timestamp="1595903227089">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
-    <state width="1578" height="189" key="GridCell.Tab.0.right/0.0.1620.1040@0.0.1620.1040" timestamp="1595789822001" />
-    <state width="1578" height="397" key="GridCell.Tab.1.bottom" timestamp="1595784885145">
+    <state width="765" height="282" key="GridCell.Tab.0.right/0.0.1620.1040@0.0.1620.1040" timestamp="1595903227089" />
+    <state width="1578" height="347" key="GridCell.Tab.1.bottom" timestamp="1595903226447">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
-    <state width="1578" height="397" key="GridCell.Tab.1.bottom/0.0.1620.1040@0.0.1620.1040" timestamp="1595784885145" />
-    <state width="1578" height="397" key="GridCell.Tab.1.center" timestamp="1595784885145">
+    <state width="1578" height="347" key="GridCell.Tab.1.bottom/0.0.1620.1040@0.0.1620.1040" timestamp="1595903226447" />
+    <state width="1578" height="347" key="GridCell.Tab.1.center" timestamp="1595903226447">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
-    <state width="1578" height="397" key="GridCell.Tab.1.center/0.0.1620.1040@0.0.1620.1040" timestamp="1595784885145" />
-    <state width="1578" height="397" key="GridCell.Tab.1.left" timestamp="1595784885145">
+    <state width="1578" height="347" key="GridCell.Tab.1.center/0.0.1620.1040@0.0.1620.1040" timestamp="1595903226447" />
+    <state width="1578" height="347" key="GridCell.Tab.1.left" timestamp="1595903226447">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
-    <state width="1578" height="397" key="GridCell.Tab.1.left/0.0.1620.1040@0.0.1620.1040" timestamp="1595784885145" />
-    <state width="1578" height="397" key="GridCell.Tab.1.right" timestamp="1595784885145">
+    <state width="1578" height="347" key="GridCell.Tab.1.left/0.0.1620.1040@0.0.1620.1040" timestamp="1595903226447" />
+    <state width="1578" height="347" key="GridCell.Tab.1.right" timestamp="1595903226447">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
-    <state width="1578" height="397" key="GridCell.Tab.1.right/0.0.1620.1040@0.0.1620.1040" timestamp="1595784885145" />
+    <state width="1578" height="347" key="GridCell.Tab.1.right/0.0.1620.1040@0.0.1620.1040" timestamp="1595903226447" />
     <state x="0" y="165" key="SettingsEditor" timestamp="1595789312281">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
     <state x="0" y="165" key="SettingsEditor/0.0.1620.1040@0.0.1620.1040" timestamp="1595789312281" />
-    <state x="403" y="253" key="Vcs.Push.Dialog.v2" timestamp="1595791813122">
+    <state x="403" y="253" key="Vcs.Push.Dialog.v2" timestamp="1595883384503">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
-    <state x="403" y="253" key="Vcs.Push.Dialog.v2/0.0.1620.1040@0.0.1620.1040" timestamp="1595791813122" />
+    <state x="403" y="253" key="Vcs.Push.Dialog.v2/0.0.1620.1040@0.0.1620.1040" timestamp="1595883384503" />
     <state x="618" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1595590317557">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
     <state x="618" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1620.1040@0.0.1620.1040" timestamp="1595590317557" />
+    <state x="293" y="256" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1595900107715">
+      <screen x="0" y="0" width="1620" height="1040" />
+    </state>
+    <state x="293" y="256" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1620.1040@0.0.1620.1040" timestamp="1595900107715" />
+    <state x="587" y="305" key="refactoring.ChangeSignatureDialog" timestamp="1595889493619">
+      <screen x="0" y="0" width="1620" height="1040" />
+    </state>
+    <state x="587" y="305" key="refactoring.ChangeSignatureDialog/0.0.1620.1040@0.0.1620.1040" timestamp="1595889493619" />
     <state x="469" y="242" key="run.anything.popup" timestamp="1595385498436">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
@@ -387,19 +437,11 @@
     <state x="474" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1620.1040@0.0.1620.1040" timestamp="1595424780339" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/run_simulation.cpp</url>
-          <line>41</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/run_simulation.cpp</url>
-          <line>38</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="CMakeRunConfiguration">
+        <watch expression="nrows" language="ObjectiveC" />
+        <watch expression="geometry" language="ObjectiveC" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

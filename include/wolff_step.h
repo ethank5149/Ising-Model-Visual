@@ -12,9 +12,9 @@
 
 #include "random_generators.h"
 #include "Ising_Params.h"
-#include "neighbors.h"
+#include "sqr_neighbors.h"
 
 
-void wolff_step(int*, Ising_Params &);
+void wolff_step(Ising_Params &);
 
 #endif //ISINGMODEL_VISUAL_WOLFF_STEP_H

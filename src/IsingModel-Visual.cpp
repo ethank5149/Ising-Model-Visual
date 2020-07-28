@@ -2,13 +2,14 @@
 #include <cstdlib>
 
 #include "../include/Ising_Params.h"
-#include "../include/randomize_lattice.h"
 #include "../include/run_simulation.h"
 
 
 int main(int argc, const char* argv[])
 {
-    Ising_Params p{};
+    long nrows, ncols, stopiter, framestep;
+    double J, h, T;
+    char method, geometry;
 
     printf("\n2D ISING MODEL - VISUAL SIMULATION\n");
     printf(  "----------------------------------\n");
@@ -21,74 +22,78 @@ int main(int argc, const char* argv[])
         FILE* file;
         file = fopen(argv[1], "r");
 
-        fscanf(file, "%*s %*s %d", &p.nrows);
-        fscanf(file, "%*s %*s %d", &p.ncols);
-        fscanf(file, "%*s %*s %ld", &p.stopiter);
-        fscanf(file, "%*s %*s %ld", &p.framestep);
-        fscanf(file, "%*s %*s %lf", &p.J);
-        fscanf(file, "%*s %*s %lf", &p.h);
-        fscanf(file, "%*s %*s %lf", &p.T);
-        fscanf(file, "%*s %*s %s", &p.method);
+        fscanf(file, "%*s %*s %ld", &nrows);
+        fscanf(file, "%*s %*s %ld", &ncols);
+        fscanf(file, "%*s %*s %ld", &stopiter);
+        fscanf(file, "%*s %*s %ld", &framestep);
+        fscanf(file, "%*s %*s %lf", &J);
+        fscanf(file, "%*s %*s %lf", &h);
+        fscanf(file, "%*s %*s %lf", &T);
+        fscanf(file, "%*s %*s %s", &method);
+        fscanf(file, "%*s %*s %s", &geometry);
+        // TODO: nrows changes after assigning geometry?
 
         fclose(file);
         printf("Done!\n\n");
     }
 
-    else if (argc == 9)
+    else if (argc == 11)
     {
         // Convert commandline arguments from strings
         char** endptr = nullptr;
-        p.nrows = strtol(argv[1], endptr, 0);
-        p.ncols = strtol(argv[2], endptr, 0);
-        p.stopiter = strtol(argv[4], endptr, 0);
-        p.framestep = strtol(argv[5], endptr, 0);
-        p.J = strtod(argv[6], endptr);
-        p.h = strtod(argv[7], endptr);
-        p.T = strtod(argv[8], endptr);
-        p.method = argv[9][0];
+        nrows = strtol(argv[1], endptr, 0);
+        ncols = strtol(argv[2], endptr, 0);
+        stopiter = strtol(argv[4], endptr, 0);
+        framestep = strtol(argv[5], endptr, 0);
+        J = strtod(argv[6], endptr);
+        h = strtod(argv[7], endptr);
+        T = strtod(argv[8], endptr);
+        method = argv[9][0];
+        geometry = argv[10][0];
     }
     else
     {
         printf("\nShortcut Usage: %s [nrows] [ncols] [startiter] [stopiter] [framestep] [J] [h] [T]\n\n", argv[0]);
 
         printf("Number of Rows ------------------> ");
-        scanf("%d", &p.nrows);
+        scanf("%ld", &nrows);
 
         printf("Number of Columns ---------------> ");
-        scanf("%d", &p.ncols);
+        scanf("%ld", &ncols);
 
         printf("Stopping Iteration --------------> ");
-        scanf("%ld", &p.stopiter);
+        scanf("%ld", &stopiter);
 
         printf("Iterations Between Frames -------> ");
-        scanf("%ld", &p.framestep);
+        scanf("%ld", &framestep);
 
         printf("Ferromagnetic Coupling Constant -> ");
-        scanf("%lf", &p.J);
+        scanf("%lf", &J);
 
         printf("Magnetic Field Strength ---------> ");
-        scanf("%lf", &p.h);
+        scanf("%lf", &h);
 
         printf("Temperature ---------------------> ");
-        scanf("%lf", &p.T);
+        scanf("%lf", &T);
 
         printf("Method --------------------------> ");
-        scanf("%s", &p.method);
+        scanf("%s", &method);
+
+        printf("Geometry --------------------------> ");
+        scanf("%s", &geometry);
     }
+    std::cout << nrows << std::endl;
+    Ising_Params p = Ising_Params(nrows, ncols, stopiter, framestep, J, h, T, method, geometry);
+    std::cout << p.nrows << std::endl;
+    std::cout << "Using the " << (p.method == 'M' ? "Metropolis-Hastings" : "Wolff") << " Algorithm" << std::endl;
+    std::cout << "With " << (p.geometry == 'S' ? "Standard Square" : "Hexagonal") << " Geometry" << std::endl;
+    std::cout << p.nrows << "x" << p.ncols << " Grid" << std::endl;
+    std::cout << p.stopiter << " Iterations, " << p.framestep << " Steps Between Frames" << std::endl;
+    std::cout << "J = " << p.J << ", h = " << p.h << ", T = " << p.T << std::endl;
+    std::cout << "\nRunning..." << std::endl;
 
-    printf("Parameters:\n");
-    printf("nrows, ncols = %d, %d\n", p.nrows, p.ncols);
-    printf("startiter, stopiter, framestep = %d, %ld, %ld\n", p.startiter, p.stopiter, p.framestep);
-    printf("J, h, T = %f, %f, %f\n", p.J, p.h, p.T);
-    printf("Method = %c\n\n", p.method);
-
-    printf("Running...\n");
-
-    int* lattice = (int*)malloc(p.nrows*p.ncols * sizeof(int));
-
-    randomize_lattice(lattice, p.nrows, p.ncols);
-    run_simulation(lattice, p); // Go baby go
-    free(lattice);
+    p.randomize();
+    run_simulation(p); // Go baby go
 
     printf("Done!\n");
     printf("----------------------------------\n");
