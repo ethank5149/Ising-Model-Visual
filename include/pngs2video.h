@@ -6,10 +6,7 @@
 #define ISINGMODEL_VISUAL_PNGS2VIDEO_H
 
 #include <cstdlib>
-#include <filesystem>
-
 #include "Ising_Params.h"
-
 
 void pngs2video(Ising_Params &);
 

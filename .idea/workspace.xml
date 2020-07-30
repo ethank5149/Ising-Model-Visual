@@ -1,23 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select />
-  </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
       <config projectName="IsingModel-Visual" targetName="IsingModel-Visual" />
@@ -25,53 +7,194 @@
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
     <configurations>
-      <configuration PROFILE_NAME="Debug-WSL" CONFIG_NAME="Debug" TOOLCHAIN_NAME="WSL" GENERATION_DIR="Debug" />
-      <configuration PROFILE_NAME="Release-WSL" CONFIG_NAME="Release" TOOLCHAIN_NAME="WSL" GENERATION_DIR="Release" />
+      <configuration PROFILE_NAME="Debug-Visual Studio" CONFIG_NAME="Debug" TOOLCHAIN_NAME="Visual Studio" GENERATION_OPTIONS="-DCMAKE_TOOLCHAIN_FILE=C:/vcpkg/scripts/buildsystems/vcpkg.cmake" />
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8852d543-114e-468e-8a5b-1e4abcf2b464" name="Default Changelist" comment="Optimized wolff_step.cpp">
-      <change afterPath="$PROJECT_DIR$/include/hex_neighbors.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hex_neighbors.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sqr_neighbors.cpp" afterDir="false" />
+    <list default="true" id="e1aff87c-1991-42d5-a808-39fc2a675c1c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeSettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/metropolis_examples/example1a.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/metropolis_examples/example1b.config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/metropolis_examples/example1b.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/metropolis_examples/example1c.config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/metropolis_examples/example1c.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/metropolis_examples/example1d.config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/metropolis_examples/example1d.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/metropolis_examples/metropolis_example1.config" beforeDir="false" afterPath="$PROJECT_DIR$/examples/metropolis_examples/metropolis_example1.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/metropolis_examples/metropolis_example1.gif" beforeDir="false" afterPath="$PROJECT_DIR$/examples/metropolis_examples/metropolis_example1.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/metropolis_examples/metropolis_example1.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/examples/metropolis_examples/metropolis_example1.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/metropolis_examples/metropolis_example2.config" beforeDir="false" afterPath="$PROJECT_DIR$/examples/metropolis_examples/metropolis_example2.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/wolff_examples/wolff_example1.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/wolff_examples/wolff_example1.config" beforeDir="false" afterPath="$PROJECT_DIR$/examples/wolff_examples/wolff_example1.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/wolff_examples/wolff_example2.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/wolff_examples/wolff_example2.config" beforeDir="false" afterPath="$PROJECT_DIR$/examples/wolff_examples/wolff_example2.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/_form0_tmp.epsi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/_form0_tmp.ps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/_formulas.aux" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/_formulas.dvi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/_formulas.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/_formulas.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/_ising___params_8cpp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/_ising___params_8h.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/_ising___params_8h_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/annotated.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/annotated_dup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/bc_s.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/bdwn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/class_ising___params-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/class_ising___params.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/classes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/closed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/dir_0dffa9b74a780dcb43d57dc6fef54ff7.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/dir_196234b1d21dc44a6281ad3c5bc37abf.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/dir_29d9304f26f0017febb5c77f2cd025cf.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/dir_36f2056e25df12a302f1f790ccd2126e.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/dir_39ae0efdac8668457047d38a89def2fe.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/dir_402b6e84fe6cedb1ff417b90070e3614.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/dir_406552daa56d8b7b38dbb032e79aef1a.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/dir_45383c372aaf507b8c6bd0f56438fe5c.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/dir_68267d1309a1af8e8297ef4c3efbcdba.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/dir_68267d1309a1af8e8297ef4c3efbcdba.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/dir_8045aa250ad63db016a3771663778e83.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/dir_8e66e56cf9c948b2cc35cef13e5e65c0.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/dir_d44c64559bbebec7f509842c48db8b23.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/dir_edc58d28dab2e9e4edbdaf227edbe567.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/dir_fea11dd409255c0cd81f2221dc541660.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/doc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/doxygen.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/doxygen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/dynsections.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/file__management_8cpp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/file__management_8cpp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/file__management_8h_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/files.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/files_dup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/folderclosed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/folderopen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/globals.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/globals_func.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/ising__struct_8h_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/lattice2pbm_8cpp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/lattice2pbm_8cpp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/lattice2pbm_8h_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/md__r_e_a_d_m_e.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/menu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/menudata.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/metropolis__hastings__neighbors_8cpp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/metropolis__hastings__neighbors_8cpp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/metropolis__hastings__neighbors_8h_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/metropolis__hastings__step_8cpp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/metropolis__hastings__step_8cpp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/metropolis__hastings__step_8h_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/nav_f.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/nav_g.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/nav_h.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/navtree.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/navtree.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/navtreedata.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/navtreeindex0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/open.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/pages.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/pbm2png_8cpp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/pbm2png_8cpp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/pbm2png_8h_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/pngs2video_8cpp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/pngs2video_8cpp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/pngs2video_8h_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/random__generators_8h_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/randomize__lattice_8cpp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/randomize__lattice_8cpp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/randomize__lattice_8h_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/resize.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/run__simulation_8cpp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/run__simulation_8cpp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/run__simulation_8h_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/all_0.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/all_0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/all_1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/all_1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/all_2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/all_2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/all_3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/all_3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/all_4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/all_4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/all_5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/all_5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/all_6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/all_6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/all_7.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/all_7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/classes_0.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/classes_0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/files_0.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/files_0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/files_1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/files_1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/files_2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/files_2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/files_3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/files_3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/files_4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/files_4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/files_5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/files_5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/functions_0.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/functions_0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/functions_1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/functions_1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/functions_2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/functions_2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/functions_3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/functions_3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/functions_4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/functions_4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/functions_5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/functions_5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/mag_sel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/nomatches.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/pages_0.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/pages_0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/search.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/search_l.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/search_m.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/search_r.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/searchdata.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/splitbar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/struct_ising___params-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/struct_ising___params.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/struct_ising___params.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/sync_off.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/sync_on.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/tab_a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/tab_b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/tab_h.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/tab_s.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/tabs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/latex/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/latex/_ising___params_8cpp.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/latex/_ising___params_8h.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/latex/annotated.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/latex/class_ising___params.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/latex/doxygen.sty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/latex/file__management_8cpp.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/latex/files.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/latex/index.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/latex/lattice2pbm_8cpp.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/latex/longtable_doxygen.sty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/latex/make.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/latex/md__r_e_a_d_m_e.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/latex/metropolis__hastings__neighbors_8cpp.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/latex/metropolis__hastings__step_8cpp.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/latex/pbm2png_8cpp.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/latex/pngs2video_8cpp.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/latex/randomize__lattice_8cpp.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/latex/refman.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/latex/run__simulation_8cpp.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/latex/struct_ising___params.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/latex/tabu_doxygen.sty" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/include/Ising_Params.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/Ising_Params.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/lattice2pbm.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/lattice2png.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/metropolis_hastings_step.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/metropolis_hastings_step.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/neighbors.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/sqr_neighbors.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/pbm2png.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/randomize_lattice.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/pngs2video.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/pngs2video.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/random_generators.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/random_generators.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/run_simulation.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/run_simulation.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/wolff_step.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/wolff_step.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/IsingModel-Visual.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/IsingModel-Visual.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ising_Params.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ising_Params.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lattice.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lattice2pbm.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lattice2png.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/metropolis_hastings_step.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/metropolis_hastings_step.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/neighbors.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pbm2png.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/randomize_lattice.cpp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/run_simulation.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/run_simulation.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/wolff_step.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/wolff_step.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_algorithm.py" beforeDir="false" />
     </list>
-    <list id="3775d31b-5cb5-45ec-91ee-223373dc3def" name="Revert &quot;broken&quot;" comment="Revert &quot;broken&quot;&#10;&#10;This reverts commit 051849dd" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -80,368 +203,113 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug-WSL" />
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Python Script" />
-      </list>
-    </option>
-  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug-Visual Studio" />
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="2c7cf6ba7d875c1a81de8a62527a4ddaa3f78f63" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RESET_MODE" value="HARD" />
   </component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="hiddenUrls">
-      <set>
-        <option value="https://github.com/ethank5149/IsingModel-Visual.git" />
-      </set>
-    </option>
-  </component>
-  <component name="ProjectId" id="1edG0iArKJYi9fKXqzwFPAYv0F0" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="1fO2vRb9NdPAMTk4YA9wEglDK4P" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/images" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="CMakeSettings" />
   </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\ethan\CLionProjects\IsingModel-Visual\images" />
-      <recent name="C:\Users\ethan\CLionProjects\ising" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\ethan\CLionProjects\IsingModel-Visual\include" />
-      <recent name="C:\Users\ethan\CLionProjects\IsingModel-Visual\src" />
-      <recent name="C:\Users\ethan\CLionProjects\ising\include" />
-      <recent name="C:\Users\ethan\CLionProjects\ising\src" />
-    </key>
-  </component>
-  <component name="RunManager" selected="CMake Application.IsingModel-Visual">
-    <configuration name="IsingModel-Visual" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="IsingModel-Visual" TARGET_NAME="IsingModel-Visual" CONFIG_NAME="Debug-WSL" RUN_TARGET_PROJECT_NAME="IsingModel-Visual" RUN_TARGET_NAME="IsingModel-Visual">
+  <component name="RunManager">
+    <configuration name="IsingModel-Visual" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="-r 500 -c 500 -s 250000 -f 2500 -j 1.0 -h 0.0 -t 1.8 -m M -g S" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="IsingModel-Visual" TARGET_NAME="IsingModel-Visual" CONFIG_NAME="Debug-Visual Studio" RUN_TARGET_PROJECT_NAME="IsingModel-Visual" RUN_TARGET_NAME="IsingModel-Visual">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="convert_to_image" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
-      <module name="ising" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\ethan\CLionProjects\ising\venv\Scripts\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cmake-build-debug" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cmake-build-debug/convert_to_image.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <list>
-      <item itemvalue="CMake Application.IsingModel-Visual" />
-      <item itemvalue="Python.convert_to_image" />
-    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="72b9ae13-8593-44b2-9ee4-c1270d9df5d7" name="Default Changelist" comment="" />
-      <created>1594643834502</created>
+      <changelist id="e1aff87c-1991-42d5-a808-39fc2a675c1c" name="Default Changelist" comment="" />
+      <created>1596075048620</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1594643834502</updated>
-      <workItem from="1594643839509" duration="27177000" />
-      <workItem from="1594693939520" duration="2875000" />
-      <workItem from="1594732726843" duration="670000" />
-      <workItem from="1594760134383" duration="23033000" />
-      <workItem from="1594814489178" duration="14003000" />
-      <workItem from="1594957118687" duration="2045000" />
-      <workItem from="1594968731213" duration="1999000" />
-      <workItem from="1594987228868" duration="1363000" />
-      <workItem from="1595011766095" duration="4550000" />
-      <workItem from="1595023561070" duration="16675000" />
-      <workItem from="1595213491666" duration="11000" />
-      <workItem from="1595220948300" duration="79000" />
-      <workItem from="1595221134956" duration="23000" />
-      <workItem from="1595221202011" duration="2619000" />
-      <workItem from="1595225837115" duration="1050000" />
-      <workItem from="1595279500788" duration="70000" />
-      <workItem from="1595385001232" duration="6325000" />
-      <workItem from="1595393311768" duration="173000" />
-      <workItem from="1595412653636" duration="7602000" />
-      <workItem from="1595422833864" duration="12378000" />
-      <workItem from="1595435718470" duration="1272000" />
-      <workItem from="1595442813727" duration="145000" />
-      <workItem from="1595554776519" duration="38000" />
-      <workItem from="1595554904853" duration="37000" />
-      <workItem from="1595587151353" duration="6624000" />
-      <workItem from="1595674629749" duration="1459000" />
-      <workItem from="1595724551842" duration="15831000" />
-      <workItem from="1595742890985" duration="97000" />
-      <workItem from="1595767942497" duration="7366000" />
-      <workItem from="1595776766222" duration="15307000" />
+      <updated>1596075048620</updated>
+      <workItem from="1596075054359" duration="1576000" />
+      <workItem from="1596078714335" duration="9427000" />
     </task>
-    <task id="LOCAL-00001" summary="separated functions into individual sources/headers">
-      <created>1595423147231</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1595423147231</updated>
-    </task>
-    <task id="LOCAL-00002" summary="just a little more tidying">
-      <created>1595436337992</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1595436337992</updated>
-    </task>
-    <task id="LOCAL-00003" summary="created a lattice class">
-      <created>1595590293970</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1595590293970</updated>
-    </task>
-    <task id="LOCAL-00004" summary="First working example of the Wolff algorithm">
-      <created>1595642849829</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1595642849829</updated>
-    </task>
-    <task id="LOCAL-00005" summary="First draft of the Wolff algorithm">
-      <created>1595742541708</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1595742541708</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Tidying up file io (std::filesystem)">
-      <created>1595789874369</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1595789874369</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Debug README.md">
-      <created>1595790410876</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1595790410876</updated>
-    </task>
-    <task id="LOCAL-00008" summary="deleting unnecessary files">
-      <created>1595790573619</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1595790573619</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Adding docs and examples back">
-      <created>1595790635338</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1595790635338</updated>
-    </task>
-    <task id="LOCAL-00010" summary="update README.md">
-      <created>1595790819335</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1595790819335</updated>
-    </task>
-    <task id="LOCAL-00011" summary="update README.md">
-      <created>1595791803282</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1595791803282</updated>
-    </task>
-    <task id="LOCAL-00012" summary="update README.md">
-      <created>1595792044276</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1595792044276</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Optimized wolff_step.cpp">
-      <created>1595883371681</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1595883371681</updated>
-    </task>
-    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="master" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="separated functions into individual sources/headers" />
-    <MESSAGE value="just a little more tidying" />
-    <MESSAGE value="created a lattice class" />
-    <MESSAGE value="First working example of the Wolff algorithm" />
-    <MESSAGE value="First draft of the Wolff algorithm" />
-    <MESSAGE value="Tidying up file io (std::filesystem)" />
-    <MESSAGE value="Debug README.md" />
-    <MESSAGE value="deleting unnecessary files" />
-    <MESSAGE value="Adding docs and examples back" />
-    <MESSAGE value="update README.md" />
-    <MESSAGE value="Optimized wolff_step.cpp" />
-    <option name="LAST_COMMIT_MESSAGE" value="Optimized wolff_step.cpp" />
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.log" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="76" y="166" key="#SSH_Configurations" timestamp="1595386652475">
+    <state x="0" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596087667414">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
-    <state x="76" y="166" key="#SSH_Configurations/0.0.1620.1040@0.0.1620.1040" timestamp="1595386652475" />
-    <state x="266" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595903223941">
+    <state x="0" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1620.1040@0.0.1620.1040" timestamp="1596087667414" />
+    <state width="1578" height="347" key="GridCell.Tab.0.bottom" timestamp="1596088772127">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
-    <state x="266" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1620.1040@0.0.1620.1040" timestamp="1595903223941" />
-    <state x="93" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1595554802315">
+    <state width="1578" height="347" key="GridCell.Tab.0.bottom/0.0.1620.1040@0.0.1620.1040" timestamp="1596088772127" />
+    <state width="1578" height="347" key="GridCell.Tab.0.center" timestamp="1596088772127">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
-    <state x="93" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1620.1040@0.0.1620.1040" timestamp="1595554802315" />
-    <state x="541" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1595897499594">
+    <state width="1578" height="347" key="GridCell.Tab.0.center/0.0.1620.1040@0.0.1620.1040" timestamp="1596088772127" />
+    <state width="1578" height="347" key="GridCell.Tab.0.left" timestamp="1596088772127">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
-    <state x="541" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1620.1040@0.0.1620.1040" timestamp="1595897499594" />
-    <state x="519" y="106" key="#convert_to_image" timestamp="1594667888306">
+    <state width="1578" height="347" key="GridCell.Tab.0.left/0.0.1620.1040@0.0.1620.1040" timestamp="1596088772127" />
+    <state width="1578" height="347" key="GridCell.Tab.0.right" timestamp="1596088772127">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
-    <state x="519" y="106" key="#convert_to_image/0.0.1620.1040@0.0.1620.1040" timestamp="1594667888306" />
-    <state x="680" y="273" key="#xdebugger.XInspectDialog" timestamp="1595899681538">
+    <state width="1578" height="347" key="GridCell.Tab.0.right/0.0.1620.1040@0.0.1620.1040" timestamp="1596088772127" />
+    <state width="1578" height="347" key="GridCell.Tab.1.bottom" timestamp="1596088772129">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
-    <state x="680" y="273" key="#xdebugger.XInspectDialog/0.0.1620.1040@0.0.1620.1040" timestamp="1595899681538" />
-    <state x="591" y="275" key="FileChooserDialogImpl" timestamp="1595220999817">
+    <state width="1578" height="347" key="GridCell.Tab.1.bottom/0.0.1620.1040@0.0.1620.1040" timestamp="1596088772129" />
+    <state width="1578" height="347" key="GridCell.Tab.1.center" timestamp="1596088772128">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
-    <state x="591" y="275" key="FileChooserDialogImpl/0.0.1620.1040@0.0.1620.1040" timestamp="1595220999817" />
-    <state width="765" height="282" key="GridCell.Tab.0.bottom" timestamp="1595903227089">
+    <state width="1578" height="347" key="GridCell.Tab.1.center/0.0.1620.1040@0.0.1620.1040" timestamp="1596088772128" />
+    <state width="1578" height="347" key="GridCell.Tab.1.left" timestamp="1596088772128">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
-    <state width="765" height="282" key="GridCell.Tab.0.bottom/0.0.1620.1040@0.0.1620.1040" timestamp="1595903227089" />
-    <state width="765" height="282" key="GridCell.Tab.0.center" timestamp="1595903227089">
+    <state width="1578" height="347" key="GridCell.Tab.1.left/0.0.1620.1040@0.0.1620.1040" timestamp="1596088772128" />
+    <state width="1578" height="347" key="GridCell.Tab.1.right" timestamp="1596088772128">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
-    <state width="765" height="282" key="GridCell.Tab.0.center/0.0.1620.1040@0.0.1620.1040" timestamp="1595903227089" />
-    <state width="765" height="282" key="GridCell.Tab.0.left" timestamp="1595903227089">
+    <state width="1578" height="347" key="GridCell.Tab.1.right/0.0.1620.1040@0.0.1620.1040" timestamp="1596088772128" />
+    <state x="312" y="165" key="SettingsEditor" timestamp="1596084389671">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
-    <state width="765" height="282" key="GridCell.Tab.0.left/0.0.1620.1040@0.0.1620.1040" timestamp="1595903227089" />
-    <state width="765" height="282" key="GridCell.Tab.0.right" timestamp="1595903227089">
-      <screen x="0" y="0" width="1620" height="1040" />
-    </state>
-    <state width="765" height="282" key="GridCell.Tab.0.right/0.0.1620.1040@0.0.1620.1040" timestamp="1595903227089" />
-    <state width="1578" height="347" key="GridCell.Tab.1.bottom" timestamp="1595903226447">
-      <screen x="0" y="0" width="1620" height="1040" />
-    </state>
-    <state width="1578" height="347" key="GridCell.Tab.1.bottom/0.0.1620.1040@0.0.1620.1040" timestamp="1595903226447" />
-    <state width="1578" height="347" key="GridCell.Tab.1.center" timestamp="1595903226447">
-      <screen x="0" y="0" width="1620" height="1040" />
-    </state>
-    <state width="1578" height="347" key="GridCell.Tab.1.center/0.0.1620.1040@0.0.1620.1040" timestamp="1595903226447" />
-    <state width="1578" height="347" key="GridCell.Tab.1.left" timestamp="1595903226447">
-      <screen x="0" y="0" width="1620" height="1040" />
-    </state>
-    <state width="1578" height="347" key="GridCell.Tab.1.left/0.0.1620.1040@0.0.1620.1040" timestamp="1595903226447" />
-    <state width="1578" height="347" key="GridCell.Tab.1.right" timestamp="1595903226447">
-      <screen x="0" y="0" width="1620" height="1040" />
-    </state>
-    <state width="1578" height="347" key="GridCell.Tab.1.right/0.0.1620.1040@0.0.1620.1040" timestamp="1595903226447" />
-    <state x="0" y="165" key="SettingsEditor" timestamp="1595789312281">
-      <screen x="0" y="0" width="1620" height="1040" />
-    </state>
-    <state x="0" y="165" key="SettingsEditor/0.0.1620.1040@0.0.1620.1040" timestamp="1595789312281" />
-    <state x="403" y="253" key="Vcs.Push.Dialog.v2" timestamp="1595883384503">
-      <screen x="0" y="0" width="1620" height="1040" />
-    </state>
-    <state x="403" y="253" key="Vcs.Push.Dialog.v2/0.0.1620.1040@0.0.1620.1040" timestamp="1595883384503" />
-    <state x="618" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1595590317557">
-      <screen x="0" y="0" width="1620" height="1040" />
-    </state>
-    <state x="618" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1620.1040@0.0.1620.1040" timestamp="1595590317557" />
-    <state x="293" y="256" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1595900107715">
-      <screen x="0" y="0" width="1620" height="1040" />
-    </state>
-    <state x="293" y="256" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1620.1040@0.0.1620.1040" timestamp="1595900107715" />
-    <state x="587" y="305" key="refactoring.ChangeSignatureDialog" timestamp="1595889493619">
-      <screen x="0" y="0" width="1620" height="1040" />
-    </state>
-    <state x="587" y="305" key="refactoring.ChangeSignatureDialog/0.0.1620.1040@0.0.1620.1040" timestamp="1595889493619" />
-    <state x="469" y="242" key="run.anything.popup" timestamp="1595385498436">
-      <screen x="0" y="0" width="1620" height="1040" />
-    </state>
-    <state x="469" y="242" key="run.anything.popup/0.0.1620.1040@0.0.1620.1040" timestamp="1595385498436" />
-    <state x="474" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1595424780339">
-      <screen x="0" y="0" width="1620" height="1040" />
-    </state>
-    <state x="474" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1620.1040@0.0.1620.1040" timestamp="1595424780339" />
+    <state x="312" y="165" key="SettingsEditor/0.0.1620.1040@0.0.1620.1040" timestamp="1596084389671" />
   </component>
   <component name="XDebuggerManager">
-    <watches-manager>
-      <configuration name="CMakeRunConfiguration">
-        <watch expression="nrows" language="ObjectiveC" />
-        <watch expression="geometry" language="ObjectiveC" />
-      </configuration>
-    </watches-manager>
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/IsingModel-Visual.cpp</url>
+          <line>34</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/IsingModel-Visual.cpp</url>
+          <line>14</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/IsingModel-Visual.cpp</url>
+          <line>29</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

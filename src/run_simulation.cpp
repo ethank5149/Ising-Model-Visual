@@ -17,17 +17,17 @@
 void run_simulation(Ising_Params &p)
 {
     long framenumber;
-    mkdir(p.outputdir.c_str(), S_IRWXU);
-    std::filesystem::current_path(p.tempdir);
+    boost::filesystem::create_directory(p.outputdir.c_str()/*, S_IRWXU*/);
+    boost::filesystem::current_path(p.tempdir);
 
     // If a run was quit early and a temporary directory is reused, it might not be empty.
     // If so, empty it manually to overcome pesky permission errors (At least in Unix).
-    if(!std::filesystem::is_empty(p.tempdir)){
+    if(!boost::filesystem::is_empty(p.tempdir)){
         system("rm *.png");
         system("rm *.pbm");
     }
-    std::filesystem::remove(p.outputdir/"output.mp4");
-    std::filesystem::remove(p.outputdir/"output.gif");
+    boost::filesystem::remove(p.outputdir/"output.mp4");
+    boost::filesystem::remove(p.outputdir/"output.gif");
 
     void (*step)(Ising_Params &);
     if (p.method == 'M') {

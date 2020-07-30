@@ -19,8 +19,8 @@
 
 #include <unordered_set>
 #include <vector>
-#include <filesystem>
 #include <iostream>
+#include <boost/filesystem.hpp>
 
 #include "../include/random_generators.h"
 #include "../include/sqr_neighbors.h"
@@ -45,8 +45,8 @@ public:
     std::unordered_set<long> cluster{};
     std::unordered_set<long> perimeter{};
 
-    std::filesystem::path outputdir = std::filesystem::current_path() / "output";
-    std::filesystem::path tempdir = std::filesystem::temp_directory_path();
+    boost::filesystem::path outputdir = boost::filesystem::current_path() / "output";
+    boost::filesystem::path tempdir = boost::filesystem::temp_directory_path();
 
     std::vector<long> (*neighbors)(long, long, long){};
 

@@ -1,0 +1,26 @@
+"C:\Program Files\JetBrains\CLion 2020.1.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_TOOLCHAIN_FILE=C:/vcpkg/scripts/buildsystems/vcpkg.cmake -G "CodeBlocks - NMake Makefiles" C:\Users\ethan\CLionProjects\IsingModel-Visual
+CMake Warning at C:/Program Files/JetBrains/CLion 2020.1.2/bin/cmake/win/share/cmake-3.16/Modules/FindBoost.cmake:1161 (message):
+  New Boost version may have incorrect or missing dependencies and imported
+  targets
+Call Stack (most recent call first):
+  C:/Program Files/JetBrains/CLion 2020.1.2/bin/cmake/win/share/cmake-3.16/Modules/FindBoost.cmake:1283 (_Boost_COMPONENT_DEPENDENCIES)
+  C:/Program Files/JetBrains/CLion 2020.1.2/bin/cmake/win/share/cmake-3.16/Modules/FindBoost.cmake:1921 (_Boost_MISSING_DEPENDENCIES)
+  C:/vcpkg/scripts/buildsystems/vcpkg.cmake:405 (_find_package)
+  CMakeLists.txt:33 (find_package)
+
+
+CMake Warning at C:/Program Files/JetBrains/CLion 2020.1.2/bin/cmake/win/share/cmake-3.16/Modules/FindBoost.cmake:1161 (message):
+  New Boost version may have incorrect or missing dependencies and imported
+  targets
+Call Stack (most recent call first):
+  C:/Program Files/JetBrains/CLion 2020.1.2/bin/cmake/win/share/cmake-3.16/Modules/FindBoost.cmake:1283 (_Boost_COMPONENT_DEPENDENCIES)
+  C:/Program Files/JetBrains/CLion 2020.1.2/bin/cmake/win/share/cmake-3.16/Modules/FindBoost.cmake:1921 (_Boost_MISSING_DEPENDENCIES)
+  C:/vcpkg/scripts/buildsystems/vcpkg.cmake:405 (_find_package)
+  CMakeLists.txt:33 (find_package)
+
+
+-- Configuring done
+WARNING: Target "IsingModel-Visual" requests linking to directory "C:/vcpkg/installed/x86-windows/lib".  Targets may link only to libraries.  CMake is dropping the item.
+WARNING: Target "IsingModel-Visual" requests linking to directory "C:/vcpkg/installed/x86-windows/debug/lib".  Targets may link only to libraries.  CMake is dropping the item.
+-- Generating done
+-- Build files have been written to: C:/Users/ethan/CLionProjects/IsingModel-Visual/cmake-build-debug-visual-studio

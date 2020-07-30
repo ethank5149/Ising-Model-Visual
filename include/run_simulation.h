@@ -5,10 +5,9 @@
 #ifndef ISINGMODEL_VISUAL_RUN_SIMULATION_H
 #define ISINGMODEL_VISUAL_RUN_SIMULATION_H
 
-#include <unistd.h>
 #include <sys/types.h>
 #include <sys/stat.h>
-#include <filesystem>
+#include <boost/filesystem.hpp>
 #include <iostream>
 #include <stdlib.h>
 
