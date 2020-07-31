@@ -5,12 +5,8 @@
 #ifndef ISINGMODEL_VISUAL_LATTICE2PNG_H
 #define ISINGMODEL_VISUAL_LATTICE2PNG_H
 
-#include <cstdio>
-#include <cstdlib>
+#include "Ising.h"
 
-#include "Ising_Params.h"
-
-
-void lattice2png(Ising_Params &, long);
+void lattice2png(Ising &, long);
 
 #endif //ISINGMODEL_VISUAL_LATTICE2PNG_H

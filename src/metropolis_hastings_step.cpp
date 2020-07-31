@@ -3,6 +3,8 @@
 ///\date 7/22/2020.
 
 #include "../include/metropolis_hastings_step.h"
+#include "../include/random_generators.h"
+#include <cmath>
 
 
 /// \brief Performs one step of the Metropolis-Hastings Algorithm
@@ -15,7 +17,7 @@
 /// \param p  Instance of an Ising_Params class
 ///
 /// \return void
-void metropolis_hastings_step(Ising_Params &p)
+void metropolis_hastings_step(Ising &p)
 {
     // Select a random point in the lattice
     int idx = uniformintegral(p.nrows*p.ncols);

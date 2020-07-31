@@ -3,7 +3,12 @@
 ///\date 7/22/2020.
 
 #include "../include/run_simulation.h"
-
+#include "../include/metropolis_hastings_step.h"
+#include "../include/wolff_step.h"
+#include "../include/lattice2png.h"
+#include "../include/pngs2video.h"
+#include "../include/clean.h"
+#include <iostream>
 
 /// \brief Run through iterations, generate files, and compile video
 ///
@@ -14,22 +19,14 @@
 /// \param p  An instance of Ising_Params
 ///
 /// \return void
-void run_simulation(Ising_Params &p)
+void run_simulation(Ising &p)
 {
     long framenumber;
-    boost::filesystem::create_directory(p.outputdir.c_str()/*, S_IRWXU*/);
-    boost::filesystem::current_path(p.tempdir);
 
-    // If a run was quit early and a temporary directory is reused, it might not be empty.
-    // If so, empty it manually to overcome pesky permission errors (At least in Unix).
-    if(!boost::filesystem::is_empty(p.tempdir)){
-        system("rm *.png");
-        system("rm *.pbm");
-    }
-    boost::filesystem::remove(p.outputdir/"output.mp4");
-    boost::filesystem::remove(p.outputdir/"output.gif");
+    if(boost::filesystem::create_directory(p.outputdir)) { std::cout << "\nCreated 'Output' Directory\n" << std::endl; }
+    clean_all(p);
 
-    void (*step)(Ising_Params &);
+    void (*step)(Ising &);
     if (p.method == 'M') {
         step = &metropolis_hastings_step;
     }
@@ -46,7 +43,8 @@ void run_simulation(Ising_Params &p)
 
             // Save the frame as a png
             lattice2png(p, framenumber);
-            std::cout << "Saving frame " << framenumber << " out of " << p.stopiter / p.framestep << std::endl;
+
+            std::cout << "Saving frame " << framenumber + 1 << " out of " << p.stopiter / p.framestep << std::endl;
         }
         // TODO: When trying a 1000x1000 grid, we segfault here
         step(p);

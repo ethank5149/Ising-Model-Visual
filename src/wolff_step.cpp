@@ -3,9 +3,11 @@
 ///\date 7/24/2020.
 
 #include "../include/wolff_step.h"
+#include "../include/random_generators.h"
+#include <utility>
+#include <algorithm>
 
-
-void wolff_step(Ising_Params &p)
+void wolff_step(Ising &p)
 {
     double P = 1.0 - exp(-2.0 * p.J / p.T);
     size_t chosen;

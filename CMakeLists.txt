@@ -2,7 +2,8 @@
 # project specific logic here.
 #
 cmake_minimum_required (VERSION 3.8)
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_STANDARD 20)
 
 project ("IsingModel-Visual")
 
@@ -18,20 +19,22 @@ add_executable (IsingModel-Visual
         src/run_simulation.cpp
         include/run_simulation.h
         include/random_generators.h
-        src/Ising_Params.cpp
-        include/Ising_Params.h
+        src/Ising.cpp
+        include/Ising.h
         src/wolff_step.cpp
         include/wolff_step.h
         src/sqr_neighbors.cpp
         include/sqr_neighbors.h
         src/hex_neighbors.cpp
-        include/hex_neighbors.h)
+        include/hex_neighbors.h src/clean.cpp include/clean.h)
 
-set(BOOST_ROOT "C:/boost")
-set(Boost_INCLUDE_DIR c:/boost)
-set(Boost_LIBRARY_DIRS c:/boost/stage/lib)
-find_package(Boost 1.73.0 REQUIRED COMPONENTS filesystem program_options)
-include_directories(${Boost_INCLUDE_DIR})
-target_link_libraries(IsingModel-Visual ${Boost_LIBRARY_DIRS}
-        c:/boost/stage/lib/libboost_filesystem-vc142-mt-gd-x32-1_73.lib
-        c:/boost/stage/lib/libboost_program_options-vc142-mt-gd-x32-1_73.lib)
+#set(Boost_INCLUDE_DIRS "/usr/include/boost")
+#set(Boost_LIBRARY_DIRS "/usr/lib/x86_64-linux-gnu")
+
+find_package(fmt CONFIG REQUIRED)
+
+set(Boost_USE_STATIC_LIBS   ON)
+find_package(Boost COMPONENTS filesystem program_options thread REQUIRED)
+
+include_directories( ${Boost_INCLUDE_DIR} )
+target_link_libraries(IsingModel-Visual ${Boost_LIBRARIES} fmt::fmt fmt::fmt-header-only)

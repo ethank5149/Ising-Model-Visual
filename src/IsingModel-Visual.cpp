@@ -1,11 +1,10 @@
-﻿#include <cstdio>
-#include <string>
-#include <boost/filesystem/fstream.hpp>
+﻿#include <boost/filesystem/fstream.hpp>
 #include <boost/program_options.hpp>
-namespace opt = boost::program_options;
-
-#include "../include/Ising_Params.h"
+#include "../include/Ising.h"
 #include "../include/run_simulation.h"
+#include <iostream>
+
+namespace opt = boost::program_options;
 
 int main(int argc, const char* argv[])
 {
@@ -16,7 +15,7 @@ int main(int argc, const char* argv[])
     opt::options_description params("Simulation Parameters");
 
     params.add_options()
-            ("help,h", "print usage message")
+            ("help", "Show usage")
             ("nrows,r", opt::value<long>(&nrows)->default_value(500), "Number of rows")
             ("ncols,c", opt::value<long>(&ncols)->default_value(500), "Number of columns")
             ("stopiter,s", opt::value<long>(&stopiter)->default_value(250000), "Number of iterations")
@@ -29,40 +28,33 @@ int main(int argc, const char* argv[])
             ;
 
     opt::variables_map vm;
+    opt::store(opt::parse_command_line(argc, argv, params), vm);
 
-    try { opt::store(opt::parse_command_line(argc, argv, params), vm); }
-    catch (const opt::reading_file& e) { std::cout << "Error: " << e.what() << std::endl; }
-
-    if(argc == 2){
-        if (vm.count("help")) {
-            std::cout << params << std::endl;
-            return 1;
-        }
-        else{
-            try { opt::store(opt::parse_config_file<char>(argv[1], params), vm); }
-            catch (const opt::reading_file& e) { std::cout << "Error: " << e.what() << std::endl; }
-        }
+    if (vm.count("help")) {
+        std::cout << params << std::endl;
+        return 1;
     }
+    else {
+        opt::notify(vm);
 
-    opt::notify(vm);
+        std::cout << "\n2D ISING MODEL - VISUAL SIMULATION" << std::endl;
+        std::cout << "----------------------------------" << std::endl;
 
-    printf("\n2D ISING MODEL - VISUAL SIMULATION\n");
-    printf(  "----------------------------------\n");
+        Ising p = Ising(nrows, ncols, stopiter, framestep, J, h, T, method, geometry);
 
-    Ising_Params p = Ising_Params(nrows, ncols, stopiter, framestep, J, h, T, method, geometry);
+        std::cout << "Using the " << (p.method == 'M' ? "Metropolis-Hastings" : "Wolff") << " Algorithm ";
+        std::cout << "with " << (p.geometry == 'S' ? "Standard Square" : "Hexagonal") << " Geometry" << std::endl;
+        std::cout << p.nrows << "x" << p.ncols << " Grid, ";
+        std::cout << p.stopiter << " Iterations, " << p.framestep << " Steps Between Frames" << std::endl;
+        std::cout << "J = " << p.J << ", h = " << p.h << ", T = " << p.T << std::endl;
+        std::cout << "\nRunning..." << std::endl;
 
-    std::cout << "Using the " << (p.method == 'M' ? "Metropolis-Hastings" : "Wolff") << " Algorithm" << std::endl;
-    std::cout << "With " << (p.geometry == 'S' ? "Standard Square" : "Hexagonal") << " Geometry" << std::endl;
-    std::cout << p.nrows << "x" << p.ncols << " Grid" << std::endl;
-    std::cout << p.stopiter << " Iterations, " << p.framestep << " Steps Between Frames" << std::endl;
-    std::cout << "J = " << p.J << ", h = " << p.h << ", T = " << p.T << std::endl;
-    std::cout << "\nRunning..." << std::endl;
+        p.randomize();
+        run_simulation(p); // Go baby go
 
-    p.randomize();
-    run_simulation(p); // Go baby go
+        std::cout << "Done!" << std::endl;
+        std::cout << "----------------------------------" << std::endl;
 
-    printf("Done!\n");
-    printf("----------------------------------\n");
-
-    return 0;
+        return 0;
+    }
 }

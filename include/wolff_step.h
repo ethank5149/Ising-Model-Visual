@@ -5,16 +5,8 @@
 #ifndef ISINGMODEL_VISUAL_WOLFF_STEP_H
 #define ISINGMODEL_VISUAL_WOLFF_STEP_H
 
-#include <cmath>
-#include <vector>
-#include <utility>
-#include <algorithm>
+#include "Ising.h"
 
-#include "random_generators.h"
-#include "Ising_Params.h"
-#include "sqr_neighbors.h"
-
-
-void wolff_step(Ising_Params &);
+void wolff_step(Ising &);
 
 #endif //ISINGMODEL_VISUAL_WOLFF_STEP_H

@@ -7,8 +7,6 @@
 
 #include <vector>
 
-#include "Ising_Params.h"
-
 std::vector<long> hex_neighbors(long, long, long);
 
 #endif //ISINGMODEL_VISUAL_HEX_NEIGHBORS_H
