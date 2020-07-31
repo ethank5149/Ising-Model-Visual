@@ -1,4 +1,4 @@
-///\file hex_neighbors.h
+///\headerfile hex_neighbors.h
 ///\author Ethan Knox
 ///\date 7/27/2020.
 

@@ -1,4 +1,8 @@
-﻿#include <boost/filesystem/fstream.hpp>
+﻿///\file IsingModel-Visual.cpp
+///\author Ethan Knox
+///\date 7/19/2020.
+
+#include <boost/filesystem/fstream.hpp>
 #include <boost/program_options.hpp>
 #include "../include/Ising.h"
 #include "../include/run_simulation.h"

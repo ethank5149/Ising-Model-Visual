@@ -80,5 +80,4 @@ Ising model using both the Metropolis-Hastings Algorithm and the Wolff Algorithm
 </table>
 
 ## Known Bugs
-When given non-square dimensions, this program produces 'interesting' visual glitches, they seem to be something to do 
-with selecting/iterating through the bounded indices?
+None, yay!

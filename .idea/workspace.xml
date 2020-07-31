@@ -29,7 +29,204 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1aff87c-1991-42d5-a808-39fc2a675c1c" name="Default Changelist" comment="Fixed boost integration and took advantage of optimization" />
+    <list default="true" id="e1aff87c-1991-42d5-a808-39fc2a675c1c" name="Default Changelist" comment="Updated README.md">
+      <change afterPath="$PROJECT_DIR$/docs/html/_form0_tmp.epsi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/_form0_tmp.ps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/_formulas.aux" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/_formulas.dvi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/_formulas.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/_formulas.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/_ising_8cpp.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/_ising_8h.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/_ising_8h_source.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/_ising_model-_visual_8cpp.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/annotated.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/bc_s.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/bdwn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/class_ising-members.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/class_ising.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/classes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/clean_8cpp.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/clean_8h.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/clean_8h_source.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/closed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/dir_196234b1d21dc44a6281ad3c5bc37abf.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/dir_37bea1b8ab9a6f412cdb40514668f146.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/dir_402b6e84fe6cedb1ff417b90070e3614.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/dir_406552daa56d8b7b38dbb032e79aef1a.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/dir_4fef79e7177ba769987a8da36c892c5f.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/dir_63772b626f2709090f0bdca0f40827b4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/dir_68267d1309a1af8e8297ef4c3efbcdba.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/dir_8e66e56cf9c948b2cc35cef13e5e65c0.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/dir_a771e9ce409f1d049d507fafddf6c96e.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/dir_d44c64559bbebec7f509842c48db8b23.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/dir_edc58d28dab2e9e4edbdaf227edbe567.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/dir_ef4246a2f1cbc4a4f1a8f3ef23f429fa.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/dir_fea11dd409255c0cd81f2221dc541660.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/doc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/doxygen.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/doxygen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/dynsections.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/files.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/folderclosed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/folderopen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/globals.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/globals_func.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/hex__neighbors_8cpp.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/hex__neighbors_8h.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/hex__neighbors_8h_source.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/lattice2png_8cpp.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/lattice2png_8h_source.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/menu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/menudata.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/metropolis__hastings__step_8cpp.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/metropolis__hastings__step_8h_source.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/nav_f.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/nav_g.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/nav_h.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/pages.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/pngs2video_8cpp.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/pngs2video_8h_source.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/random__generators_8h_source.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/run__simulation_8cpp.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/run__simulation_8h_source.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/all_0.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/all_0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/all_1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/all_1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/all_2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/all_2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/all_3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/all_3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/all_4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/all_4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/all_5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/all_5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/all_6.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/all_6.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/all_7.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/all_7.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/all_8.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/all_8.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/all_9.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/all_9.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/classes_0.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/classes_0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/files_0.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/files_0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/files_1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/files_1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/files_2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/files_2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/files_3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/files_3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/files_4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/files_4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/files_5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/files_5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/files_6.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/files_6.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/files_7.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/files_7.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/files_8.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/files_8.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/functions_0.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/functions_0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/functions_1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/functions_1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/functions_2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/functions_2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/functions_3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/functions_3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/functions_4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/functions_4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/functions_5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/functions_5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/functions_6.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/functions_6.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/functions_7.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/functions_7.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/mag_sel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/nomatches.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/pages_0.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/pages_0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/pages_1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/pages_1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/search.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/search_l.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/search_m.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/search_r.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/search/searchdata.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/splitbar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/sqr__neighbors_8cpp.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/sqr__neighbors_8h.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/sqr__neighbors_8h_source.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/sync_off.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/sync_on.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/tab_a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/tab_b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/tab_h.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/tab_s.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/tabs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/todo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/wolff__step_8cpp.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/wolff__step_8h.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/html/wolff__step_8h_source.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/latex/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/latex/_ising_8cpp.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/latex/_ising_8h.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/latex/_ising_model-_visual_8cpp.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/latex/annotated.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/latex/class_ising.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/latex/clean_8cpp.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/latex/clean_8h.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/latex/doxygen.sty" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/latex/files.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/latex/hex__neighbors_8cpp.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/latex/hex__neighbors_8h.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/latex/index.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/latex/lattice2png_8cpp.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/latex/longtable_doxygen.sty" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/latex/make.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/latex/metropolis__hastings__step_8cpp.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/latex/pngs2video_8cpp.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/latex/refman.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/latex/run__simulation_8cpp.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/latex/sqr__neighbors_8cpp.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/latex/sqr__neighbors_8h.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/latex/tabu_doxygen.sty" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/latex/todo.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/latex/wolff__step_8cpp.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/latex/wolff__step_8h.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/src/hex_neighbors.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/src/hex_neighbors.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/src/sqr_neighbors.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/src/sqr_neighbors.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/IsingModel-Visual" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-wsl/IsingModel-Visual" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/output/output.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-wsl/output/output.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/Ising.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/Ising.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/clean.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/clean.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/hex_neighbors.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/hex_neighbors.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/lattice2png.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/lattice2png.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/sqr_neighbors.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/sqr_neighbors.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/wolff_step.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/wolff_step.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ising.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ising.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IsingModel-Visual.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/IsingModel-Visual.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clean.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/clean.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hex_neighbors.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/hex_neighbors.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lattice2png.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lattice2png.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/metropolis_hastings_step.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/metropolis_hastings_step.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pngs2video.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/pngs2video.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/run_simulation.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/run_simulation.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sqr_neighbors.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/sqr_neighbors.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wolff_step.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/wolff_step.cpp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,6 +248,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -66,7 +264,12 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="IsingModel-Visual" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="-r 1000 -c 1000 -s 100 -f 1 -j 1.0 -h 0.0 -t 1.8 -m W -g H" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="IsingModel-Visual" TARGET_NAME="IsingModel-Visual" CONFIG_NAME="Debug-WSL" RUN_TARGET_PROJECT_NAME="IsingModel-Visual" RUN_TARGET_NAME="IsingModel-Visual">
+    <configuration name="IsingModel-Visual" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="-r 1920 -c 1080 -s 1000000000 -f 1000000 -j 1.0 -h 0.0 -t 1.0 -m M -g H" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="IsingModel-Visual" TARGET_NAME="IsingModel-Visual" CONFIG_NAME="Debug-WSL" RUN_TARGET_PROJECT_NAME="IsingModel-Visual" RUN_TARGET_NAME="IsingModel-Visual">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -89,6 +292,7 @@
       <workItem from="1596111486254" duration="2354000" />
       <workItem from="1596114088696" duration="11796000" />
       <workItem from="1596145070754" duration="20060000" />
+      <workItem from="1596181751595" duration="8458000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed boost integration and took advantage of optimization">
       <created>1596170270646</created>
@@ -97,7 +301,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596170270646</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Updated README.md">
+      <created>1596181992898</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1596181992899</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,34 +330,36 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Fixed boost integration and took advantage of optimization" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed boost integration and took advantage of optimization" />
+    <MESSAGE value="Updated README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated README.md" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="0" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596169290194">
+    <state x="0" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596207581923">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
-    <state x="0" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1620.1040@0.0.1620.1040" timestamp="1596169290194" />
+    <state x="0" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1620.1040@0.0.1620.1040" timestamp="1596207581923" />
     <state x="591" y="275" key="FileChooserDialogImpl" timestamp="1596107116747">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
     <state x="591" y="275" key="FileChooserDialogImpl/0.0.1620.1040@0.0.1620.1040" timestamp="1596107116747" />
-    <state width="1578" height="347" key="GridCell.Tab.0.bottom" timestamp="1596170896586">
+    <state width="1578" height="278" key="GridCell.Tab.0.bottom" timestamp="1596211743731">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
-    <state width="1578" height="347" key="GridCell.Tab.0.bottom/0.0.1620.1040@0.0.1620.1040" timestamp="1596170896586" />
-    <state width="1578" height="347" key="GridCell.Tab.0.center" timestamp="1596170896586">
+    <state width="1578" height="278" key="GridCell.Tab.0.bottom/0.0.1620.1040@0.0.1620.1040" timestamp="1596211743731" />
+    <state width="1578" height="278" key="GridCell.Tab.0.center" timestamp="1596211743730">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
-    <state width="1578" height="347" key="GridCell.Tab.0.center/0.0.1620.1040@0.0.1620.1040" timestamp="1596170896586" />
-    <state width="1578" height="347" key="GridCell.Tab.0.left" timestamp="1596170896586">
+    <state width="1578" height="278" key="GridCell.Tab.0.center/0.0.1620.1040@0.0.1620.1040" timestamp="1596211743730" />
+    <state width="1578" height="278" key="GridCell.Tab.0.left" timestamp="1596211743730">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
-    <state width="1578" height="347" key="GridCell.Tab.0.left/0.0.1620.1040@0.0.1620.1040" timestamp="1596170896586" />
-    <state width="1578" height="347" key="GridCell.Tab.0.right" timestamp="1596170896586">
+    <state width="1578" height="278" key="GridCell.Tab.0.left/0.0.1620.1040@0.0.1620.1040" timestamp="1596211743730" />
+    <state width="1578" height="278" key="GridCell.Tab.0.right" timestamp="1596211743730">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
-    <state width="1578" height="347" key="GridCell.Tab.0.right/0.0.1620.1040@0.0.1620.1040" timestamp="1596170896586" />
+    <state width="1578" height="278" key="GridCell.Tab.0.right/0.0.1620.1040@0.0.1620.1040" timestamp="1596211743730" />
     <state width="1578" height="347" key="GridCell.Tab.1.bottom" timestamp="1596170896587">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
@@ -167,10 +380,10 @@
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
     <state x="312" y="165" key="SettingsEditor/0.0.1620.1040@0.0.1620.1040" timestamp="1596150783608" />
-    <state x="403" y="253" key="Vcs.Push.Dialog.v2" timestamp="1596170281693">
+    <state x="403" y="253" key="Vcs.Push.Dialog.v2" timestamp="1596182000403">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
-    <state x="403" y="253" key="Vcs.Push.Dialog.v2/0.0.1620.1040@0.0.1620.1040" timestamp="1596170281693" />
+    <state x="403" y="253" key="Vcs.Push.Dialog.v2/0.0.1620.1040@0.0.1620.1040" timestamp="1596182000403" />
     <state x="474" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1596118370436">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>

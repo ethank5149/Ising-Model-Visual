@@ -7,16 +7,15 @@
 #include <cmath>
 
 
-/// \brief Performs one step of the Metropolis-Hastings Algorithm
+///\brief Performs one step of the Metropolis-Hastings Algorithm
 ///
-/// Selects a point at random and calculates the energy difference.
-/// If this difference is less than zero, the spin is automatically flipped,
-/// otherwise it's flipped with probability \f$ P = e^{-\frac{dE}{k_BT}} \f$
+///Selects a point at random and calculates the energy difference.
+///If this difference is less than zero, the spin is automatically flipped,
+///otherwise it's flipped with probability \f$ P = e^{-\frac{dE}{k_BT}} \f$
 ///
-/// \param lattice  The 2D grid of spin values
-/// \param p  Instance of an Ising_Params class
+///\param p An instance of the Ising class
 ///
-/// \return void
+///\return void
 void metropolis_hastings_step(Ising &p)
 {
     // Select a random point in the lattice

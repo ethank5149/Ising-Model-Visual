@@ -8,10 +8,11 @@
 #include <fmt/format.h>
 #include <iostream>
 
-/// \brief Uses ffmpeg to create a video from png images
+///\brief Creates a video of the simulation
 ///
-/// Uses ffmpeg to convert existing png images into a gif and mp4.
-/// The now obsolete png files are then deleted
+///Uses ffmpeg to convert the png frames into both a gif and mp4, then the now
+///obsolete frames are deleted
+///\todo Don't delete these images if future option to save them is selected
 ///
 /// \return void
 void pngs2video(Ising &p)

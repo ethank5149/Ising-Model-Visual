@@ -1,4 +1,4 @@
-///\headerfile lattice2pbm.h
+///\headerfile lattice2png.h
 ///\author Ethan Knox
 ///\date 7/22/2020.
 
