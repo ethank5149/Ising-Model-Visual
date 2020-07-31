@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="IsingModel-Visual"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\vcpkg\;CMake Files\..\..\..\..\..\..\vcpkg\scripts\;CMake Files\..\..\..\..\..\..\vcpkg\scripts\buildsystems\;CMake Files\..\..\..\..\..\..\vcpkg\installed\;CMake Files\..\..\..\..\..\..\vcpkg\installed\x64-linux\;CMake Files\..\..\..\..\..\..\vcpkg\installed\x64-linux\share\;CMake Files\..\..\..\..\..\..\vcpkg\installed\x64-linux\share\fmt\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/mnt/c/users/ethan/clionprojects/isingmodel-visual/cmake-build-debug-wsl"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/users/ethan/clionprojects/isingmodel-visual/cmake-build-debug-wsl/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/users/ethan/clionprojects/isingmodel-visual/cmake-build-debug-wsl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/users/ethan/clionprojects/isingmodel-visual/cmake-build-debug-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/users/ethan/clionprojects/isingmodel-visual/cmake-build-debug-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/mnt/c/users/ethan/clionprojects/isingmodel-visual/cmake-build-debug-wsl"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/users/ethan/clionprojects/isingmodel-visual/cmake-build-debug-wsl/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/users/ethan/clionprojects/isingmodel-visual/cmake-build-debug-wsl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/users/ethan/clionprojects/isingmodel-visual/cmake-build-debug-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/users/ethan/clionprojects/isingmodel-visual/cmake-build-debug-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/mnt/c/users/ethan/clionprojects/isingmodel-visual/cmake-build-debug-wsl"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/users/ethan/clionprojects/isingmodel-visual/cmake-build-debug-wsl/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/users/ethan/clionprojects/isingmodel-visual/cmake-build-debug-wsl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/users/ethan/clionprojects/isingmodel-visual/cmake-build-debug-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/users/ethan/clionprojects/isingmodel-visual/cmake-build-debug-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="IsingModel-Visual">
+				<Option output="/mnt/c/users/ethan/clionprojects/isingmodel-visual/cmake-build-debug-wsl/IsingModel-Visual" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/users/ethan/clionprojects/isingmodel-visual/cmake-build-debug-wsl"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DFMT_LOCALE"/>
+					<Add option="-DFMT_HEADER_ONLY=1"/>
+					<Add directory="/vcpkg/installed/x64-linux/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/users/ethan/clionprojects/isingmodel-visual/cmake-build-debug-wsl/Makefile&quot;  VERBOSE=1 IsingModel-Visual"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/users/ethan/clionprojects/isingmodel-visual/cmake-build-debug-wsl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/users/ethan/clionprojects/isingmodel-visual/cmake-build-debug-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/users/ethan/clionprojects/isingmodel-visual/cmake-build-debug-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="IsingModel-Visual/fast">
+				<Option output="/mnt/c/users/ethan/clionprojects/isingmodel-visual/cmake-build-debug-wsl/IsingModel-Visual" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/users/ethan/clionprojects/isingmodel-visual/cmake-build-debug-wsl"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DFMT_LOCALE"/>
+					<Add option="-DFMT_HEADER_ONLY=1"/>
+					<Add directory="/vcpkg/installed/x64-linux/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/users/ethan/clionprojects/isingmodel-visual/cmake-build-debug-wsl/Makefile&quot;  VERBOSE=1 IsingModel-Visual/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/users/ethan/clionprojects/isingmodel-visual/cmake-build-debug-wsl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/users/ethan/clionprojects/isingmodel-visual/cmake-build-debug-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/users/ethan/clionprojects/isingmodel-visual/cmake-build-debug-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/Ising.h">
+			<Option target="IsingModel-Visual"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/clean.h">
+			<Option target="IsingModel-Visual"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/hex_neighbors.h">
+			<Option target="IsingModel-Visual"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/lattice2png.h">
+			<Option target="IsingModel-Visual"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/metropolis_hastings_step.h">
+			<Option target="IsingModel-Visual"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/pngs2video.h">
+			<Option target="IsingModel-Visual"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/random_generators.h">
+			<Option target="IsingModel-Visual"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/run_simulation.h">
+			<Option target="IsingModel-Visual"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/sqr_neighbors.h">
+			<Option target="IsingModel-Visual"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/include/wolff_step.h">
+			<Option target="IsingModel-Visual"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/Ising.cpp">
+			<Option target="IsingModel-Visual"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/IsingModel-Visual.cpp">
+			<Option target="IsingModel-Visual"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/clean.cpp">
+			<Option target="IsingModel-Visual"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/hex_neighbors.cpp">
+			<Option target="IsingModel-Visual"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/lattice2png.cpp">
+			<Option target="IsingModel-Visual"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/metropolis_hastings_step.cpp">
+			<Option target="IsingModel-Visual"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/pngs2video.cpp">
+			<Option target="IsingModel-Visual"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/run_simulation.cpp">
+			<Option target="IsingModel-Visual"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/sqr_neighbors.cpp">
+			<Option target="IsingModel-Visual"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/src/wolff_step.cpp">
+			<Option target="IsingModel-Visual"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/../../../../../../vcpkg/scripts/buildsystems/vcpkg.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\vcpkg\scripts\buildsystems\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/../../../../../../vcpkg/installed/x64-linux/share/fmt/fmt-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\vcpkg\installed\x64-linux\share\fmt\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/../../../../../../vcpkg/installed/x64-linux/share/fmt/fmt-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\vcpkg\installed\x64-linux\share\fmt\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/../../../../../../vcpkg/installed/x64-linux/share/fmt/fmt-targets-debug.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\vcpkg\installed\x64-linux\share\fmt\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/../../../../../../vcpkg/installed/x64-linux/share/fmt/fmt-targets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\vcpkg\installed\x64-linux\share\fmt\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/ethan/CLionProjects/IsingModel-Visual/../../../../../../vcpkg/installed/x64-linux/share/fmt/fmt-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\vcpkg\installed\x64-linux\share\fmt\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,64 @@
+/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_TOOLCHAIN_FILE=/vcpkg/scripts/buildsystems/vcpkg.cmake -G "CodeBlocks - Unix Makefiles" /mnt/c/Users/ethan/CLionProjects/IsingModel-Visual
+CMake Warning at /usr/share/cmake-3.16/Modules/FindBoost.cmake:1161 (message):
+  New Boost version may have incorrect or missing dependencies and imported
+  targets
+Call Stack (most recent call first):
+  /usr/share/cmake-3.16/Modules/FindBoost.cmake:1283 (_Boost_COMPONENT_DEPENDENCIES)
+  /usr/share/cmake-3.16/Modules/FindBoost.cmake:1921 (_Boost_MISSING_DEPENDENCIES)
+  /vcpkg/scripts/buildsystems/vcpkg.cmake:405 (_find_package)
+  CMakeLists.txt:37 (find_package)
+
+
+CMake Warning at /usr/share/cmake-3.16/Modules/FindBoost.cmake:1161 (message):
+  New Boost version may have incorrect or missing dependencies and imported
+  targets
+Call Stack (most recent call first):
+  /usr/share/cmake-3.16/Modules/FindBoost.cmake:1283 (_Boost_COMPONENT_DEPENDENCIES)
+  /usr/share/cmake-3.16/Modules/FindBoost.cmake:1921 (_Boost_MISSING_DEPENDENCIES)
+  /vcpkg/scripts/buildsystems/vcpkg.cmake:405 (_find_package)
+  CMakeLists.txt:37 (find_package)
+
+
+CMake Warning at /usr/share/cmake-3.16/Modules/FindBoost.cmake:1161 (message):
+  New Boost version may have incorrect or missing dependencies and imported
+  targets
+Call Stack (most recent call first):
+  /usr/share/cmake-3.16/Modules/FindBoost.cmake:1283 (_Boost_COMPONENT_DEPENDENCIES)
+  /usr/share/cmake-3.16/Modules/FindBoost.cmake:1921 (_Boost_MISSING_DEPENDENCIES)
+  /vcpkg/scripts/buildsystems/vcpkg.cmake:405 (_find_package)
+  CMakeLists.txt:37 (find_package)
+
+
+CMake Warning at /usr/share/cmake-3.16/Modules/FindBoost.cmake:1161 (message):
+  New Boost version may have incorrect or missing dependencies and imported
+  targets
+Call Stack (most recent call first):
+  /usr/share/cmake-3.16/Modules/FindBoost.cmake:1283 (_Boost_COMPONENT_DEPENDENCIES)
+  /usr/share/cmake-3.16/Modules/FindBoost.cmake:1921 (_Boost_MISSING_DEPENDENCIES)
+  /vcpkg/scripts/buildsystems/vcpkg.cmake:405 (_find_package)
+  CMakeLists.txt:37 (find_package)
+
+
+CMake Warning at /usr/share/cmake-3.16/Modules/FindBoost.cmake:1161 (message):
+  New Boost version may have incorrect or missing dependencies and imported
+  targets
+Call Stack (most recent call first):
+  /usr/share/cmake-3.16/Modules/FindBoost.cmake:1283 (_Boost_COMPONENT_DEPENDENCIES)
+  /usr/share/cmake-3.16/Modules/FindBoost.cmake:1921 (_Boost_MISSING_DEPENDENCIES)
+  /vcpkg/scripts/buildsystems/vcpkg.cmake:405 (_find_package)
+  CMakeLists.txt:37 (find_package)
+
+
+CMake Warning at /usr/share/cmake-3.16/Modules/FindBoost.cmake:1161 (message):
+  New Boost version may have incorrect or missing dependencies and imported
+  targets
+Call Stack (most recent call first):
+  /usr/share/cmake-3.16/Modules/FindBoost.cmake:1283 (_Boost_COMPONENT_DEPENDENCIES)
+  /usr/share/cmake-3.16/Modules/FindBoost.cmake:1921 (_Boost_MISSING_DEPENDENCIES)
+  /vcpkg/scripts/buildsystems/vcpkg.cmake:405 (_find_package)
+  CMakeLists.txt:37 (find_package)
+
+
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /mnt/c/users/ethan/clionprojects/isingmodel-visual/cmake-build-debug-wsl

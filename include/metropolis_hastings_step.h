@@ -5,13 +5,8 @@
 #ifndef ISINGMODEL_VISUAL_METROPOLIS_HASTINGS_STEP_H
 #define ISINGMODEL_VISUAL_METROPOLIS_HASTINGS_STEP_H
 
-#include <cmath>
+#include "Ising.h"
 
-#include "random_generators.h"
-#include "sqr_neighbors.h"
-#include "Ising_Params.h"
-
-
-void metropolis_hastings_step(Ising_Params &);
+void metropolis_hastings_step(Ising &);
 
 #endif //ISINGMODEL_VISUAL_METROPOLIS_HASTINGS_STEP_H

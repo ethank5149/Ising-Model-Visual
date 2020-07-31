@@ -3,7 +3,10 @@
 ///\date 7/22/2020.
 
 #include "../include/pngs2video.h"
-
+#include "../include/clean.h"
+#include <boost/process.hpp>
+#include <fmt/format.h>
+#include <iostream>
 
 /// \brief Uses ffmpeg to create a video from png images
 ///
@@ -11,16 +14,15 @@
 /// The now obsolete png files are then deleted
 ///
 /// \return void
-void pngs2video(Ising_Params &p)
+void pngs2video(Ising &p)
 {
-    char mp4command[0x100];
-    snprintf(mp4command, sizeof(mp4command),"ffmpeg -nostats -loglevel 0 -i frame%%d.png %s", (p.outputdir/"output.mp4").c_str());
+    std::cout << "\nCreating mp4... ";
+    boost::process::system(fmt::format("ffmpeg -nostats -loglevel 0 -i {0}/frame%d.png {1}", p.outputdir.string(), (p.outputdir/"output.mp4").string()).c_str());
+    std::cout << "Done!\n" << std::endl;
 
-    char gifcommand[0x100];
-    snprintf(gifcommand, sizeof(gifcommand),"ffmpeg -nostats -loglevel 0 -i frame%%d.png %s", (p.outputdir/"output.gif").c_str());
+    std::cout << "\nCreating gif... ";
+    boost::process::system(fmt::format("ffmpeg -nostats -loglevel 0 -i {0}/frame%d.png {1}", p.outputdir.string(), (p.outputdir/"output.gif").string()).c_str());
+    std::cout << "Done!\n" << std::endl;
 
-    system(mp4command);
-    system(gifcommand);
-    system("rm *.png");
-
+    clean_pngs(p);
 }

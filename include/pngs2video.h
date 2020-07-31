@@ -5,12 +5,8 @@
 #ifndef ISINGMODEL_VISUAL_PNGS2VIDEO_H
 #define ISINGMODEL_VISUAL_PNGS2VIDEO_H
 
-#include <cstdlib>
-#include <filesystem>
+#include "Ising.h"
 
-#include "Ising_Params.h"
-
-
-void pngs2video(Ising_Params &);
+void pngs2video(Ising &);
 
 #endif //ISINGMODEL_VISUAL_PNGS2VIDEO_H

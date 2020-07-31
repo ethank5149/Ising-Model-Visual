@@ -7,9 +7,6 @@
 
 #include <vector>
 
-#include "Ising_Params.h"
-
-
 std::vector<long> sqr_neighbors(long, long, long);
 
 #endif //ISINGMODEL_VISUAL_SQR_NEIGHBORS_H
