@@ -29,7 +29,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1aff87c-1991-42d5-a808-39fc2a675c1c" name="Default Changelist" comment="Fixed boost integration and took advantage of optimization" />
+    <list default="true" id="e1aff87c-1991-42d5-a808-39fc2a675c1c" name="Default Changelist" comment="syncing with remote" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,6 +40,11 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug-WSL" />
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="boost" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1fO2vRb9NdPAMTk4YA9wEglDK4P" />
@@ -71,11 +76,6 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -102,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596170270646</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="syncing with remote">
+      <created>1596212429062</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1596212429062</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,7 +132,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fixed boost integration and took advantage of optimization" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed boost integration and took advantage of optimization" />
+    <MESSAGE value="syncing with remote" />
+    <option name="LAST_COMMIT_MESSAGE" value="syncing with remote" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596169290194">
@@ -168,17 +176,53 @@
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
     <state width="1578" height="347" key="GridCell.Tab.1.right/0.0.1620.1040@0.0.1620.1040" timestamp="1596170896587" />
+    <state x="156" y="87" key="MergeDialog" timestamp="1596212644511">
+      <screen x="0" y="0" width="1620" height="1040" />
+    </state>
+    <state x="156" y="87" key="MergeDialog/0.0.1620.1040@0.0.1620.1040" timestamp="1596212644511" />
+    <state x="449" y="281" key="MultipleFileMergeDialog" timestamp="1596212644517">
+      <screen x="0" y="0" width="1620" height="1040" />
+    </state>
+    <state x="449" y="281" key="MultipleFileMergeDialog/0.0.1620.1040@0.0.1620.1040" timestamp="1596212644517" />
     <state x="312" y="165" key="SettingsEditor" timestamp="1596150783608">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
     <state x="312" y="165" key="SettingsEditor/0.0.1620.1040@0.0.1620.1040" timestamp="1596150783608" />
+    <state x="595" y="236" key="VCS.ChangeListViewerDialog" timestamp="1596212391583">
+      <screen x="0" y="0" width="1620" height="1040" />
+    </state>
+    <state x="595" y="236" key="VCS.ChangeListViewerDialog/0.0.1620.1040@0.0.1620.1040" timestamp="1596212391583" />
     <state x="403" y="253" key="Vcs.Push.Dialog.v2" timestamp="1596170281693">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
     <state x="403" y="253" key="Vcs.Push.Dialog.v2/0.0.1620.1040@0.0.1620.1040" timestamp="1596170281693" />
+    <state x="628" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596212364326">
+      <screen x="0" y="0" width="1620" height="1040" />
+    </state>
+    <state x="628" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1620.1040@0.0.1620.1040" timestamp="1596212364326" />
+    <state x="658" y="238" key="git4idea.branch.GitBranchIsNotFullyMergedDialog" timestamp="1596212506033">
+      <screen x="0" y="0" width="1620" height="1040" />
+    </state>
+    <state x="658" y="238" key="git4idea.branch.GitBranchIsNotFullyMergedDialog/0.0.1620.1040@0.0.1620.1040" timestamp="1596212506033" />
     <state x="474" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1596118370436">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
     <state x="474" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1620.1040@0.0.1620.1040" timestamp="1596118370436" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/run_simulation.cpp</url>
+          <line>41</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/run_simulation.cpp</url>
+          <line>38</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
