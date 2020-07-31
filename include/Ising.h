@@ -1,4 +1,4 @@
-///\file Ising.h
+///\headerfile Ising.h
 ///\author Ethan Knox
 ///\date 7/22/2020.
 

@@ -1,0 +1,44 @@
+\hypertarget{hex__neighbors_8h}{}\doxysection{include/hex\+\_\+neighbors.h File Reference}
+\label{hex__neighbors_8h}\index{include/hex\_neighbors.h@{include/hex\_neighbors.h}}
+{\ttfamily \#include $<$vector$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ long $>$ \mbox{\hyperlink{hex__neighbors_8h_aed065631e249cb8784075159ab7d0af5}{hex\+\_\+neighbors}} (long, long, long)
+\begin{DoxyCompactList}\small\item\em Return the indices of a point\textquotesingle{}s neighbors. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Ethan Knox 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/27/2020. 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{hex__neighbors_8h_aed065631e249cb8784075159ab7d0af5}\label{hex__neighbors_8h_aed065631e249cb8784075159ab7d0af5}} 
+\index{hex\_neighbors.h@{hex\_neighbors.h}!hex\_neighbors@{hex\_neighbors}}
+\index{hex\_neighbors@{hex\_neighbors}!hex\_neighbors.h@{hex\_neighbors.h}}
+\doxysubsubsection{\texorpdfstring{hex\_neighbors()}{hex\_neighbors()}}
+{\footnotesize\ttfamily std\+::vector$<$long$>$ hex\+\_\+neighbors (\begin{DoxyParamCaption}\item[{long}]{rows,  }\item[{long}]{cols,  }\item[{long}]{idx }\end{DoxyParamCaption})}
+
+
+
+Return the indices of a point\textquotesingle{}s neighbors. 
+
+Returns a vector containing the flattened indices of its neighbors in a hexagonal grid
+
+
+\begin{DoxyParams}{Parameters}
+{\em rows} & The number of rows in the grid \\
+\hline
+{\em cols} & The number of columns in the grid \\
+\hline
+{\em idx} & The index in question\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+:\+:$<$vector$>$ containing the neighbors\textquotesingle{} indices 
+\end{DoxyReturn}

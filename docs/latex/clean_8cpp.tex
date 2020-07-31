@@ -1,0 +1,68 @@
+\hypertarget{clean_8cpp}{}\doxysection{src/clean.cpp File Reference}
+\label{clean_8cpp}\index{src/clean.cpp@{src/clean.cpp}}
+{\ttfamily \#include \char`\"{}../include/clean.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{clean_8cpp_a802e1acb2af3372b538bbbc8fe81951a}{clean\+\_\+pngs}} (\mbox{\hyperlink{class_ising}{Ising}} \&p)
+\begin{DoxyCompactList}\small\item\em Removes all existing png photos from the output directory. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{clean_8cpp_a60e30df0e91f0a388e9804b69971a439}{clean\+\_\+all}} (\mbox{\hyperlink{class_ising}{Ising}} \&p)
+\begin{DoxyCompactList}\small\item\em Removes all (un-\/renamed) output files from the output directory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Ethan Knox 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/30/2020. 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{clean_8cpp_a60e30df0e91f0a388e9804b69971a439}\label{clean_8cpp_a60e30df0e91f0a388e9804b69971a439}} 
+\index{clean.cpp@{clean.cpp}!clean\_all@{clean\_all}}
+\index{clean\_all@{clean\_all}!clean.cpp@{clean.cpp}}
+\doxysubsubsection{\texorpdfstring{clean\_all()}{clean\_all()}}
+{\footnotesize\ttfamily void clean\+\_\+all (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ising}{Ising}} \&}]{p }\end{DoxyParamCaption})}
+
+
+
+Removes all (un-\/renamed) output files from the output directory. 
+
+All \textquotesingle{}.png\textquotesingle{} files are deleted, as well as any previously existing \textquotesingle{}output.\+mp4\textquotesingle{} and \textquotesingle{}output.\+gif\textquotesingle{} files. \begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000002}{Todo}}]Enable the ability to save raw frames\end{DoxyRefDesc}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & an instance of the \mbox{\hyperlink{class_ising}{Ising}} class\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{clean_8cpp_a802e1acb2af3372b538bbbc8fe81951a}\label{clean_8cpp_a802e1acb2af3372b538bbbc8fe81951a}} 
+\index{clean.cpp@{clean.cpp}!clean\_pngs@{clean\_pngs}}
+\index{clean\_pngs@{clean\_pngs}!clean.cpp@{clean.cpp}}
+\doxysubsubsection{\texorpdfstring{clean\_pngs()}{clean\_pngs()}}
+{\footnotesize\ttfamily void clean\+\_\+pngs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ising}{Ising}} \&}]{p }\end{DoxyParamCaption})}
+
+
+
+Removes all existing png photos from the output directory. 
+
+All \textquotesingle{}.png\textquotesingle{} files are deleted. \begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000001}{Todo}}]Enable the ability to save raw frames\end{DoxyRefDesc}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Instance of the \mbox{\hyperlink{class_ising}{Ising}} class\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}

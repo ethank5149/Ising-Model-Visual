@@ -8,8 +8,8 @@ Ising model using both the Metropolis-Hastings Algorithm and the Wolff Algorithm
 <table style="width:100%">
 
   <tr>
-    <th>Metropolis-Hastings \n Square Geometry</th>
-    <th>Wolff \n Square Geometry</th>
+    <th>Metropolis-Hastings <br> Square Geometry</th>
+    <th>Wolff <br> Square Geometry</th>
   </tr>
 
   <tr>
@@ -31,19 +31,19 @@ Ising model using both the Metropolis-Hastings Algorithm and the Wolff Algorithm
     <td>
     <figure>
       <img src="examples/metropolis_examples/Example3a~~-r_1000_-c_1000_-s_100000000_-f_100000_-j_1.0_-h_0.0_-t_1.8_-m_M_-g_S.gif" width="500" height="500"/>
-      <figcaption><center>Fig.1 - 1000 Steps/Frame</center></figcaption>
+      <figcaption><center>Fig.1 - 1000x1000 Grid, 1000 Steps/Frame</center></figcaption>
     </figure>
     </td>
     <td>
     <figure>
           <img src="examples/wolff_examples/Example3b~~-r_1000_-c_1000_-s_15000_-f_10_-j_1.0_-h_0.0_-t_1.8_-m_W_-g_S.gif"  width="500" height="500"/>
-          <figcaption><center>Fig.2 - 1500 Steps/Frame</center></figcaption>
+          <figcaption><center>Fig.2 - 1000x1000 Grid, 1500 Steps/Frame</center></figcaption>
         </figure>
     </td>
   </tr>
   <tr>
-    <th>Metropolis-Hastings \n Hexagonal Geometry</th>
-    <th>Wolff \n Hexagonal Geometry</th>
+    <th>Metropolis-Hastings <br> Hexagonal Geometry</th>
+    <th>Wolff <br> Hexagonal Geometry</th>
   </tr>
     <tr>
   </tr>
@@ -67,18 +67,17 @@ Ising model using both the Metropolis-Hastings Algorithm and the Wolff Algorithm
     <td>
         <figure>
           <img src="examples/metropolis_examples/Example4a~~-r_1000_-c_1000_-s_100000000_-f_100000_-j_1.0_-h_0.0_-t_1.8_-m_M_-g_H.gif" width="500" height="500"/>
-          <figcaption><center>Fig.3 - 1000 Steps/Frame</center></figcaption>
+          <figcaption><center>Fig.3 - 1000x1000 Grid, 1000 Steps/Frame</center></figcaption>
         </figure>
     </td>
     <td>
         <figure>
               <img src="examples/wolff_examples/Example4b~~-r_1000_-c_1000_-s_100_-f_1_-j_1.0_-h_0.0_-t_1.8_-m_W_-g_H.gif"  width="500" height="500"/>
-              <figcaption><center>Fig.4 - 100 Steps/Frame</center></figcaption>
+              <figcaption><center>Fig.4 - 1000x1000 Grid, 100 Steps/Frame</center></figcaption>
             </figure>
     </td>
   </tr>
 </table>
 
 ## Known Bugs
-When given non-square dimensions, this program produces 'interesting' visual glitches, they seem to be something to do 
-with selecting/iterating through the bounded indices?
+None, yay!

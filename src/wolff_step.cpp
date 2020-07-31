@@ -7,6 +7,18 @@
 #include <utility>
 #include <algorithm>
 
+///\brief Performs one step of the Wolff Algorithm
+///
+///- Chooses a random seed spin and adds its nearest parallel neighbors to the list of perimeter spins.
+///- Randomly choose a spin from the perimeter list and decide with probability P if a bond exists between the two spins,
+///if so, spin moves to the list of cluster spins, if not, we leave the spin alone.
+///- For each spin that's added to the cluster, we also add its parallel neighbor spins to the perimeter list.
+///- This gets repeated until the perimeter list is empty.
+///- Finally, all spins in the cluster are flipped with probability 1.
+///
+/// \param p  An instance of the Ising class
+///
+/// \return void
 void wolff_step(Ising &p)
 {
     double P = 1.0 - exp(-2.0 * p.J / p.T);
