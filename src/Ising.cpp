@@ -1,4 +1,4 @@
-///\file Ising_Params.cpp
+///\file Ising.cpp
 ///\author Ethan Knox
 ///\date 7/22/2020.
 

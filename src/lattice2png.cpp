@@ -7,13 +7,17 @@
 #include <fmt/core.h>
 #include <iostream>
 
-/// \brief Writes an Ising lattice to a ".pbm" file
+///\brief Writes an Ising lattice to a png image
 ///
-/// \param lattice
-/// \param p
-/// \param frame
+///First writes grid to an intermediate '.pbm' file, then converts this into an
+///image and deletes the intermediate file in order to save space (since png
+///files are compressed, and our images is in black and white anyway, this
+///saves a tremendous amount of space while generating frames)
 ///
-/// \return void
+///\param p An instance of the Ising class
+///\param frame The current frame
+///
+///\return void
 void lattice2png(Ising &p, long frame)
 {
     boost::filesystem::path savefile{p.outputdir / fmt::format("frame{}.pbm", frame)};

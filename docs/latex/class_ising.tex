@@ -1,0 +1,102 @@
+\hypertarget{class_ising}{}\doxysection{Ising Class Reference}
+\label{class_ising}\index{Ising@{Ising}}
+
+
+Stores all pertinent info regarding the simulation.  
+
+
+
+
+{\ttfamily \#include $<$Ising.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_ising_a05afa83ffc3336aef07c8a9b31eeef45}\label{class_ising_a05afa83ffc3336aef07c8a9b31eeef45}} 
+void {\bfseries randomize} () const
+\item 
+\mbox{\Hypertarget{class_ising_addfae5df0fba52f1f8e042d7e931726e}\label{class_ising_addfae5df0fba52f1f8e042d7e931726e}} 
+{\bfseries Ising} (long, long, long, long, double, double, double, char, char)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_ising_af6813a96a6c5b7d45170b697577487be}\label{class_ising_af6813a96a6c5b7d45170b697577487be}} 
+long {\bfseries nrows} \{\}
+\item 
+\mbox{\Hypertarget{class_ising_a5a7d0ab54ab5e0beb2a68acf9e40693c}\label{class_ising_a5a7d0ab54ab5e0beb2a68acf9e40693c}} 
+long {\bfseries ncols} \{\}
+\item 
+\mbox{\Hypertarget{class_ising_a2a47e630061f2e5f42134084185a679b}\label{class_ising_a2a47e630061f2e5f42134084185a679b}} 
+long {\bfseries stopiter} \{\}
+\item 
+\mbox{\Hypertarget{class_ising_a8d5be802c64536b14740637e36d8bc8b}\label{class_ising_a8d5be802c64536b14740637e36d8bc8b}} 
+long {\bfseries framestep} \{\}
+\item 
+\mbox{\Hypertarget{class_ising_a3ce4acf92cba07ecc281a61715273c57}\label{class_ising_a3ce4acf92cba07ecc281a61715273c57}} 
+double {\bfseries J} \{\}
+\item 
+\mbox{\Hypertarget{class_ising_a819d04ac03aa618740c8094f4cff1512}\label{class_ising_a819d04ac03aa618740c8094f4cff1512}} 
+double {\bfseries h} \{\}
+\item 
+\mbox{\Hypertarget{class_ising_a55215a84412bb0b4fca516fe985fe8a7}\label{class_ising_a55215a84412bb0b4fca516fe985fe8a7}} 
+double {\bfseries T} \{\}
+\item 
+\mbox{\Hypertarget{class_ising_a42ac972ef27d88a0e4e1c8aa3335acb6}\label{class_ising_a42ac972ef27d88a0e4e1c8aa3335acb6}} 
+double {\bfseries k\+\_\+B} = 1.\+0
+\item 
+\mbox{\Hypertarget{class_ising_aa2df6ea30e60c74c3f0472f439186647}\label{class_ising_aa2df6ea30e60c74c3f0472f439186647}} 
+char {\bfseries method} \{\}
+\item 
+\mbox{\Hypertarget{class_ising_a6ac2a846477f3ed81283e57766793b30}\label{class_ising_a6ac2a846477f3ed81283e57766793b30}} 
+char {\bfseries geometry} \{\}
+\item 
+\mbox{\Hypertarget{class_ising_acbbe399e072bec1e4aaf6380121038b5}\label{class_ising_acbbe399e072bec1e4aaf6380121038b5}} 
+int $\ast$ {\bfseries lattice} \{\}
+\item 
+\mbox{\Hypertarget{class_ising_a088954004d18f9b981f7ab022cca3b71}\label{class_ising_a088954004d18f9b981f7ab022cca3b71}} 
+std\+::unordered\+\_\+set$<$ long $>$ {\bfseries cluster} \{\}
+\item 
+\mbox{\Hypertarget{class_ising_aace4d535f43aea7cf1b7627bb7183afb}\label{class_ising_aace4d535f43aea7cf1b7627bb7183afb}} 
+std\+::unordered\+\_\+set$<$ long $>$ {\bfseries perimeter} \{\}
+\item 
+\mbox{\Hypertarget{class_ising_a5507b4db6187da64283d2ceb073c12fd}\label{class_ising_a5507b4db6187da64283d2ceb073c12fd}} 
+boost\+::filesystem\+::path {\bfseries outputdir} = boost\+::filesystem\+::current\+\_\+path() / \char`\"{}output\char`\"{}
+\item 
+\mbox{\Hypertarget{class_ising_a596b996be03678a66775c0513d3441f2}\label{class_ising_a596b996be03678a66775c0513d3441f2}} 
+std\+::vector$<$ long $>$($\ast$ {\bfseries neighbors} )(long, long, long)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Stores all pertinent info regarding the simulation. 
+
+\begin{DoxyAuthor}{Author}
+Ethan Knox 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/22/2020.
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em nrows} & Number of rows \\
+\hline
+{\em ncols} & Number of columns \\
+\hline
+{\em nframes} & The number of frames desired to visualize the system \\
+\hline
+{\em algsteps} & The number of algorithm steps between each recorded frame \\
+\hline
+{\em J} & Ferromagnetic Coupling Constant \\
+\hline
+{\em h} & Magnetic field strength \\
+\hline
+{\em T} & Temperature \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Ising.\+h\item 
+src/\mbox{\hyperlink{_ising_8cpp}{Ising.\+cpp}}\end{DoxyCompactItemize}

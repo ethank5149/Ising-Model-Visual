@@ -1,0 +1,44 @@
+\hypertarget{sqr__neighbors_8h}{}\doxysection{include/sqr\+\_\+neighbors.h File Reference}
+\label{sqr__neighbors_8h}\index{include/sqr\_neighbors.h@{include/sqr\_neighbors.h}}
+{\ttfamily \#include $<$vector$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ long $>$ \mbox{\hyperlink{sqr__neighbors_8h_a8fdb57597acfdb497047f8c226e50bae}{sqr\+\_\+neighbors}} (long, long, long)
+\begin{DoxyCompactList}\small\item\em Return the indices of a point\textquotesingle{}s neighbors. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Ethan Knox 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/25/2020. 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{sqr__neighbors_8h_a8fdb57597acfdb497047f8c226e50bae}\label{sqr__neighbors_8h_a8fdb57597acfdb497047f8c226e50bae}} 
+\index{sqr\_neighbors.h@{sqr\_neighbors.h}!sqr\_neighbors@{sqr\_neighbors}}
+\index{sqr\_neighbors@{sqr\_neighbors}!sqr\_neighbors.h@{sqr\_neighbors.h}}
+\doxysubsubsection{\texorpdfstring{sqr\_neighbors()}{sqr\_neighbors()}}
+{\footnotesize\ttfamily std\+::vector$<$long$>$ sqr\+\_\+neighbors (\begin{DoxyParamCaption}\item[{long}]{rows,  }\item[{long}]{cols,  }\item[{long}]{idx }\end{DoxyParamCaption})}
+
+
+
+Return the indices of a point\textquotesingle{}s neighbors. 
+
+Returns a vector containing the flattened indices of its neighbors in a square grid
+
+
+\begin{DoxyParams}{Parameters}
+{\em rows} & The number of rows in the grid \\
+\hline
+{\em cols} & The number of columns in the grid \\
+\hline
+{\em idx} & The index in question\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+:\+:$<$vector$>$ containing the neighbors\textquotesingle{} indices 
+\end{DoxyReturn}

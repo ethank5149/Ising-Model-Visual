@@ -1,6 +1,6 @@
-//
-// Created by ethan on 7/25/2020.
-//
+///\headerfile sqr_neighbors.h
+///\author Ethan Knox
+///\date 7/25/2020.
 
 #ifndef ISINGMODEL_VISUAL_SQR_NEIGHBORS_H
 #define ISINGMODEL_VISUAL_SQR_NEIGHBORS_H

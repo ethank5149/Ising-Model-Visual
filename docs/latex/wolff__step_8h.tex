@@ -1,0 +1,47 @@
+\hypertarget{wolff__step_8h}{}\doxysection{include/wolff\+\_\+step.h File Reference}
+\label{wolff__step_8h}\index{include/wolff\_step.h@{include/wolff\_step.h}}
+{\ttfamily \#include \char`\"{}Ising.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{wolff__step_8h_a5117eb9960ce91ef0cf5a76633ded133}{wolff\+\_\+step}} (\mbox{\hyperlink{class_ising}{Ising}} \&)
+\begin{DoxyCompactList}\small\item\em Performs one step of the Wolff Algorithm. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Ethan Knox 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/24/2020. 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{wolff__step_8h_a5117eb9960ce91ef0cf5a76633ded133}\label{wolff__step_8h_a5117eb9960ce91ef0cf5a76633ded133}} 
+\index{wolff\_step.h@{wolff\_step.h}!wolff\_step@{wolff\_step}}
+\index{wolff\_step@{wolff\_step}!wolff\_step.h@{wolff\_step.h}}
+\doxysubsubsection{\texorpdfstring{wolff\_step()}{wolff\_step()}}
+{\footnotesize\ttfamily void wolff\+\_\+step (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ising}{Ising}} \&}]{p }\end{DoxyParamCaption})}
+
+
+
+Performs one step of the Wolff Algorithm. 
+
+
+\begin{DoxyItemize}
+\item Chooses a random seed spin and adds its nearest parallel neighbors to the list of perimeter spins.
+\item Randomly choose a spin from the perimeter list and decide with probability P if a bond exists between the two spins, if so, spin moves to the list of cluster spins, if not, we leave the spin alone.
+\item For each spin that\textquotesingle{}s added to the cluster, we also add its parallel neighbor spins to the perimeter list.
+\item This gets repeated until the perimeter list is empty.
+\item Finally, all spins in the cluster are flipped with probability 1.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & An instance of the \mbox{\hyperlink{class_ising}{Ising}} class\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}

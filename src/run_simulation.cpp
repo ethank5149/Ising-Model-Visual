@@ -10,15 +10,15 @@
 #include "../include/clean.h"
 #include <iostream>
 
-/// \brief Run through iterations, generate files, and compile video
+///\brief Run through iterations, generate files, and compile video
 ///
-/// Loops through the total number of algorithm iterations (nframes * algsteps)
-/// and performs the necessary file handling by calling the subsequent functions
+///Initializes the solution method for the Ising instance.
+///Loops through the total number of algorithm iterations (nframes * algsteps)
+///and performs the necessary file handling by calling the subsequent functions
 ///
-/// \param lattice  The 2D grid of spin values
-/// \param p  An instance of Ising_Params
+///\param p An instance of the Ising class
 ///
-/// \return void
+///\return void
 void run_simulation(Ising &p)
 {
     long framenumber;
@@ -46,7 +46,6 @@ void run_simulation(Ising &p)
 
             std::cout << "Saving frame " << framenumber + 1 << " out of " << p.stopiter / p.framestep << std::endl;
         }
-        // TODO: When trying a 1000x1000 grid, we segfault here
         step(p);
     }
 
