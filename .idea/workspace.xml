@@ -25,11 +25,307 @@
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
     <configurations>
-      <configuration PROFILE_NAME="Debug-WSL" CONFIG_NAME="Debug" TOOLCHAIN_NAME="WSL" GENERATION_OPTIONS="-DCMAKE_TOOLCHAIN_FILE=/vcpkg/scripts/buildsystems/vcpkg.cmake" />
+      <configuration PROFILE_NAME="Debug-Unix" CONFIG_NAME="Debug" TOOLCHAIN_NAME="WSL" />
+      <configuration PROFILE_NAME="Debug-Windows64" CONFIG_NAME="Debug" GENERATION_OPTIONS="-DVCPKG_CHAINLOAD_TOOLCHAIN_FILE=/vcpkg/scripts/toolchains/mingw.cmake" />
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1aff87c-1991-42d5-a808-39fc2a675c1c" name="Default Changelist" comment="syncing with remote" />
+    <list default="true" id="e1aff87c-1991-42d5-a808-39fc2a675c1c" name="Default Changelist" comment="syncing with remote">
+      <change beforePath="$PROJECT_DIR$/.idea/IsingModel-Visual.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/IsingModel-Visual.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/ethan.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/ethan.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CMake Overview" beforeDir="false" afterPath="$PROJECT_DIR$/windows64toolchain.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/IsingModel-Visual/v16/.suo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/IsingModel-Visual/v16/Browse.VC.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectSettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/VSWorkspaceState.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/cmake.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/slnx.sqlite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxyfile" beforeDir="false" afterPath="$PROJECT_DIR$/Doxyfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/.cmake/api/v1/query/client-vscode/query.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeCache.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.17.20032601-MSVC_2/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.17.20032601-MSVC_2/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.17.20032601-MSVC_2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.17.20032601-MSVC_2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.17.20032601-MSVC_2/CMakeRCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.17.20032601-MSVC_2/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.17.20032601-MSVC_2/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.17.20032601-MSVC_2/CompilerIdC/CompilerIdC.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.17.20032601-MSVC_2/CompilerIdC/CompilerIdC.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.17.20032601-MSVC_2/CompilerIdC/Debug/CMakeCCompilerId.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.17.20032601-MSVC_2/CompilerIdC/Debug/CompilerIdC.tlog/CL.command.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.17.20032601-MSVC_2/CompilerIdC/Debug/CompilerIdC.tlog/CL.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.17.20032601-MSVC_2/CompilerIdC/Debug/CompilerIdC.tlog/CL.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.17.20032601-MSVC_2/CompilerIdC/Debug/CompilerIdC.tlog/CompilerIdC.lastbuildstate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.17.20032601-MSVC_2/CompilerIdC/Debug/CompilerIdC.tlog/link.command.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.17.20032601-MSVC_2/CompilerIdC/Debug/CompilerIdC.tlog/link.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.17.20032601-MSVC_2/CompilerIdC/Debug/CompilerIdC.tlog/link.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.17.20032601-MSVC_2/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.17.20032601-MSVC_2/CompilerIdCXX/CompilerIdCXX.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.17.20032601-MSVC_2/CompilerIdCXX/CompilerIdCXX.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.17.20032601-MSVC_2/CompilerIdCXX/Debug/CMakeCXXCompilerId.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.17.20032601-MSVC_2/CompilerIdCXX/Debug/CompilerIdCXX.tlog/CL.command.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.17.20032601-MSVC_2/CompilerIdCXX/Debug/CompilerIdCXX.tlog/CL.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.17.20032601-MSVC_2/CompilerIdCXX/Debug/CompilerIdCXX.tlog/CL.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.17.20032601-MSVC_2/CompilerIdCXX/Debug/CompilerIdCXX.tlog/CompilerIdCXX.lastbuildstate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.17.20032601-MSVC_2/CompilerIdCXX/Debug/CompilerIdCXX.tlog/link.command.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.17.20032601-MSVC_2/CompilerIdCXX/Debug/CompilerIdCXX.tlog/link.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.17.20032601-MSVC_2/CompilerIdCXX/Debug/CompilerIdCXX.tlog/link.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.17.20032601-MSVC_2/Debug/VCTargetsPath.tlog/VCTargetsPath.lastbuildstate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.17.20032601-MSVC_2/VCTargetsPath.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.17.20032601-MSVC_2/VCTargetsPath.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CMakeOutput.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/cmake.check_cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeCache.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/3.16.3/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/3.16.3/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/3.16.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/3.16.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/3.16.3/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/3.16.3/CompilerIdC/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/3.16.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/3.16.3/CompilerIdCXX/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/CMakeError.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/CMakeOutput.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/src/Ising.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/src/IsingModel-Visual.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/src/clean.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/src/hex_neighbors.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/src/lattice2png.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/src/metropolis_hastings_step.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/src/pngs2video.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/src/run_simulation.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/src/sqr_neighbors.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/IsingModel-Visual.dir/src/wolff_step.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/Makefile.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/Makefile2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/clion-environment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/clion-log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/cmake.check_cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/IsingModel-Visual" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/IsingModel-Visual.cbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-wsl/output/output.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/_form0_tmp.epsi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/_form0_tmp.ps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/_formulas.aux" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/_formulas.dvi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/_formulas.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/_formulas.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/_ising_8cpp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/_ising_8h.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/_ising_8h_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/_ising_model-_visual_8cpp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/annotated.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/bc_s.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/bdwn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/class_ising-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/class_ising.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/classes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/clean_8cpp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/clean_8h.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/clean_8h_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/closed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/dir_196234b1d21dc44a6281ad3c5bc37abf.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/dir_37bea1b8ab9a6f412cdb40514668f146.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/dir_402b6e84fe6cedb1ff417b90070e3614.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/dir_406552daa56d8b7b38dbb032e79aef1a.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/dir_4fef79e7177ba769987a8da36c892c5f.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/dir_63772b626f2709090f0bdca0f40827b4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/dir_68267d1309a1af8e8297ef4c3efbcdba.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/dir_8e66e56cf9c948b2cc35cef13e5e65c0.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/dir_a771e9ce409f1d049d507fafddf6c96e.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/dir_d44c64559bbebec7f509842c48db8b23.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/dir_edc58d28dab2e9e4edbdaf227edbe567.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/dir_ef4246a2f1cbc4a4f1a8f3ef23f429fa.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/dir_fea11dd409255c0cd81f2221dc541660.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/doc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/doxygen.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/doxygen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/dynsections.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/files.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/folderclosed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/folderopen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/globals.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/globals_func.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/hex__neighbors_8cpp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/hex__neighbors_8h.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/hex__neighbors_8h_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/lattice2png_8cpp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/lattice2png_8h_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/menu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/menudata.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/metropolis__hastings__step_8cpp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/metropolis__hastings__step_8h_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/nav_f.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/nav_g.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/nav_h.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/open.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/pages.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/pngs2video_8cpp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/pngs2video_8h_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/random__generators_8h_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/run__simulation_8cpp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/run__simulation_8h_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/all_0.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/all_0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/all_1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/all_1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/all_2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/all_2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/all_3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/all_3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/all_4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/all_4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/all_5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/all_5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/all_6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/all_6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/all_7.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/all_7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/all_8.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/all_8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/all_9.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/all_9.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/classes_0.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/classes_0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/files_0.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/files_0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/files_1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/files_1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/files_2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/files_2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/files_3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/files_3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/files_4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/files_4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/files_5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/files_5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/files_6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/files_6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/files_7.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/files_7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/files_8.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/files_8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/functions_0.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/functions_0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/functions_1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/functions_1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/functions_2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/functions_2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/functions_3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/functions_3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/functions_4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/functions_4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/functions_5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/functions_5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/functions_6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/functions_6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/functions_7.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/functions_7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/mag_sel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/nomatches.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/pages_0.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/pages_0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/pages_1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/pages_1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/search.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/search_l.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/search_m.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/search_r.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/searchdata.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/splitbar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/sqr__neighbors_8cpp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/sqr__neighbors_8h.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/sqr__neighbors_8h_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/sync_off.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/sync_on.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/tab_a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/tab_b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/tab_h.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/tab_s.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/tabs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/todo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/wolff__step_8cpp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/wolff__step_8h.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/wolff__step_8h_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/latex/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/latex/_ising_8cpp.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/latex/_ising_8h.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/latex/_ising_model-_visual_8cpp.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/latex/annotated.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/latex/class_ising.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/latex/clean_8cpp.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/latex/clean_8h.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/latex/doxygen.sty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/latex/files.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/latex/hex__neighbors_8cpp.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/latex/hex__neighbors_8h.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/latex/index.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/latex/lattice2png_8cpp.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/latex/longtable_doxygen.sty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/latex/make.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/latex/metropolis__hastings__step_8cpp.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/latex/pngs2video_8cpp.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/latex/refman.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/latex/run__simulation_8cpp.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/latex/sqr__neighbors_8cpp.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/latex/sqr__neighbors_8h.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/latex/tabu_doxygen.sty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/latex/todo.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/latex/wolff__step_8cpp.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/latex/wolff__step_8h.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/metropolis_examples/metropolis_example1.config" beforeDir="false" afterPath="$PROJECT_DIR$/examples/metropolis_examples/metropolis_example1.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/metropolis_examples/metropolis_example2.config" beforeDir="false" afterPath="$PROJECT_DIR$/examples/metropolis_examples/metropolis_example2.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/wolff_examples/wolff_example1.config" beforeDir="false" afterPath="$PROJECT_DIR$/examples/wolff_examples/wolff_example1.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/wolff_examples/wolff_example2.config" beforeDir="false" afterPath="$PROJECT_DIR$/examples/wolff_examples/wolff_example2.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/Ising.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/Ising.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/clean.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/clean.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/hex_neighbors.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/hex_neighbors.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/lattice2png.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/lattice2png.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/pngs2video.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/pngs2video.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/random_generators.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/random_generators.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/run_simulation.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/run_simulation.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/sqr_neighbors.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/sqr_neighbors.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/wolff_step.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/wolff_step.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map2torus.lyx" beforeDir="false" afterPath="$PROJECT_DIR$/map2torus.lyx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ising.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ising.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IsingModel-Visual.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/IsingModel-Visual.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clean.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/clean.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hex_neighbors.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/hex_neighbors.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lattice2png.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lattice2png.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/metropolis_hastings_step.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/metropolis_hastings_step.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pngs2video.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/pngs2video.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/run_simulation.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/run_simulation.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sqr_neighbors.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/sqr_neighbors.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wolff_step.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/wolff_step.cpp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,7 +334,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug-WSL" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug-Unix" />
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -46,6 +342,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="ProjectId" id="1fO2vRb9NdPAMTk4YA9wEglDK4P" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -56,6 +353,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -71,9 +369,19 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="IsingModel-Visual" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="-r 1000 -c 1000 -s 100 -f 1 -j 1.0 -h 0.0 -t 1.8 -m W -g H" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="IsingModel-Visual" TARGET_NAME="IsingModel-Visual" CONFIG_NAME="Debug-WSL" RUN_TARGET_PROJECT_NAME="IsingModel-Visual" RUN_TARGET_NAME="IsingModel-Visual">
+    <configuration name="IsingModel-Visual" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="-r 1000 -c 1000 -s 100 -f 1 -j 1.0 -h 0.0 -t 1.8 -m W -g H" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="IsingModel-Visual" TARGET_NAME="IsingModel-Visual" CONFIG_NAME="Debug-Unix" RUN_TARGET_PROJECT_NAME="IsingModel-Visual" RUN_TARGET_NAME="IsingModel-Visual">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -94,6 +402,7 @@
       <workItem from="1596111486254" duration="2354000" />
       <workItem from="1596114088696" duration="11796000" />
       <workItem from="1596145070754" duration="20060000" />
+      <workItem from="1596229511461" duration="2039000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed boost integration and took advantage of optimization">
       <created>1596170270646</created>
@@ -131,6 +440,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Fixed boost integration and took advantage of optimization" />
     <MESSAGE value="syncing with remote" />
     <option name="LAST_COMMIT_MESSAGE" value="syncing with remote" />
@@ -144,22 +454,22 @@
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
     <state x="591" y="275" key="FileChooserDialogImpl/0.0.1620.1040@0.0.1620.1040" timestamp="1596107116747" />
-    <state width="1578" height="347" key="GridCell.Tab.0.bottom" timestamp="1596170896586">
+    <state width="767" height="279" key="GridCell.Tab.0.bottom" timestamp="1596229464811">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
-    <state width="1578" height="347" key="GridCell.Tab.0.bottom/0.0.1620.1040@0.0.1620.1040" timestamp="1596170896586" />
-    <state width="1578" height="347" key="GridCell.Tab.0.center" timestamp="1596170896586">
+    <state width="767" height="279" key="GridCell.Tab.0.bottom/0.0.1620.1040@0.0.1620.1040" timestamp="1596229464811" />
+    <state width="767" height="279" key="GridCell.Tab.0.center" timestamp="1596229464810">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
-    <state width="1578" height="347" key="GridCell.Tab.0.center/0.0.1620.1040@0.0.1620.1040" timestamp="1596170896586" />
-    <state width="1578" height="347" key="GridCell.Tab.0.left" timestamp="1596170896586">
+    <state width="767" height="279" key="GridCell.Tab.0.center/0.0.1620.1040@0.0.1620.1040" timestamp="1596229464810" />
+    <state width="767" height="279" key="GridCell.Tab.0.left" timestamp="1596229464810">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
-    <state width="1578" height="347" key="GridCell.Tab.0.left/0.0.1620.1040@0.0.1620.1040" timestamp="1596170896586" />
-    <state width="1578" height="347" key="GridCell.Tab.0.right" timestamp="1596170896586">
+    <state width="767" height="279" key="GridCell.Tab.0.left/0.0.1620.1040@0.0.1620.1040" timestamp="1596229464810" />
+    <state width="767" height="279" key="GridCell.Tab.0.right" timestamp="1596229464811">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
-    <state width="1578" height="347" key="GridCell.Tab.0.right/0.0.1620.1040@0.0.1620.1040" timestamp="1596170896586" />
+    <state width="767" height="279" key="GridCell.Tab.0.right/0.0.1620.1040@0.0.1620.1040" timestamp="1596229464811" />
     <state width="1578" height="347" key="GridCell.Tab.1.bottom" timestamp="1596170896587">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
@@ -184,10 +494,10 @@
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
     <state x="449" y="281" key="MultipleFileMergeDialog/0.0.1620.1040@0.0.1620.1040" timestamp="1596212644517" />
-    <state x="312" y="165" key="SettingsEditor" timestamp="1596150783608">
+    <state x="312" y="165" key="SettingsEditor" timestamp="1596230938932">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
-    <state x="312" y="165" key="SettingsEditor/0.0.1620.1040@0.0.1620.1040" timestamp="1596150783608" />
+    <state x="312" y="165" key="SettingsEditor/0.0.1620.1040@0.0.1620.1040" timestamp="1596230938932" />
     <state x="595" y="236" key="VCS.ChangeListViewerDialog" timestamp="1596212391583">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
