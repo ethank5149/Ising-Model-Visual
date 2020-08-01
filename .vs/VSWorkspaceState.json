@@ -1,12 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\include",
-    "\\out",
-    "\\out\\build",
-    "\\out\\build\\x64-Debug (default)",
-    "\\src"
+    ""
   ],
-  "SelectedNode": "\\include\\Ising_Params.h",
+  "SelectedNode": "\\CMakeLists.txt",
   "PreviewInSolutionExplorer": false
 }
