@@ -7,11 +7,11 @@ import pandas as pd
 
 class Ising:
     def __init__(self, 
-        rows=100,            # Number of rows
-        cols=100,            # Number of columns
+        rows=50,            # Number of rows
+        cols=50,            # Number of columns
         h=0.0,              # Magnetic Field Strength
         J=1.0,              # Ferromagnetic Coupling Constant
-        relax = 100,        # Number of relaxation iterations done for each temperature
+        relax = 500,        # Number of relaxation iterations done for each temperature
         sample_size = 100,  # Number of observations from each temperature
         T_i = 1.5,          # Initial Temperature
         T_f = 3.5,          # Final Temperature
@@ -28,15 +28,10 @@ class Ising:
         self.temperatures = np.repeat(self.T_series, self.sample_size).reshape((self.num_T, self.sample_size))  # TODO: This is ugly
         self.energy_sample = np.zeros_like(self.temperatures)
         self.magnetization_sample = np.zeros_like(self.energy_sample)
-
-        self.num_updates = self.num_T * (self.relax + self.sample_size)
         
         self.rng = default_rng()
         self.k_B = 1.0
         self.grid = self.rng.choice([-1, 1], size=(self.rows, self.cols))
-
-        self.fig, self.ax = plt.subplots(1, 1, figsize=(16, 16), dpi=200, constrained_layout=True)
-        self.fig.suptitle('Ising Model (Metropolis-Hastings Algorithm)')
 
 
     def get_energy(self):
@@ -65,7 +60,7 @@ class Ising:
     def log_observation(self, i_t, i_s):
         self.energy_sample[i_t, i_s] = self.get_energy()
         self.magnetization_sample[i_t, i_s] = self.get_magnetization()
-        
+
 
     def compile_results(self):
         self.intrinsic_E   = np.mean(self.energy_sample,        axis=1) / (self.rows * self.cols                     )
@@ -83,15 +78,13 @@ class Ising:
 
 
     def run(self):
-        print('Running Model...')
-        for i_t in trange(self.T_series.size):
+        for i_t in trange(self.T_series.size, desc='Running Model'):
             self.T = self.T_series.flatten()[i_t]
             for _ in range(self.relax):
                 self.update()
             for i_s in range(self.sample_size):
                 self.update()
                 self.log_observation(i_t, i_s)
-        print('Done!\n')
 
 
 def main():
@@ -99,24 +92,24 @@ def main():
     p.run()
     p.save_results()
 
-    fig, ((ax1, ax2), (ax3, ax4)) = plt.subplots(2, 2, figsize=(32, 32), dpi=200, constrained_layout=True)
+    fig, ax = plt.subplots(2, 2, figsize=(32, 32), dpi=200, constrained_layout=True)
     fig.suptitle('Ising Model (Metropolis-Hastings Algorithm)')
-    ax1.scatter(p.results['Temperature'], p.results['Energy'], marker=',')
-    ax2.scatter(p.results['Temperature'], p.results['Magnetization'], marker=',')
-    ax3.scatter(p.results['Temperature'], p.results['Specific Heat Capacity'], marker=',')
-    ax4.scatter(p.results['Temperature'], p.results['Magnetic Susceptibility'], marker=',')
-    ax1.set_ylabel('Energy')
-    ax2.set_ylabel('Magnetization')
-    ax3.set_ylabel('Specific Heat Capacity')
-    ax4.set_ylabel('Magnetic Susceptibility')
-    ax1.set_xlabel('Temperature')
-    ax2.set_xlabel('Temperature')
-    ax3.set_xlabel('Temperature')
-    ax4.set_xlabel('Temperature')
-    ax1.grid()
-    ax2.grid()
-    ax3.grid()
-    ax4.grid()
+    ax[0,0].scatter(p.results['Temperature'], p.results['Energy'], marker=',')
+    ax[0,1].scatter(p.results['Temperature'], p.results['Magnetization'], marker=',')
+    ax[1,0].scatter(p.results['Temperature'], p.results['Specific Heat Capacity'], marker=',')
+    ax[1,1].scatter(p.results['Temperature'], p.results['Magnetic Susceptibility'], marker=',')
+    ax[0,0].set_ylabel('Energy')
+    ax[0,1].set_ylabel('Magnetization')
+    ax[1,0].set_ylabel('Specific Heat Capacity')
+    ax[1,1].set_ylabel('Magnetic Susceptibility')
+    ax[0,0].set_xlabel('Temperature')
+    ax[0,1].set_xlabel('Temperature')
+    ax[1,0].set_xlabel('Temperature')
+    ax[1,1].set_xlabel('Temperature')
+    ax[0,0].grid()
+    ax[0,1].grid()
+    ax[1,0].grid()
+    ax[1,1].grid()
     fig.savefig('results')
 
 
