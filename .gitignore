@@ -184,3 +184,6 @@ __pycache__/
 *.txt
 *.db
 .vs/IsingModel-Visual/v16/Browse.VC.db
+python/frames/
+python/*.mp4
+python/*.csv

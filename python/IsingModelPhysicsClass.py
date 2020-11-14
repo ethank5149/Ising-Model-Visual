@@ -7,15 +7,15 @@ import pandas as pd
 
 class Ising:
     def __init__(self, 
-        rows=50,            # Number of rows
-        cols=50,            # Number of columns
-        h=0.0,              # Magnetic Field Strength
-        J=1.0,              # Ferromagnetic Coupling Constant
-        relax = 500,        # Number of relaxation iterations done for each temperature
-        sample_size = 100,  # Number of observations from each temperature
-        T_i = 1.5,          # Initial Temperature
-        T_f = 3.5,          # Final Temperature
-        num_T = 1000        # Number of temperature values
+        rows=25,             # Number of rows
+        cols=25,             # Number of columns
+        h=0.0,               # Magnetic Field Strength
+        J=1.0,               # Ferromagnetic Coupling Constant
+        relax = 200,         # Number of relaxation iterations done for each temperature
+        sample_size = 1000,  # Number of observations from each temperature
+        T_i = 1.75,          # Initial Temperature
+        T_f = 3.0,           # Final Temperature
+        num_T = 1000         # Number of temperature values
         ):
 
         self.rows, self.cols = rows, cols

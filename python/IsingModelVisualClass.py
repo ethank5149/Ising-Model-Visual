@@ -19,7 +19,9 @@ class Ising:
         self.h, self.J, self.T, self.k_B = h, J, T, 1.0
         self.rng = default_rng()
         self.grids = self.rng.choice([-1, 1], size=(self.frames, self.rows, self.cols))
-        self.fig, self.ax = plt.subplots(1, 1, figsize=(16, 16), dpi=200, constrained_layout=True)
+        self.figsize = np.array([self.cols, self.rows])                  # Create a figsize array matching the lattice
+        self.figsize = 16 * self.figsize / np.linalg.norm(self.figsize)  # Scale down, preserving aspect ratio 
+        self.fig, self.ax = plt.subplots(1, 1, figsize=self.figsize, dpi=200, constrained_layout=True)
         self.fig.suptitle('Ising Model (Metropolis-Hastings Algorithm)')
       
 
@@ -47,9 +49,9 @@ class Ising:
             plt.cla()
 
 
-    def save_video(self, fps=60):
+    def save_video(self, fps=24):
         self.save_frames()
-        os.system(rf'ffmpeg -framerate {fps} -i frame_%04d.png output.mp4')
+        os.system(f'ffmpeg -framerate {fps} -i frames/frame_%04d.png output.mp4')
 
 
 def main():
