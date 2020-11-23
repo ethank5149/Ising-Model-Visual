@@ -1,170 +1,116 @@
 import numpy as np
-import pandas as pd
-from tqdm import trange
-from numba import jit, prange
-from numba import int64, float64, typeof
+from numba import int64, float64
 from numba.experimental import jitclass
-import matplotlib.pyplot as plt
-from scipy.optimize import curve_fit
 
 
-isinglattice_types = [
-    ('nrows',      int64),  # Number Of Rows
-    ('ncols',      int64),  # Number Of Columns
-    ('scale',    float64),  # Scaling Factor
-    (    'h',    float64),  # Magnetic Field Strength
-    (    'J',    float64),  # Ferromagnetic Coupling Constant
-    (   'kB',    float64),  # Boltzmann Constant
-    (    'T',    float64),  # Temperature
-    ( 'grid', int64[:,:]),  # Ising Lattice
+types = [
+    (                          'rows',      int64),  # Number Of Rows In The Ising Lattice
+    (                          'cols',      int64),  # Number Of Columns In The Ising Lattice
+    (                           'n_T',      int64),  # Number Of Temperature Values To Sweep
+    (                           'n_h',      int64),  # Number Of Magnetic Field Magnitudes To Sweep
+    (                           'n_S',      int64),  # Sample Size
+    (                           'n_R',      int64),  # Number Of "Relaxation" Updates To Perform
+    (                           'h_i',    float64),  # Initial Magnetic Field Magnitude
+    (                           'h_f',    float64),  # Final Magnetic Field Magnitude
+    (                             'J',    float64),  # Ferromagnetic Coupling Constant
+    (                           'k_B',    float64),  # Boltzmann's Constant
+    (                           'T_i',    float64),  # Initial Temperature Value
+    (                           'T_f',    float64),  # Final Temperature Value
+    (                         'scale',    float64),  # Scaling Factor Correcting For Lattice Size
+    ('magnetic_field_magnitude_range', float64[:]),
+    (             'temperature_range', float64[:]),
+    (                 'energy_sample', float64[:]),
+    (          'magnetization_sample', float64[:]),
+    (                             'H', float64[:]),  # A Data Container For Magnetic Field Magnitudes
+    (                             'T', float64[:]),  # A Data Container For Temperatures
+    (                             'E', float64[:]),  # A Data Container For Energy
+    (                             'M', float64[:]),  # A Data Container For Magnetization
+    (                             'C', float64[:]),  # A Data Container For Specific Heat Capacity
+    (                             'X', float64[:]),  # A Data Container For Magnetic Susceptibility
+    (                            'at', int64[:,:]),  # The Ising Lattice
 ]
 
 
-@jitclass(isinglattice_types)
+@jitclass(types)
 class IsingLattice(object):
-    def __init__(self, nrows, ncols, h, J, kB, T):
-        self.nrows, self.ncols = nrows, ncols
-        self.scale = 1.0 / (nrows * ncols)
-        self.h, self.J, self.kB, self.T = h, J, kB, T
-        self.grid = np.random.choice(np.array([1, -1]), size=(self.nrows, self.ncols))
+    def __init__(self, cols, rows, J, k_B, T_i, T_f, n_T, h_i, h_f, n_h, n_R, n_S):
+        ## Assign Inputted Object Attributes
+        self.rows, self.cols = rows, cols
+        self.J, self.k_B = J, k_B
+        self.T_i, self.T_f, self.n_T = T_i, T_f, n_T
+        self.h_i, self.h_f, self.n_h = h_i, h_f, n_h
+        self.n_R, self.n_S = n_R, n_S
+        
+        ## Assign Created Object Attributes
+        self.temperature_range = np.linspace(self.T_i, self.T_f, self.n_T)
+        self.magnetic_field_magnitude_range = np.linspace(self.h_i, self.h_f, self.n_h)
+        self.scale = 1.0 / (self.rows * self.cols)
+        self.at = np.random.choice(np.array([1, -1]), size=(self.rows, self.cols))
 
-    def siteneighbors(self, i, j):
-        return self.grid[             (i + 1) % self.nrows,                                 j] + \
-               self.grid[(i - 1 + self.nrows) % self.nrows,                                 j] + \
-               self.grid[                                i,              (j + 1) % self.ncols] + \
-               self.grid[                                i, (j - 1 + self.ncols) % self.ncols]
+        self.energy_sample, self.magnetization_sample = np.zeros(self.n_S), np.zeros(self.n_S)
+        self.H = np.zeros(self.n_h * self.n_T)
+        self.T = np.zeros(self.n_h * self.n_T)
+        self.E = np.zeros(self.n_h * self.n_T)
+        self.M = np.zeros(self.n_h * self.n_T)
+        self.C = np.zeros(self.n_h * self.n_T)
+        self.X = np.zeros(self.n_h * self.n_T)
+
+    def metric_at(self, i, j):
+        return self.at[            (i + 1) % self.rows,                               j] +\
+               self.at[(i - 1 + self.rows) % self.rows,                               j] +\
+               self.at[                              i,             (j + 1) % self.cols] +\
+               self.at[                              i, (j - 1 + self.cols) % self.cols]
+
+    def get_E(self):
+        return self.scale * np.mean(self.energy_sample)
+        
+    def get_M(self):
+        return self.scale * np.mean(self.magnetization_sample)
+        
+    def get_C(self, temperature):
+        return self.scale * np.var(self.energy_sample) * temperature ** (-2.0)
     
-    def gridneighbors(self):
-        _ = np.zeros_like(self.grid)
-        for i in range(self.nrows):
-            for j in range(self.ncols):
-                _[i, j] = self.siteneighbors(i, j)
+    def get_X(self, temperature):
+        return self.scale * np.var(self.magnetization_sample) * temperature ** (-1.0)
+
+    def metric(self):
+        _ = np.zeros_like(self.at)
+        for i in range(self.rows):
+            for j in range(self.cols):
+                _[i, j] = self.metric_at(i, j)
         return _
 
-    def update(self):
-        for i in range(self.nrows):
-            for j in range(self.ncols):
-                dE = 2.0 * (self.J * self.siteneighbors(i, j) - self.h) * self.grid[i, j]
-                prob = 1.0 if dE < 0.0 else np.exp(-dE / (self.kB * self.T))
+    def update(self, magnetic_field_magnitude, temperature):
+        for i in range(self.rows):
+            for j in range(self.cols):
+                dE = 2.0 * (self.J * self.metric_at(i, j) - magnetic_field_magnitude) * self.at[i, j]
+                prob = 1.0 if dE < 0.0 else np.exp(-dE / (self.k_B * temperature))
                 if np.random.random() < prob:
-                    self.grid[i, j] = -self.grid[i, j]            
+                    self.at[i, j] = -self.at[i, j]            
 
-    def relax(self, n):
-        for _ in range(n):
-            self.update()
+    def relax(self, magnetic_field_magnitude, temperature):
+        for _ in range(self.n_R):
+            self.update(magnetic_field_magnitude, temperature)
 
-    def observe(self, s):
-        Es, Ms = np.zeros(s), np.zeros(s)
-        for _ in range(s):
-            self.update()
-            dE = 2.0 * (self.J * self.gridneighbors() - self.h) * self.grid
-            Es[_] = -0.5 * np.sum(dE)
-            Ms[_] = np.sum(self.grid)
-        E = self.scale * np.mean(Es)
-        M = self.scale * np.mean(Ms)
-        C = self.scale * np.var(Es) * self.T ** (-2)
-        X = self.scale * np.var(Ms) * self.T ** (-1)
-        return self.T, E, M, C, X
+    def measure_at(self, magnetic_field_magnitude, temperature):
+        for _ in range(self.n_S):
+            self.update(magnetic_field_magnitude, temperature)
+            dE = 2.0 * (self.J * self.metric() - magnetic_field_magnitude) * self.at
+            self.energy_sample[_] = -0.5 * np.sum(dE)
+            self.magnetization_sample[_] = np.sum(self.at)
+        return magnetic_field_magnitude, temperature, self.get_E(), self.get_M(), self.get_C(temperature), self.get_X(temperature)
 
     def reset(self):
-        self.grid = np.random.choice(np.array([1, -1]), size=(self.nrows, self.ncols))
-
-
-
-class IsingModel(object):
-    def __init__(self, nrows=1080, ncols=1920, h=0.0, J=1.0, kB=1.0, nR=1000, sS=1000, Ti=1.8, Tf=3.0, nT=1000):
-        self.nrows, self.ncols = nrows, ncols
-        self.h, self.J, self.kB = h, J, kB
-        self.nR, self.sS = nR, sS
-        self.Ti, self.Tf, self.nT, self.Ts = Ti, Tf, nT, np.linspace(Ti, Tf, nT)
-        self.T = self.Ti
-        self.E, self.M, self.C, self.X = np.zeros(nT), np.zeros(nT), np.zeros(nT), np.zeros(nT)
-        self.lattice = IsingLattice(self.nrows, self.ncols, self.h, self.J, self.kB, self.Ts[0])
-
-        self.figsize = np.array([self.ncols, self.nrows])
-        self.figsize = 16 * self.figsize / np.linalg.norm(self.figsize)
-        self.fig, self.ax = plt.subplots(1,1,figsize=self.figsize, dpi=200, constrained_layout=True)
-        self.fig.suptitle(f'Ising Model (Metropolis-Hastings Algorithm)\nh = {self.h:0.4f} | J = {self.J:0.4f} | T = {self.T:0.4f} [K/kB]')
+        self.at = np.random.choice(np.array([1, -1]), size=(self.rows, self.cols))
 
     def simulate(self):
-        for t in trange(self.nT, desc='Sweeping Temperatures'):
-            self.lattice.reset()
-            self.lattice.T = self.Ts[t]
-            self.lattice.relax(self.nR)
-            _, self.E[t], self.C[t], self.M[t], self.X[t] = self.lattice.observe(self.sS)       
-        return self.Ts, self.E, self.M, self.C, self.X
-
-    def visualize(self, t=1.4):
-        self.lattice.T = t
-        for r in trange(self.nR, desc='Saving Frames'):
-            self.ax.matshow(self.lattice.grid, interpolation='bicubic')
-            plt.savefig(f'framedump/frame{str(r).zfill(4)}')
-            plt.cla()
-            self.lattice.relax(1)
-
-
-# def main():
-#     p = IsingModel()
-#     Ts, E, C, M, X = p.simulate()
-#     res = pd.DataFrame(
-#         np.vstack((Ts, E, C, M, X)).T, 
-#         columns=['Temperature', 'Energy', 'Specific Heat Capacity', 'Magnetization', 'Magnetic Susceptibility'])
-#     res.to_csv('results.csv')
-    
-#     fig, ax = plt.subplots(2, 2, figsize=(32, 32), dpi=200, constrained_layout=True)
-#     fig.suptitle('Ising Model (Metropolis-Hastings Algorithm)')
-    
-#     ax[0,0].scatter(res['Temperature'], res['Energy'], marker=',')
-#     ax[0,0].set_ylabel('Energy')
-#     ax[0,0].set_xlabel('Temperature')
-#     ax[0,0].grid()
-    
-#     ax[0,1].scatter(res['Temperature'], res['Specific Heat Capacity'], marker=',')
-#     ax[0,1].set_ylabel('Specific Heat Capacity')
-#     ax[0,1].set_xlabel('Temperature')
-#     ax[0,1].grid()
-    
-#     ax[1,0].scatter(res['Temperature'], res['Magnetization'], marker=',')
-#     ax[1,0].set_ylabel('Magnetization')
-#     ax[1,0].set_xlabel('Temperature')
-#     ax[1,0].grid()
-    
-#     ax[1,1].scatter(res['Temperature'], res['Magnetic Susceptibility'], marker=',')
-#     ax[1,1].set_ylabel('Magnetic Susceptibility')
-#     ax[1,1].set_xlabel('Temperature')
-#     ax[1,1].grid()
-    
-#     fig.savefig('results')
-
-
-def main():
-    p = IsingModel(nrows=15, ncols=15)
-    Ts, E, C, M, X = p.simulate()
-
-    Tc = 2 / np.log(1 + np.sqrt(2))
-    betamodel = lambda T, c, beta : c * (Tc - T) ** beta
-    alphamodel = lambda T, c, alpha : c * (T - Tc) ** -alpha
-
-    # (calpha, alpha), _ = curve_fit(alphamodel, Ts, C)
-    # (cbeta, beta), _ = curve_fit(betamodel, Ts, M)
-
-    fig, ax = plt.subplots(1, 1, figsize=(16, 16), dpi=200)
-    ax.set_title('Ising Model (Metropolis-Hastings Algorithm)\nCritical Exponents About The Critical Temperature')
-
-    betascatter = ax.scatter(Ts, M, marker=',')
-    alphascatter = ax.scatter(Ts, C, marker=',')
-    # ax.plot(Ts, model(Ts, cbeta, beta), label=rf'$M\sim{cbeta:0.4g}(T_c-T)^{{{beta:0.4g}}}$')
-    # ax.plot(Ts, model(Ts, calpha, alpha), label=rf'$C\sim\frac{{{calpha:0.4g}}}{{(T-T_c)^{{{alpha:0.4g}}}}}$')
-
-    ax.grid()
-    fig.savefig('IsingModel')
-
-
-# def main():
-#     p = IsingModel(Ti=0.2)
-#     p.visualize()
-
-    
-
-if __name__ == '__main__':
-    main()
+        for i_h in range(self.n_h):
+            magnetic_field_magnitude = self.magnetic_field_magnitude_range[i_h]
+            for i_t in range(self.n_T):
+                temperature = self.temperature_range[i_t]
+                line = i_h * self.n_T + i_t
+                print('Running:', 100.0 * line / (self.n_T * self.n_h), '%')
+                self.reset()
+                self.relax(magnetic_field_magnitude, temperature)
+                self.H[line], self.T[line], self.E[line], self.M[line], self.C[line], self.X[line] = self.measure_at(magnetic_field_magnitude, temperature)
+        return self.H, self.T, self.E, self.M, self.C, self.X
